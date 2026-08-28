@@ -50,11 +50,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137210"
+        "last_updated": "2026-08-28T22:36:49.136709"
     },
     {
         "id": "uefa_europa_league_draw_vs_dra",
-        "title": "UEFA Europa League Draw VS Draw Aug 28, 2026, 5:00 PM Starts in: 0d 4h 7m 19s LIVE",
+        "title": "UEFA Europa League Draw VS Draw Aug 28, 2026, 5:00 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-draw",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -67,28 +67,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137229"
-    },
-    {
-        "id": "germany_bundesliga_bayern_münc",
-        "title": "Germany Bundesliga Bayern München VS Stuttgart Aug 29, 2026, 12:30 AM Starts in: 0d 11h 37m 19s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga",
-        "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137247"
+        "last_updated": "2026-08-28T22:36:49.136727"
     },
     {
         "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 TKR VS BT Aug 29, 2026, 6:00 AM Starts in: 0d 17h 7m 19s LIVE",
+        "title": "Caribbean Premier League 2026 TKR VS BT Aug 29, 2026, 6:00 AM Starts in: 0d 7h 24m 19s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -101,11 +84,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137258"
+        "last_updated": "2026-08-28T22:36:49.136739"
     },
     {
         "id": "icc_women_t20_world_cup_2026_i",
-        "title": "Icc Women T20 World Cup 2026 Ind W VS Tha W Aug 30, 2026, 8:30 PM Starts in: 2d 7h 37m 19s LIVE",
+        "title": "Icc Women T20 World Cup 2026 Ind W VS Tha W Aug 30, 2026, 8:30 PM Starts in: 1d 21h 54m 19s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -118,11 +101,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137269"
+        "last_updated": "2026-08-28T22:36:49.136751"
     },
     {
         "id": "icc_women_t20_world_cup_ban_w_",
-        "title": "Icc Women T20 World Cup Ban W VS Idn W Aug 31, 2026, 8:30 PM Starts in: 3d 7h 37m 19s LIVE",
+        "title": "Icc Women T20 World Cup Ban W VS Idn W Aug 31, 2026, 8:30 PM Starts in: 2d 21h 54m 19s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -135,11 +118,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137279"
+        "last_updated": "2026-08-28T22:36:49.136761"
     },
     {
         "id": "women_t20_world_cup_2026_pak_w",
-        "title": "Women T20 World Cup 2026 Pak W VS Tha W Sep 1, 2026, 8:30 PM Starts in: 4d 7h 37m 19s LIVE",
+        "title": "Women T20 World Cup 2026 Pak W VS Tha W Sep 1, 2026, 8:30 PM Starts in: 3d 21h 54m 19s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/women-t20-world-cup-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -152,6 +135,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:53:53.137289"
+        "last_updated": "2026-08-28T22:36:49.136772"
     }
 ]
