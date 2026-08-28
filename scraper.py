@@ -1,4 +1,5 @@
 import re
+import base64
 import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any
@@ -6,8 +7,8 @@ import config
 
 class MHDTVScraper:
     """
-    live.mhdtv.online থেকে লাইভ ও আপকামিং ম্যাচ, প্লেয়ার আইফ্রেম এবং
-    স্ট্রিমিং লিংক স্ক্র্যাপ করার ক্লাস
+    live.mhdtv.online থেকে লাইভ ম্যাচ, অরিজিনাল মেনিফেস্ট/m3u8 সরাসরি স্ট্রিমিং লিঙ্ক 
+    এবং প্লেয়ার সোর্স এক্সট্র্যাক্ট করার প্রিমিয়াম স্ক্র্যাপার
     """
 
     def __init__(self):
@@ -15,7 +16,7 @@ class MHDTVScraper:
         self.session.headers.update(config.HTTP_HEADERS)
 
     def fetch_page(self, url: str) -> BeautifulSoup:
-        """ পেজ ডাউনলোডের জন্য সেফ রিকোয়েস্ট হ্যান্ডলার """
+        """ সেফ HTTP রিকোয়েস্ট সেভার """
         for attempt in range(config.MAX_RETRIES):
             try:
                 response = self.session.get(url, timeout=config.REQUEST_TIMEOUT)
@@ -25,16 +26,15 @@ class MHDTVScraper:
                 pass
         return None
 
-    def extract_stream_sources(self, match_url: str) -> Dict[str, str]:
+    def extract_direct_stream(self, match_url: str) -> Dict[str, str]:
         """
-        ম্যাচ স্লাগ পেজে ঢুকে আইফ্রেম ও m3u8 স্ট্রিম লিংক বের করে।
-        সাইটের অপ্রয়োজনীয় এলিমেন্ট কেটে দিয়ে শুধু ভিডিও প্লেয়ার রাখার কোডও তৈরি করে।
+        ম্যাচ পেজ এবং প্লেয়ার স্ক্রিপ্ট এনালাইসিস করে সরাসরি m3u8 স্ট্রিমিং লিঙ্ক খুঁজে বের করে।
         """
         soup = self.fetch_page(match_url)
         result = {
-            "iframe_url": match_url,
-            "m3u8_url": "",
-            "embed_code": f'<iframe src="{match_url}" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>'
+            "stream_url": "",
+            "stream_type": "unknown",
+            "page_url": match_url
         }
 
         if not soup:
@@ -42,38 +42,70 @@ class MHDTVScraper:
 
         page_html = str(soup)
 
-        # ১. Iframe খোঁজা (Ads ও Google Tag Manager ফিল্টার করে)
+        # ১. সরাসরি HTML5 <source> এবং <video> ট্যাগ চেক করা
+        video_tags = soup.find_all(['video', 'source'])
+        for v in video_tags:
+            src = v.get('src') or v.get('data-src') or ''
+            if '.m3u8' in src or '.mp4' in src:
+                result["stream_url"] = src if src.startswith('http') else f"https:{src}" if src.startswith('//') else f"{config.TARGET_BASE_URL.rstrip('/')}/{src.lstrip('/')}"
+                result["stream_type"] = "hls" if ".m3u8" in src else "mp4"
+                return result
+
+        # ২. JavaScript স্ক্রিপ্ট ফাইল ও Clappr/JWPlayer কনফিগারেশন থেকে m3u8 ডিটেক্ট করা
+        script_m3u8 = re.findall(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', page_html)
+        if script_m3u8:
+            result["stream_url"] = script_m3u8[0]
+            result["stream_type"] = "hls"
+            return result
+
+        # ৩. বেস৬৪ (Base64) এনকোডেড m3u8 লিঙ্ক ফিল্টারিং
+        b64_matches = re.findall(r'aHR0cHM6Ly[A0Za-z0-9+/=]+', page_html)
+        for b64 in b64_matches:
+            try:
+                decoded = base64.b64decode(b64).decode('utf-8')
+                if '.m3u8' in decoded:
+                    result["stream_url"] = decoded
+                    result["stream_type"] = "hls"
+                    return result
+            except Exception:
+                pass
+
+        # ৪. আইফ্রেম পেজে প্রবেশ করে সাব-লেভেলে স্ট্রিমিং লিঙ্ক অনুসন্ধান করা
         iframes = soup.find_all('iframe')
         ignored_domains = ['googletagmanager.com', 'facebook.com', 'analytics', 'disqus', 'ads', 'gtm']
 
         for iframe in iframes:
-            src = iframe.get('src') or iframe.get('data-src') or ''
-            if src and not any(domain in src.lower() for domain in ignored_domains):
-                final_iframe = src if src.startswith('http') else f"https:{src}" if src.startswith('//') else f"{config.TARGET_BASE_URL.rstrip('/')}/{src.lstrip('/')}"
-                result["iframe_url"] = final_iframe
+            iframe_src = iframe.get('src') or iframe.get('data-src') or ''
+            if iframe_src and not any(d in iframe_src.lower() for d in ignored_domains):
+                full_iframe_url = iframe_src if iframe_src.startswith('http') else f"https:{iframe_src}" if iframe_src.startswith('//') else f"{config.TARGET_BASE_URL.rstrip('/')}/{iframe_src.lstrip('/')}"
                 
-                # সম্পূর্ণ ফুলস্ক্রিন প্লেয়ার embed কোড
-                result["embed_code"] = f'<iframe src="{final_iframe}" width="100%" height="100%" frameborder="0" allowfullscreen="true" scrolling="no" allow="autoplay; encrypted-media"></iframe>'
-                break
+                # আইফ্রেম পেজ স্ক্র্যাপ করা
+                sub_soup = self.fetch_page(full_iframe_url)
+                if sub_soup:
+                    sub_html = str(sub_soup)
+                    sub_m3u8 = re.findall(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', sub_html)
+                    if sub_m3u8:
+                        result["stream_url"] = sub_m3u8[0]
+                        result["stream_type"] = "hls"
+                        return result
 
-        # ২. m3u8 লিংক ফিল্টার করা (যদি সরাসরি ব্যাকএন্ডে থাকে)
-        m3u8_matches = re.findall(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', page_html)
-        if m3u8_matches:
-            result["m3u8_url"] = m3u8_matches[0]
+                # ডাইরেক্ট লিঙ্ক না পাওয়া গেলে fallback আইফ্রেম ইউআরএল সেভ রাখা
+                if not result["stream_url"]:
+                    result["stream_url"] = full_iframe_url
+                    result["stream_type"] = "iframe"
 
         return result
 
     def get_all_matches(self) -> List[Dict[str, Any]]:
-        """ মূল পেজ থেকে সকল ম্যাচ ইনফরমেশন কালেকশন করে """
+        """ সাইট থেকে বর্তমানে সক্রিয় সকল লাইভ ও আপকামিং ম্যাচ এক্সট্র্যাক্ট করে """
         print(f"[+] স্ক্র্যাপ করা হচ্ছে: {config.TARGET_BASE_URL}")
         soup = self.fetch_page(config.TARGET_BASE_URL)
         matches_data = []
 
         if not soup:
-            print("[-] পেজ লোড করা সম্ভব হয়নি।")
+            print("[-] মূল পেজ লোড করা সম্ভব হয়নি।")
             return matches_data
 
-        # ম্যাচ কার্ড এবং লিংক নির্বাচন
         cards = soup.select('.post, .article, .match-card, .entry-title a, article a, div.content a, .event-item')
         seen_urls = set()
 
@@ -93,7 +125,7 @@ class MHDTVScraper:
             if len(title) < 4:
                 continue
 
-            # অরিজিনাল থাম্বনেইল পিক করা
+            # থিম থাম্বনেইল পিক করা
             img_tag = card.find('img') if card.name != 'a' else (card.find_parent().find('img') if card.find_parent() else None)
             existing_image_url = ""
             
@@ -102,18 +134,17 @@ class MHDTVScraper:
                 if existing_image_url and not existing_image_url.startswith('http'):
                     existing_image_url = f"{config.TARGET_BASE_URL.rstrip('/')}/{existing_image_url.lstrip('/')}"
 
-            print(f"  └─ ম্যাচ পাওয়া গেছে: {title[:40]}...")
+            print(f"  └─ লাইভ ম্যাচ প্রসেস হচ্ছে: {title[:40]}...")
 
-            # স্লাগ পেজ থেকে ভিডিও স্ট্রিম এক্সট্র্যাক্ট
-            stream_info = self.extract_stream_sources(href)
+            # সরাসরি স্ট্রিমিং লিঙ্ক সোর্স এক্সট্র্যাক্ট করা
+            stream_info = self.extract_direct_stream(href)
 
             matches_data.append({
                 "title": title,
                 "slug_url": href,
                 "original_image": existing_image_url,
-                "iframe_url": stream_info["iframe_url"],
-                "m3u8_url": stream_info["m3u8_url"],
-                "embed_code": stream_info["embed_code"]
+                "stream_url": stream_info["stream_url"],
+                "stream_type": stream_info["stream_type"]
             })
 
         return matches_data
