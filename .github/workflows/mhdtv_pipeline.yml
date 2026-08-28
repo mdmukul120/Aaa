@@ -2,8 +2,8 @@ name: MHDTV Match Scraper & Image Generator Pipeline
 
 on:
   schedule:
-    # প্রতি ১৫ মিনিট পরপর স্বয়ংক্রিয়ভাবে চলবে
-    - cron: '*/15 * * * *'
+    # প্রতি ৫ মিনিট পরপর স্বয়ংক্রিয়ভাবে রান হবে
+    - cron: '*/5 * * * *'
   workflow_dispatch: # ম্যানুয়ালি চালুর জন্য
 
 jobs:
@@ -41,4 +41,4 @@ jobs:
         
         git add output/
         
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Scraped MHDTV live matches & thumbnails [skip ci]" && git push)
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Live stream links updated & ended matches purged [skip ci]" && git push)
