@@ -1,6 +1,8 @@
+import os
 import json
 import re
 from datetime import datetime
+from pathlib import Path
 import config
 from scraper import MHDTVScraper
 from image_generator import FallbackImageGenerator
@@ -10,53 +12,79 @@ def sanitize_filename(name: str) -> str:
     clean = re.sub(r'[^\w\s-]', '', name).strip().lower()
     return re.sub(r'[-\s]+', '_', clean)[:30]
 
+def cleanup_ended_matches(active_image_paths: set):
+    """
+    ম্যাচ শেষ হয়ে গেলে ফোল্ডার থেকে পুরাতন জেনারেট করা ডিলিটেড ইমেজের ফাইল মুছে ফেলে।
+    """
+    if not config.IMAGE_OUTPUT_DIR.exists():
+        return
+    
+    for img_file in config.IMAGE_OUTPUT_DIR.glob("*.png"):
+        if str(img_file.resolve()) not in active_image_paths and str(img_file) not in active_image_paths:
+            try:
+                os.remove(img_file)
+                print(f"[−] পুরাতন/শেষ হওয়া ম্যাচের থাম্বনেইল ডিলিট করা হয়েছে: {img_file.name}")
+            except Exception as e:
+                print(f"[!] ফাইল মুছতে ব্যর্থ: {e}")
+
 def main():
     print("==================================================")
-    print("      MHDTV Live Match Automated Pipeline         ")
+    print("   MHDTV Live Auto Stream & Auto-Purge Pipeline   ")
     print("==================================================")
 
     scraper = MHDTVScraper()
     img_generator = FallbackImageGenerator()
 
     processed_data = []
+    active_image_paths = set()
     matches = scraper.get_all_matches()
 
     for match in matches:
         file_slug = sanitize_filename(match['title'])
         final_image_path = match['original_image']
 
-        # যদি সাইটে অরিজিনাল ইমেজ না থাকে, Pillow/Willow দিয়ে তৈরি করা হবে
+        # সাইটে ইমেজ না থাকলে অটোমেটিক Pillow/Willow দিয়ে ব্যানার তৈরি
         if not final_image_path:
-            img_filename = f"{file_slug}_{datetime.now().strftime('%H%M%S')}.png"
+            img_filename = f"{file_slug}.png"
             local_img_path = config.IMAGE_OUTPUT_DIR / img_filename
 
-            print(f"     └─ [Pillow/Willow] কাস্টম ইমেজ জেনারেট হচ্ছে: {img_filename}")
-            generated_path = img_generator.create_custom_thumbnail(
-                match_title=match['title'],
-                output_path=str(local_img_path)
-            )
-            final_image_path = str(generated_path)
+            # ফাইল না থাকলে নতুন করে সেভ করা
+            if not local_img_path.exists():
+                print(f"     └─ [Pillow/Willow] নতুন ব্যানার তৈরি হচ্ছে: {img_filename}")
+                generated_path = img_generator.create_custom_thumbnail(
+                    match_title=match['title'],
+                    output_path=str(local_img_path)
+                )
+                final_image_path = str(generated_path)
+            else:
+                final_image_path = str(local_img_path)
+
+            active_image_paths.add(str(Path(final_image_path).resolve()))
+            active_image_paths.add(final_image_path)
 
         match_entry = {
             "id": file_slug,
             "title": match['title'],
             "slug_url": match['slug_url'],
             "image_url": final_image_path,
-            "iframe_url": match['iframe_url'],
-            "m3u8_url": match['m3u8_url'],
-            "embed_code": match['embed_code'],
-            "timestamp": datetime.now().isoformat()
+            "stream_url": match['stream_url'],      # সরাসরি .m3u8 অথবা এক্সট্র্যাক্টেড প্লেয়ার সোর্স
+            "stream_type": match['stream_type'],    # hls / mp4 / iframe
+            "status": "LIVE",
+            "last_updated": datetime.now().isoformat()
         }
 
         processed_data.append(match_entry)
 
-    # JSON ফাইলে সেভ করা
-    print("\n[+] JSON ফাইল আপডেট করা হচ্ছে...")
+    # ১. শেষ হয়ে যাওয়া ম্যাচের ডিলিট নিশ্চিত করা (Old Thumbnail Cleanup)
+    cleanup_ended_matches(active_image_paths)
+
+    # ২. শুধুমাত্র বর্তমানে সক্রিয় লাইভ ম্যাচ দিয়ে JSON ওভাররাইট করা
+    print("\n[+] সক্রিয় লাইভ ডাটা দিয়ে JSON ফাইল আপডেট করা হচ্ছে...")
     with open(config.JSON_OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
-    print(f"[✓] পাইপলাইন সফলভাবে সম্পন্ন হয়েছে! মোট ম্যাচ: {len(processed_data)}")
-    print(f"[✓] ডাটা সেভ ফাইল: {config.JSON_OUTPUT_FILE}")
+    print(f"[✓] পাইপলাইন সফলভাবে সম্পন্ন হয়েছে! বর্তমান লাইভ ম্যাচ: {len(processed_data)}")
+    print(f"[✓] জেনারেট ফাইল: {config.JSON_OUTPUT_FILE}")
     print("==================================================")
 
 if __name__ == "__main__":
