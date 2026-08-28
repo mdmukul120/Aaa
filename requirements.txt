@@ -1,0 +1,6 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+pillow>=10.2.0
+willow>=1.8.0
+lxml>=5.1.0
+pydantic>=2.6.0
