@@ -4,69 +4,118 @@
         "title": "Pakistan Tour of England 2026 Pakistan VS England Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "",
-        "stream_type": "unknown",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://live.mhdtv.online/watch/pakistan-tour-of-england-2026\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947700"
+        "last_updated": "2026-08-28T12:44:06.259113"
     },
     {
         "id": "uefa_europa_league_draw_vs_dra",
         "title": "UEFA Europa League Draw VS Draw Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-draw",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "",
-        "stream_type": "unknown",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://live.mhdtv.online/watch/uefa-champions-league-draw",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://live.mhdtv.online/watch/uefa-champions-league-draw\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947719"
+        "last_updated": "2026-08-28T12:44:06.259129"
     },
     {
         "id": "germany_bundesliga_bayern_münc",
         "title": "Germany Bundesliga Bayern München VS Stuttgart Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "",
-        "stream_type": "unknown",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://live.mhdtv.online/watch/germany-bundesliga",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://live.mhdtv.online/watch/germany-bundesliga\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947733"
+        "last_updated": "2026-08-28T12:44:06.259142"
     },
     {
         "id": "caribbean_premier_league_2026_",
         "title": "Caribbean Premier League 2026 TKR VS BT Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "https://1freecdn.xyz/hembedplayer/csstream5/1/960/540",
-        "stream_type": "iframe",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://1freecdn.xyz/hembedplayer/csstream5/1/960/540",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://1freecdn.xyz/hembedplayer/csstream5/1/960/540\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947742"
+        "last_updated": "2026-08-28T12:44:06.259150"
     },
     {
         "id": "icc_women_t20_world_cup_2026_i",
         "title": "Icc Women T20 World Cup 2026 Ind W VS Tha W Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "",
-        "stream_type": "unknown",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup-2026",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://live.mhdtv.online/watch/icc-women-t20-world-cup-2026\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947750"
+        "last_updated": "2026-08-28T12:44:06.259158"
     },
     {
         "id": "icc_women_t20_world_cup_ban_w_",
         "title": "Icc Women T20 World Cup Ban W VS Idn W Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "",
-        "stream_type": "unknown",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://live.mhdtv.online/watch/icc-women-t20-world-cup\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947758"
+        "last_updated": "2026-08-28T12:44:06.259165"
     },
     {
         "id": "women_t20_world_cup_2026_pak_w",
         "title": "Women T20 World Cup 2026 Pak W VS Tha W Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/women-t20-world-cup-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "stream_url": "",
-        "stream_type": "unknown",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Main Server",
+                "stream_url": "https://live.mhdtv.online/watch/women-t20-world-cup-2026",
+                "stream_type": "iframe",
+                "embed_code": "<iframe src=\"https://live.mhdtv.online/watch/women-t20-world-cup-2026\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" allow=\"autoplay; encrypted-media\"></iframe>"
+            }
+        ],
         "status": "LIVE",
-        "last_updated": "2026-08-28T12:34:56.947765"
+        "last_updated": "2026-08-28T12:44:06.259172"
     }
 ]
