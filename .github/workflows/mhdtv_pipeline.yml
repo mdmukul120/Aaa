@@ -1,17 +1,17 @@
-name: MHDTV Match Scraper & Image Generator Pipeline
+name: MHDTV Multi-Server Live Scraper Pipeline
 
 on:
   schedule:
-    # প্রতি ৫ মিনিট পরপর স্বয়ংক্রিয়ভাবে রান হবে
+    # প্রতি ৫ মিনিট পর পর অটোমেটিক আপডেট হবে
     - cron: '*/5 * * * *'
-  workflow_dispatch: # ম্যানুয়ালি চালুর জন্য
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
 
 jobs:
-  build-and-run:
+  run-pipeline:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository Source
+    - name: Checkout Repository
       uses: actions/checkout@v4
 
     - name: Setup Python Environment
@@ -20,7 +20,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
 
-    - name: Install System Graphics Dependencies
+    - name: Install System Dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y libfreetype6-dev libjpeg-dev zlib1g-dev
@@ -30,15 +30,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run Main Scraper & Image Pipeline
+    - name: Run Main Scraper Engine
       run: |
         python main.py
 
-    - name: Commit and Push Updated Data & Images
+    - name: Commit and Push Updated Data
       run: |
-        git config --global user.name "MHDTV Bot"
-        git config --global user.email "bot@mhdtv-pipeline.local"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
         git add output/
         
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Live stream links updated & ended matches purged [skip ci]" && git push)
+        git diff --staged --quiet || (git commit -m "Auto-update: Multi-server streams updated & ended matches purged [skip ci]" && git push)
