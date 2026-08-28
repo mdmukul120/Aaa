@@ -1,0 +1,44 @@
+name: MHDTV Match Scraper & Image Generator Pipeline
+
+on:
+  schedule:
+    # প্রতি ১৫ মিনিট পরপর স্বয়ংক্রিয়ভাবে চলবে
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # ম্যানুয়ালি চালুর জন্য
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository Source
+      uses: actions/checkout@v4
+
+    - name: Setup Python Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install System Graphics Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libfreetype6-dev libjpeg-dev zlib1g-dev
+
+    - name: Install Python Packages
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Main Scraper & Image Pipeline
+      run: |
+        python main.py
+
+    - name: Commit and Push Updated Data & Images
+      run: |
+        git config --global user.name "MHDTV Bot"
+        git config --global user.email "bot@mhdtv-pipeline.local"
+        
+        git add output/
+        
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Scraped MHDTV live matches & thumbnails [skip ci]" && git push)
