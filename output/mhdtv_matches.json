@@ -50,45 +50,45 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439608"
+        "last_updated": "2026-08-29T15:17:05.914057"
     },
     {
-        "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 TKR VS BT Aug 29, 2026, 6:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+        "id": "germany_bundesliga_bayer_lever",
+        "title": "Germany - Bundesliga Bayer Leverkusen VS Elversberg Aug 29, 2026, 7:30 PM Starts in: 0d 4h 14m 54s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439626"
+        "last_updated": "2026-08-29T15:17:05.914074"
     },
     {
-        "id": "england_premier_league_liverpo",
-        "title": "England - Premier League Liverpool VS Nottingham Aug 29, 2026, 5:30 PM Starts in: 0d 6h 59m 53s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league",
+        "id": "bundesliga_köln_vs_paderborn_a",
+        "title": "Bundesliga Köln VS Paderborn Aug 29, 2026, 7:30 PM Starts in: 0d 4h 14m 54s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/bundesliga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league",
+                "page_url": "https://live.mhdtv.online/watch/bundesliga",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439637"
+        "last_updated": "2026-08-29T15:17:05.914090"
     },
     {
         "id": "england_premier_leagu_coventry",
-        "title": "England - Premier Leagu Coventry City VS Hull City Aug 29, 2026, 8:00 PM Starts in: 0d 9h 29m 53s LIVE",
+        "title": "England - Premier Leagu Coventry City VS Hull City Aug 29, 2026, 8:00 PM Starts in: 0d 4h 44m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-leagu",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -101,28 +101,46 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439647"
+        "last_updated": "2026-08-29T15:17:05.914100"
     },
     {
-        "id": "england_premier_leagues_afc_bo",
-        "title": "England - Premier Leagues AFC Bournemouth VS Everton Aug 29, 2026, 8:00 PM Starts in: 0d 9h 29m 53s LIVE",
+        "id": "england_premier_league_afc_bou",
+        "title": "England - Premier League AFC Bournemouth VS Everton Aug 29, 2026, 8:00 PM Starts in: 0d 4h 44m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-leagues",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "total_servers": 1,
+        "total_servers": 4,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/england-premier-leagues",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "FAST SERVER",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-leagues",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "ESPN Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-leagues",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "DAZN",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-leagues",
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439656"
+        "last_updated": "2026-08-29T15:17:05.914110"
     },
     {
         "id": "spain_la_liga_real_betis_vs_le",
-        "title": "Spain - La Liga Real Betis VS Levante Aug 29, 2026, 9:00 PM Starts in: 0d 10h 29m 53s LIVE",
+        "title": "Spain - La Liga Real Betis VS Levante Aug 29, 2026, 9:00 PM Starts in: 0d 5h 44m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -135,11 +153,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439665"
+        "last_updated": "2026-08-29T15:17:05.914119"
     },
     {
         "id": "england_premier_leaguess_totte",
-        "title": "England - Premier Leaguess Tottenham Hotspur VS Newcastle United Aug 29, 2026, 10:30 PM Starts in: 0d 11h 59m 53s LIVE",
+        "title": "England - Premier Leaguess Tottenham Hotspur VS Newcastle United Aug 29, 2026, 10:30 PM Starts in: 0d 7h 14m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-leaguess",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -152,11 +170,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439675"
+        "last_updated": "2026-08-29T15:17:05.914128"
     },
     {
         "id": "italy_serie_a_torino_vs_sassuo",
-        "title": "Italy - Serie A Torino VS Sassuolo Aug 29, 2026, 10:30 PM Starts in: 0d 11h 59m 53s LIVE",
+        "title": "Italy - Serie A Torino VS Sassuolo Aug 29, 2026, 10:30 PM Starts in: 0d 7h 14m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -169,11 +187,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439690"
+        "last_updated": "2026-08-29T15:17:05.914141"
     },
     {
         "id": "italy_serie_monza_vs_udinese_a",
-        "title": "Italy Serie Monza VS Udinese Aug 29, 2026, 10:30 PM Starts in: 0d 11h 59m 53s LIVE",
+        "title": "Italy Serie Monza VS Udinese Aug 29, 2026, 10:30 PM Starts in: 0d 7h 14m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -186,11 +204,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439699"
+        "last_updated": "2026-08-29T15:17:05.914148"
+    },
+    {
+        "id": "italy_series_fiorentina_vs_fro",
+        "title": "Italy Series Fiorentina VS Frosinone Aug 29, 2026, 10:30 PM Starts in: 0d 7h 14m 54s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-series",
+        "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-series",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-08-29T15:17:05.914156"
     },
     {
         "id": "spain_laliga_real_sociedad_vs_",
-        "title": "Spain - LaLiga Real Sociedad VS Espanyol Aug 29, 2026, 11:00 PM Starts in: 0d 12h 29m 53s LIVE",
+        "title": "Spain - LaLiga Real Sociedad VS Espanyol Aug 29, 2026, 11:00 PM Starts in: 0d 7h 44m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-laliga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -203,11 +238,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439708"
+        "last_updated": "2026-08-29T15:17:05.914163"
+    },
+    {
+        "id": "caribbean_premier_league_2026_",
+        "title": "Caribbean Premier League 2026 TKR VS BT Aug 30, 2026, 6:00 AM Starts in: 0d 14h 44m 54s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+        "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-08-29T15:17:05.914171"
     },
     {
         "id": "icc_women_t20_world_cup_2026_i",
-        "title": "Icc Women T20 World Cup 2026 Ind W VS Tha W Aug 30, 2026, 8:30 PM Starts in: 1d 9h 59m 53s LIVE",
+        "title": "Icc Women T20 World Cup 2026 Ind W VS Tha W Aug 30, 2026, 8:30 PM Starts in: 1d 5h 14m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -220,11 +272,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439719"
+        "last_updated": "2026-08-29T15:17:05.914179"
     },
     {
         "id": "icc_women_t20_world_cup_ban_w_",
-        "title": "Icc Women T20 World Cup Ban W VS Idn W Aug 31, 2026, 8:30 PM Starts in: 2d 9h 59m 53s LIVE",
+        "title": "Icc Women T20 World Cup Ban W VS Idn W Aug 31, 2026, 8:30 PM Starts in: 2d 5h 14m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -237,11 +289,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439728"
+        "last_updated": "2026-08-29T15:17:05.914186"
     },
     {
         "id": "women_t20_world_cup_2026_pak_w",
-        "title": "Women T20 World Cup 2026 Pak W VS Tha W Sep 1, 2026, 8:30 PM Starts in: 3d 9h 59m 53s LIVE",
+        "title": "Women T20 World Cup 2026 Pak W VS Tha W Sep 1, 2026, 8:30 PM Starts in: 3d 5h 14m 54s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/women-t20-world-cup-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -254,6 +306,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-29T10:31:50.439736"
+        "last_updated": "2026-08-29T15:17:05.914194"
     }
 ]
