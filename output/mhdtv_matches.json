@@ -4,53 +4,17 @@
         "title": "Pakistan Tour of England 2026 Pakistan VS England Aug 27, 2026, 4:00 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "total_servers": 7,
+        "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
                 "stream_type": "iframe"
-            },
-            {
-                "server_name": "Willow FHD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TAPMAD HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Cricbuzz Fast",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Tamasha",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Willow HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Sky Cricket",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/pakistan-tour-of-england-2026",
-                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587342"
+        "last_updated": "2026-08-31T00:25:11.253372"
     },
     {
         "id": "france_ligue_1_nice_vs_paris_a",
@@ -67,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587361"
+        "last_updated": "2026-08-31T00:25:11.253387"
     },
     {
         "id": "germany_bundesliga_freiburg_vs",
@@ -77,14 +41,14 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/germany-bundesliga",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587373"
+        "last_updated": "2026-08-31T00:25:11.253395"
     },
     {
         "id": "icc_women_t20_world_cup_2026_i",
@@ -94,43 +58,31 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup-2026",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587385"
+        "last_updated": "2026-08-31T00:25:11.253402"
     },
     {
         "id": "spain_la_liga_real_madrid_vs_m",
         "title": "Spain - La Liga Real Madrid VS Málaga Aug 30, 2026, 9:00 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "total_servers": 3,
+        "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
                 "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER 2",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587406"
+        "last_updated": "2026-08-31T00:25:11.253415"
     },
     {
         "id": "ligue_1_le_mans_vs_rennes_aug_",
@@ -147,7 +99,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587417"
+        "last_updated": "2026-08-31T00:25:11.253421"
     },
     {
         "id": "premier_league_manchester_unit",
@@ -157,115 +109,103 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/premier-leagu",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587427"
+        "last_updated": "2026-08-31T00:25:11.253427"
     },
     {
         "id": "italy_serie_a_napoli_vs_como_a",
-        "title": "Italy - Serie A Napoli VS Como Aug 30, 2026, 10:30 PM Starts in: 0d 0h 29m 24s LIVE",
+        "title": "Italy - Serie A Napoli VS Como Aug 30, 2026, 10:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
+                "server_name": "Main Stream",
+                "m3u8_url": "https://playback.livetl001.com/live/69f42e961f739deff81510c0_1080p.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/italy-serie-a",
-                "stream_type": "iframe"
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587443"
+        "last_updated": "2026-08-31T00:25:11.253438"
     },
     {
         "id": "la_liga_deportivo_la_coruña_vs",
-        "title": "La Liga Deportivo La Coruña VS Valencia Aug 30, 2026, 11:30 PM Starts in: 0d 1h 29m 24s LIVE",
+        "title": "La Liga Deportivo La Coruña VS Valencia Aug 30, 2026, 11:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/la-liga",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/la-liga",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587456"
+        "last_updated": "2026-08-31T00:25:11.253446"
     },
     {
         "id": "france_ligue_1_monaco_vs_olymp",
-        "title": "France - Ligue 1 Monaco VS Olympique Marseille Aug 31, 2026, 12:45 AM Starts in: 0d 2h 44m 24s LIVE",
+        "title": "France - Ligue 1 Monaco VS Olympique Marseille Aug 31, 2026, 12:45 AM Starts in: 0d 0h 21m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/france-l-1",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
+                "server_name": "Main Stream",
+                "m3u8_url": "https://playback.livetl001.com/live/69aa9525f5ec459ae275b43f_1080p.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/france-l-1",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587468"
-    },
-    {
-        "id": "spain_la_liga_athletic_club_vs",
-        "title": "Spain - La Liga Athletic Club VS Celta de Vigo Aug 31, 2026, 1:30 AM Starts in: 0d 3h 29m 24s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
-        "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Bein Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playback.livetl001.com/live/69ef10b47146e04fbe6d4363_1080p.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
                 "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587479"
+        "last_updated": "2026-08-31T00:25:11.253453"
     },
     {
-        "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 SNP VS ABF Aug 31, 2026, 5:00 AM Starts in: 0d 6h 59m 24s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+        "id": "spain_la_liga_athletic_club_vs",
+        "title": "Spain - La Liga Athletic Club VS Celta de Vigo Aug 31, 2026, 1:30 AM Starts in: 0d 1h 6m 20s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-08-31T00:25:11.253460"
+    },
+    {
+        "id": "caribbean_premier_league_2026_",
+        "title": "Caribbean Premier League 2026 SNP VS ABF Aug 31, 2026, 5:00 AM Starts in: 0d 4h 36m 20s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+        "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587490"
+        "last_updated": "2026-08-31T00:25:11.253471"
     },
     {
         "id": "italy_serie_a_cagliari_vs_inte",
-        "title": "Italy - Serie A Cagliari VS Internazionale Aug 31, 2026, 12:44 PM Starts in: 0d 14h 43m 24s LIVE",
+        "title": "Italy - Serie A Cagliari VS Internazionale Aug 31, 2026, 12:44 PM Starts in: 0d 12h 20m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-a",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
@@ -278,40 +218,40 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587502"
+        "last_updated": "2026-08-31T00:25:11.253477"
     },
     {
         "id": "italy_serie_a_genoa_vs_lazio_a",
-        "title": "Italy - Serie A Genoa VS Lazio Aug 31, 2026, 12:44 PM Starts in: 0d 14h 43m 24s LIVE",
+        "title": "Italy - Serie A Genoa VS Lazio Aug 31, 2026, 12:44 PM Starts in: 0d 12h 20m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-a-aa",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/italy-serie-a-a-aa",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587512"
+        "last_updated": "2026-08-31T00:25:11.253482"
     },
     {
         "id": "icc_women_t20_world_cup_ban_w_",
-        "title": "Icc Women T20 World Cup Ban W VS Idn W Aug 31, 2026, 8:30 PM Starts in: 0d 22h 29m 24s LIVE",
+        "title": "Icc Women T20 World Cup Ban W VS Idn W Aug 31, 2026, 8:30 PM Starts in: 0d 20h 6m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/rmAeqiwboLR2Fa3bDjezJxd5DbeB3FKyBDYwbulQ.jpg",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
+                "server_name": "Default Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-08-30T22:03:17.587522"
+        "last_updated": "2026-08-31T00:25:11.253488"
     }
 ]
