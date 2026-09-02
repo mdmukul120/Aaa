@@ -14,11 +14,132 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007602"
+        "last_updated": "2026-09-02T15:14:30.572395"
     },
     {
-        "id": "icc_women_t20_asia_cup_pak_w_v",
-        "title": "Icc Women T20 Asia Cup PAK W VS THA W Sep 1, 2026, 8:30 PM Starts in: --:--:-- LIVE",
+        "id": "soudi_pro_league_al_hilal_vs_a",
+        "title": "Soudi Pro League Al Hilal VS Al-Ahli Sep 2, 2026, 12:00 AM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 3,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Fox Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572414"
+    },
+    {
+        "id": "englad_championship_sheffield_",
+        "title": "Englad ChampionShip Sheffield United VS Bolton Wanderers Sep 2, 2026, 12:44 AM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/englad-championship",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 3,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/englad-championship",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/englad-championship",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Fast server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/englad-championship",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572425"
+    },
+    {
+        "id": "germany_dfb_pokal_borussia_dor",
+        "title": "Germany DFB Pokal Borussia Dortmund VS HEBC Sep 2, 2026, 12:45 AM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/germany-dfb-pokal",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/germany-dfb-pokal",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572434"
+    },
+    {
+        "id": "coppa_italia_torino_vs_monza_s",
+        "title": "Coppa Italia Torino VS Monza Sep 2, 2026, 1:00 AM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/coppa-italia-aa",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/coppa-italia-aa",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572442"
+    },
+    {
+        "id": "coppa_italia_sassuolo_vs_frosi",
+        "title": "Coppa Italia Sassuolo VS Frosinone Sep 2, 2026, 7:00 PM Starts in: 0d 3h 48m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/coppa-italia",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 3,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/coppa-italia",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Premier Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/coppa-italia",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "https://playback.livetl001.com/live/69aa9525f5ec459ae275b43f_1080p.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/coppa-italia",
+                "stream_type": "hls"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572451"
+    },
+    {
+        "id": "icc_women_t20_asia_cup_sri_w_v",
+        "title": "Icc Women T20 Asia Cup SRI W VS INA W Sep 2, 2026, 8:30 PM Starts in: 0d 5h 18m 8s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
         "total_servers": 4,
@@ -49,103 +170,113 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007619"
+        "last_updated": "2026-09-02T15:14:30.572461"
     },
     {
-        "id": "soudi_pro_league_al_hilal_vs_a",
-        "title": "Soudi Pro League Al Hilal VS Al-Ahli Sep 2, 2026, 12:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fox Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007627"
-    },
-    {
-        "id": "englad_championship_sheffield_",
-        "title": "Englad ChampionShip Sheffield United VS Bolton Wanderers Sep 2, 2026, 12:44 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/englad-championship",
-        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/englad-championship",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/englad-championship",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fast server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/englad-championship",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007635"
-    },
-    {
-        "id": "germany_dfb_pokal_borussia_dor",
-        "title": "Germany DFB Pokal Borussia Dortmund VS HEBC Sep 2, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/germany-dfb-pokal",
+        "id": "coppa_italia_udinese_vs_venezi",
+        "title": "Coppa Italia Udinese VS Venezia Sep 2, 2026, 10:00 PM Starts in: 0d 6h 48m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/coppa-italia-a",
         "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/germany-dfb-pokal",
+                "page_url": "https://live.mhdtv.online/watch/coppa-italia-a",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007642"
+        "last_updated": "2026-09-02T15:14:30.572475"
     },
     {
-        "id": "coppa_italia_torino_vs_monza_s",
-        "title": "Coppa Italia Torino VS Monza Sep 2, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/coppa-italia-aa",
+        "id": "dfb_pokal_bayern_münchen_vs_os",
+        "title": "DFB POKAL Bayern München VS Osnabrück Sep 3, 2026, 12:45 AM Starts in: 0d 9h 33m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/dfb-pokal",
         "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/coppa-italia-aa",
+                "page_url": "https://live.mhdtv.online/watch/dfb-pokal",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007649"
+        "last_updated": "2026-09-02T15:14:30.572491"
+    },
+    {
+        "id": "england_championship_west_brom",
+        "title": "England - Championship West Bromwich Albion VS Charlton Athletic Sep 3, 2026, 12:45 AM Starts in: 0d 9h 33m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-championship",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-championship",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572502"
+    },
+    {
+        "id": "england_championship_queens_pa",
+        "title": "England - Championship Queens Park VS Cardiff City Sep 3, 2026, 12:45 AM Starts in: 0d 9h 33m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-championship-a",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-championship-a",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572512"
+    },
+    {
+        "id": "england_championship_burnley_v",
+        "title": "England - Championship Burnley VS Middlesbrough Sep 3, 2026, 12:45 AM Starts in: 0d 9h 33m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-championship-aa",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-championship-aa",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572520"
+    },
+    {
+        "id": "england_championship_millwall_",
+        "title": "England - Championship Millwall VS Wrexham Sep 3, 2026, 12:45 AM Starts in: 0d 9h 33m 8s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-championship-aaaa",
+        "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-championship-aaaa",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-02T15:14:30.572528"
     },
     {
         "id": "afc_asian_cup_u20_qualificatio",
-        "title": "AFC Asian Cup U20 - Qualification - Round 2 Bangladesh U20 VS Syria U20 Sep 3, 2026, 5:00 PM Starts in: 1d 5h 33m 57s LIVE",
+        "title": "AFC Asian Cup U20 - Qualification - Round 2 Bangladesh U20 VS Syria U20 Sep 3, 2026, 5:00 PM Starts in: 1d 1h 48m 8s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/afc-asian-cup-u20-qualification-round-2",
         "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
         "total_servers": 1,
@@ -158,11 +289,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007658"
+        "last_updated": "2026-09-02T15:14:30.572538"
     },
     {
         "id": "afc_asian_cup_u20_qualificatio",
-        "title": "AFC Asian Cup U20 - Qualification - Round 2 India U20 VS Uzbekistan U20 Sep 3, 2026, 8:00 PM Starts in: 1d 8h 33m 57s LIVE",
+        "title": "AFC Asian Cup U20 - Qualification - Round 2 India U20 VS Uzbekistan U20 Sep 3, 2026, 8:00 PM Starts in: 1d 4h 48m 8s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/afc-asian-cup-u20-qualification-round",
         "image_url": "https://live.mhdtv.online/storage/images/events/0fw7c2Wvv7Vo2i3YfXrQgNe4MVHGEjb487mNaNGw.png",
         "total_servers": 1,
@@ -175,6 +306,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-02T11:27:11.007671"
+        "last_updated": "2026-09-02T15:14:30.572579"
     }
 ]
