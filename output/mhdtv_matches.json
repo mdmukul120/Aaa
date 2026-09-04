@@ -7,14 +7,14 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
+                "server_name": "Main Stream",
+                "m3u8_url": "https://playback.livetl001.com/live/6a5df755b89dded67b39b8bc_1080p.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/afc-asian-cup-u20-qualification-round-2",
-                "stream_type": "iframe"
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-04T00:38:09.625725"
+        "last_updated": "2026-09-04T05:04:58.014745"
     },
     {
         "id": "afc_asian_cup_u20_qualificatio",
@@ -24,65 +24,47 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
+                "server_name": "Main Stream",
+                "m3u8_url": "https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1788447061-0-0-a9364d087946341e85ee6945afc5a1cb",
                 "page_url": "https://live.mhdtv.online/watch/afc-asian-cup-u20-qualification-round",
-                "stream_type": "iframe"
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-04T00:38:09.625744"
+        "last_updated": "2026-09-04T05:04:58.014764"
     },
     {
         "id": "icc_women_t20_asia_cup_ind_w_v",
         "title": "Icc Women T20 Asia Cup IND W VS HK W Sep 3, 2026, 8:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/EVuNnpAqqWwlxv8z5B0IBu3pLy4HemAA31G03rJ6.webp",
-        "total_servers": 4,
+        "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
+                "server_name": "Main Stream",
+                "m3u8_url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/tracks-v1a1/mono.ts.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "T Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "WILLOW",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "WILLOW HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-women-t20-world-cup",
-                "stream_type": "iframe"
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-04T00:38:09.625752"
+        "last_updated": "2026-09-04T05:04:58.014773"
     },
     {
         "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 SKN VS SKL Sep 4, 2026, 5:00 AM Starts in: 0d 4h 22m 25s LIVE",
+        "title": "Caribbean Premier League 2026 SKN VS SKL Sep 4, 2026, 5:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/EVuNnpAqqWwlxv8z5B0IBu3pLy4HemAA31G03rJ6.webp",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
+                "server_name": "Main Stream",
+                "m3u8_url": "https://002.cdnplayer.eu/live/csstream5/playlist.m3u8?id=1005&pk=40c1fad248a995ba530d3d665d6823993f301e54b37b764922792e800d397ad7c07f60db386554a4f8d8a22105cc04f652f12a4de173ba20c2ddea7b88eff348",
                 "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
-                "stream_type": "iframe"
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-04T00:38:09.625759"
+        "last_updated": "2026-09-04T05:04:58.014780"
     }
 ]
