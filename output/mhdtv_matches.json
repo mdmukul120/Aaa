@@ -1,158 +1,9 @@
 [
     {
-        "id": "soudi_pro_league_al_hilal_vs_a",
-        "title": "Soudi Pro League Al Hilal VS Al Shabab Sep 5, 2026, 12:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TAPMAD HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FOX DEPORTES",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214281"
-    },
-    {
-        "id": "italy_serie_a_como_vs_genoa_se",
-        "title": "Italy - Serie A Como VS Genoa Sep 5, 2026, 12:44 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214299"
-    },
-    {
-        "id": "england_premier_league_liverpo",
-        "title": "England - Premier League Liverpool VS Ipswich Town Sep 5, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214311"
-    },
-    {
-        "id": "spain_la_liga_real_madrid_vs_r",
-        "title": "Spain - La Liga Real Madrid VS Real Betis Sep 5, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 4,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FanCode",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "premir Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214320"
-    },
-    {
-        "id": "france_ligue_1_psg_vs_monaco_s",
-        "title": "France - Ligue 1 PSG VS Monaco Sep 5, 2026, 1:05 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/france-ligue-1",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/france-ligue-1",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214328"
-    },
-    {
-        "id": "primeira_liga_porto_vs_moreire",
-        "title": "Primeira Liga Porto VS Moreirense Sep 5, 2026, 1:14 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/primeira-liga",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/primeira-liga",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214337"
-    },
-    {
-        "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 SKN VS SKL Sep 5, 2026, 5:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214346"
-    },
-    {
         "id": "english_premier_league_newcast",
-        "title": "English Premier League Newcastle United VS AFC Bournemouth Sep 5, 2026, 5:30 PM Starts in: 0d 8h 6m 6s LIVE",
+        "title": "English Premier League Newcastle United VS AFC Bournemouth Sep 5, 2026, 5:30 PM Starts in: 0d 4h 36m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/english-premier-league",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -163,13 +14,30 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214362"
+        "last_updated": "2026-09-05T12:54:44.558883"
+    },
+    {
+        "id": "italy_serie_a_torino_vs_fioren",
+        "title": "Italy - Serie A Torino VS Fiorentina Sep 5, 2026, 7:00 PM Starts in: 0d 6h 6m 32s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-aa",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-aa",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-05T12:54:44.558903"
     },
     {
         "id": "english_premier_league_tottenh",
-        "title": "English Premier League Tottenham Hotspur VS Nottingham Forest Sep 5, 2026, 8:00 PM Starts in: 0d 10h 36m 6s LIVE",
+        "title": "English Premier League Tottenham Hotspur VS Nottingham Forest Sep 5, 2026, 8:00 PM Starts in: 0d 7h 6m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/english-premier-league-a",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -180,13 +48,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214373"
+        "last_updated": "2026-09-05T12:54:44.558916"
     },
     {
         "id": "england_premier_league_sunderl",
-        "title": "England - Premier League Sunderland VS Brentford Sep 5, 2026, 8:00 PM Starts in: 0d 10h 36m 6s LIVE",
+        "title": "England - Premier League Sunderland VS Brentford Sep 5, 2026, 8:00 PM Starts in: 0d 7h 6m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-sa",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -197,13 +65,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214382"
+        "last_updated": "2026-09-05T12:54:44.558927"
     },
     {
         "id": "england_premier_league_brighto",
-        "title": "England - Premier League Brighton & Hove Albion VS Leeds United Sep 5, 2026, 8:00 PM Starts in: 0d 10h 36m 6s LIVE",
+        "title": "England - Premier League Brighton & Hove Albion VS Leeds United Sep 5, 2026, 8:00 PM Starts in: 0d 7h 6m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-sak",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -214,13 +82,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214393"
+        "last_updated": "2026-09-05T12:54:44.558939"
     },
     {
         "id": "england_premier_league_crystal",
-        "title": "England - Premier League Crystal Palace VS Fulham Sep 5, 2026, 8:00 PM Starts in: 0d 10h 36m 6s LIVE",
+        "title": "England - Premier League Crystal Palace VS Fulham Sep 5, 2026, 8:00 PM Starts in: 0d 7h 6m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-mu",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -231,13 +99,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214403"
+        "last_updated": "2026-09-05T12:54:44.558949"
     },
     {
         "id": "england_premier_league_manches",
-        "title": "England - Premier League Manchester City VS Coventry City Sep 5, 2026, 8:00 PM Starts in: 0d 10h 36m 6s LIVE",
+        "title": "England - Premier League Manchester City VS Coventry City Sep 5, 2026, 8:00 PM Starts in: 0d 7h 6m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-suk",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -248,13 +116,47 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214413"
+        "last_updated": "2026-09-05T12:54:44.558959"
+    },
+    {
+        "id": "icc_womens_t20_asia_cup_india_",
+        "title": "ICC Women's T20 Asia Cup INDIA W VS Pakistan W Sep 5, 2026, 8:30 PM Starts in: 0d 7h 36m 32s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-05T12:54:44.558977"
+    },
+    {
+        "id": "italy_serie_a_internazionale_v",
+        "title": "Italy - Serie A Internazionale VS Napoli Sep 5, 2026, 10:00 PM Starts in: 0d 9h 6m 32s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-a",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-a",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-05T12:54:44.558987"
     },
     {
         "id": "england_premier_league_aston_v",
-        "title": "England - Premier League Aston Villa VS Hull City Sep 5, 2026, 10:29 PM Starts in: 0d 13h 5m 6s LIVE",
+        "title": "England - Premier League Aston Villa VS Hull City Sep 5, 2026, 10:29 PM Starts in: 0d 9h 35m 32s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-sukr",
-        "image_url": "https://live.mhdtv.online/storage/images/events/FTtGNGwTUClsoTFk8Pbb0UoD499nXAodufv8KCLt.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
         "total_servers": 1,
         "servers": [
             {
@@ -265,6 +167,23 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-05T09:25:59.214421"
+        "last_updated": "2026-09-05T12:54:44.558997"
+    },
+    {
+        "id": "caribbean_premier_league_2026_",
+        "title": "Caribbean Premier League 2026 SKN VS SKL Sep 6, 2026, 5:00 AM Starts in: 0d 16h 6m 32s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+        "image_url": "https://live.mhdtv.online/storage/images/events/TTiRIwl6QvBJZK0RzgeovxxkQ0doFGn8C7hhHwCR.webp",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-05T12:54:44.559006"
     }
 ]
