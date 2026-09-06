@@ -1,141 +1,60 @@
 [
     {
-        "id": "afc_u20_asian_cup_qualificatio",
-        "title": "AFC U20 Asian Cup Qualification BAN U20 VS IND U20 Sep 6, 2026, 5:00 PM Starts in: 0d 0h 45m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/afc-u20-asian-cup-qualification",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
+        "id": "italy_serie_a_juventus_vs_mila",
+        "title": "Italy - Serie A Juventus VS Milan Sep 7, 2026, 12:45 AM Starts in: 0d 6h 24m 57s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-akkk",
+        "image_url": "https://live.mhdtv.online/storage/images/events/DveqGKSO3oyvoYyXRQXRXktcivNEo29KQzWQiLDL.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/afc-u20-asian-cup-qualification",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-akkk",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234308"
+        "last_updated": "2026-09-06T18:20:37.432451"
     },
     {
-        "id": "england_premier_league_everton",
-        "title": "England - Premier League Everton VS Manchester United Sep 6, 2026, 7:00 PM Starts in: 0d 2h 45m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Astro Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234328"
-    },
-    {
-        "id": "italy_serie_a_venezia_vs_frosi",
-        "title": "Italy - Serie A Venezia VS Frosinone Sep 6, 2026, 7:00 PM Starts in: 0d 2h 45m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
+        "id": "caribbean_premier_league_2026_",
+        "title": "Caribbean Premier League 2026 SKN VS GAW Sep 7, 2026, 1:00 AM Starts in: 0d 6h 39m 57s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
+        "image_url": "https://live.mhdtv.online/storage/images/events/DveqGKSO3oyvoYyXRQXRXktcivNEo29KQzWQiLDL.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a",
+                "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234339"
+        "last_updated": "2026-09-06T18:20:37.432472"
     },
     {
-        "id": "italy_serie_a_monza_vs_parma_s",
-        "title": "Italy - Serie A Monza VS Parma Sep 6, 2026, 7:00 PM Starts in: 0d 2h 45m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-k",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-k",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234349"
-    },
-    {
-        "id": "germany_bundesliga_mainz_05_vs",
-        "title": "Germany Bundesliga Mainz 05 VS Hamburger Sep 6, 2026, 7:30 PM Starts in: 0d 3h 15m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Default Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234357"
-    },
-    {
-        "id": "spain_la_liga_barcelona_vs_val",
-        "title": "Spain - La Liga Barcelona VS Valencia Sep 6, 2026, 8:15 PM Starts in: 0d 4h 0m 29s LIVE",
+        "id": "spain_la_liga_espanyol_vs_sevi",
+        "title": "Spain - La Liga Espanyol VS Sevilla Sep 7, 2026, 1:00 AM Starts in: 0d 6h 39m 57s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 4,
+        "image_url": "https://live.mhdtv.online/storage/images/events/DveqGKSO3oyvoYyXRQXRXktcivNEo29KQzWQiLDL.png",
+        "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
                 "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Bein Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Bein Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
-                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234366"
+        "last_updated": "2026-09-06T18:20:37.432485"
     },
     {
-        "id": "icc_womens_t20_asia_cup_ban_w_",
-        "title": "ICC Women's T20 Asia Cup BAN W VS SRI W Sep 6, 2026, 8:30 PM Starts in: 0d 4h 15m 29s LIVE",
+        "id": "icc_womens_t20_asia_cup_hk_w_v",
+        "title": "ICC Women's T20 Asia Cup HK W VS PAK W Sep 7, 2026, 8:30 PM Starts in: 1d 2h 9m 57s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
+        "image_url": "https://live.mhdtv.online/storage/images/events/DveqGKSO3oyvoYyXRQXRXktcivNEo29KQzWQiLDL.png",
         "total_servers": 4,
         "servers": [
             {
@@ -164,74 +83,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234376"
-    },
-    {
-        "id": "england_premier_league_chelsea",
-        "title": "England - Premier League Chelsea VS Arsenal Sep 6, 2026, 9:30 PM Starts in: 0d 5h 15m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-sak",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-sak",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234391"
-    },
-    {
-        "id": "spain_la_liga_levante_vs_málag",
-        "title": "Spain - La Liga Levante VS Málaga Sep 6, 2026, 10:30 PM Starts in: 0d 6h 15m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-a",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234412"
-    },
-    {
-        "id": "spain_la_liga_osasuna_vs_depor",
-        "title": "Spain - La Liga Osasuna VS Deportivo Alavés Sep 6, 2026, 10:30 PM Starts in: 0d 6h 15m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-hg",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-hg",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234423"
-    },
-    {
-        "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 SKN VS GAW Sep 7, 2026, 1:00 AM Starts in: 0d 8h 45m 29s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
-        "image_url": "https://live.mhdtv.online/storage/images/events/B4NjTi7PoYUxWbt24AuFMdBbhXPtOP2jevbGblv8.webp",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-06T16:16:18.234433"
+        "last_updated": "2026-09-06T18:20:37.432497"
     }
 ]
