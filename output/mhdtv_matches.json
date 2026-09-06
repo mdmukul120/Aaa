@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923109"
+        "last_updated": "2026-09-06T05:49:21.896357"
     },
     {
         "id": "icc_womens_t20_asia_cup_india_",
@@ -43,7 +43,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923129"
+        "last_updated": "2026-09-06T05:49:21.896379"
     },
     {
         "id": "italy_serie_a_internazionale_v",
@@ -60,7 +60,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923140"
+        "last_updated": "2026-09-06T05:49:21.896390"
     },
     {
         "id": "england_premier_league_aston_v",
@@ -89,7 +89,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923151"
+        "last_updated": "2026-09-06T05:49:21.896401"
     },
     {
         "id": "germany_bundesliga_bayern_münc",
@@ -118,7 +118,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923163"
+        "last_updated": "2026-09-06T05:49:21.896414"
     },
     {
         "id": "italy_serie_a_roma_vs_atalanta",
@@ -135,7 +135,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923173"
+        "last_updated": "2026-09-06T05:49:21.896424"
     },
     {
         "id": "soudi_pro_league_al_nassr_vs_a",
@@ -152,7 +152,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923182"
+        "last_updated": "2026-09-06T05:49:21.896433"
     },
     {
         "id": "spain_la_liga_villarreal_vs_de",
@@ -169,11 +169,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923199"
+        "last_updated": "2026-09-06T05:49:21.896452"
     },
     {
         "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 SKN VS SKL Sep 6, 2026, 5:00 AM Starts in: 0d 3h 57m 46s LIVE",
+        "title": "Caribbean Premier League 2026 SKN VS SKL Sep 6, 2026, 5:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/yrYq0YyGAfezGBCzTdDPZG3OXATbj5Aks7aQPkoX.png",
         "total_servers": 1,
@@ -186,6 +186,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-06T01:03:45.923211"
+        "last_updated": "2026-09-06T05:49:21.896461"
     }
 ]
