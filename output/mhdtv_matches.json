@@ -1,70 +1,88 @@
 [
     {
         "id": "icc_womens_t20_asia_cup_hk_w_v",
-        "title": "ICC Women's T20 Asia Cup HK W VS PAK W Sep 7, 2026, 8:30 PM Starts in: 0d 11h 39m 21s LIVE",
+        "title": "ICC Women's T20 Asia Cup HK W VS PAK W Sep 7, 2026, 8:30 PM Starts in: 0d 6h 0m 6s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
-        "total_servers": 1,
+        "total_servers": 4,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Sony Max",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "T Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Fast server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T08:50:58.841567"
+        "last_updated": "2026-09-07T14:30:26.348339"
     },
     {
         "id": "italy_serie_a_cagliari_vs_lecc",
-        "title": "Italy - Serie A Cagliari VS Lecce Sep 7, 2026, 10:30 PM Starts in: 0d 13h 39m 21s LIVE",
+        "title": "Italy - Serie A Cagliari VS Lecce Sep 7, 2026, 10:30 PM Starts in: 0d 8h 0m 6s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-akkk",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://playback.livetl001.com/live/69f42e961f739deff81510c0_1080p.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/italy-serie-akkk",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T08:50:58.841583"
+        "last_updated": "2026-09-07T14:30:26.348360"
     },
     {
         "id": "spain_la_liga_getafe_vs_celta_",
-        "title": "Spain - La Liga Getafe VS Celta de Vigo Sep 7, 2026, 11:00 PM Starts in: 0d 14h 9m 21s LIVE",
+        "title": "Spain - La Liga Getafe VS Celta de Vigo Sep 7, 2026, 11:00 PM Starts in: 0d 8h 30m 6s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T08:50:58.841592"
+        "last_updated": "2026-09-07T14:30:26.348372"
     },
     {
         "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 ABF VS GAW Sep 9, 2026, 5:00 AM Starts in: 1d 20h 9m 21s LIVE",
+        "title": "Caribbean Premier League 2026 ABF VS GAW Sep 9, 2026, 5:00 AM Starts in: 1d 14h 30m 6s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T08:50:58.841601"
+        "last_updated": "2026-09-07T14:30:26.348381"
     }
 ]
