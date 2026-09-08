@@ -32,7 +32,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T23:51:09.741838"
+        "last_updated": "2026-09-08T01:31:05.692916"
     },
     {
         "id": "italy_serie_a_cagliari_vs_lecc",
@@ -49,7 +49,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T23:51:09.741854"
+        "last_updated": "2026-09-08T01:31:05.692935"
     },
     {
         "id": "spain_la_liga_getafe_vs_celta_",
@@ -66,11 +66,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T23:51:09.741865"
+        "last_updated": "2026-09-08T01:31:05.692946"
     },
     {
         "id": "soudi_pro_league_al_hilal_vs_n",
-        "title": "Soudi Pro League Al Hilal VS NEOM Sep 8, 2026, 12:00 AM Starts in: 0d 0h 10m 22s LIVE",
+        "title": "Soudi Pro League Al Hilal VS NEOM Sep 8, 2026, 12:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
         "total_servers": 3,
@@ -95,11 +95,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T23:51:09.741874"
+        "last_updated": "2026-09-08T01:31:05.692956"
     },
     {
         "id": "italy_serie_all_udinese_vs_laz",
-        "title": "Italy - Serie All Udinese VS Lazio Sep 8, 2026, 12:45 AM Starts in: 0d 0h 55m 22s LIVE",
+        "title": "Italy - Serie All Udinese VS Lazio Sep 8, 2026, 12:45 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-all",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
         "total_servers": 1,
@@ -112,11 +112,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T23:51:09.741882"
+        "last_updated": "2026-09-08T01:31:05.692966"
     },
     {
         "id": "caribbean_premier_league_2026_",
-        "title": "Caribbean Premier League 2026 ABF VS GAW Sep 9, 2026, 5:00 AM Starts in: 1d 5h 10m 22s LIVE",
+        "title": "Caribbean Premier League 2026 ABF VS GAW Sep 9, 2026, 5:00 AM Starts in: 1d 3h 30m 13s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/It6GgiCkNd101HBbIZcXQdzpdqjZkPEGtFTec5WM.png",
         "total_servers": 1,
@@ -129,6 +129,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-07T23:51:09.741891"
+        "last_updated": "2026-09-08T01:31:05.692976"
     }
 ]
