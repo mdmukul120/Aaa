@@ -32,7 +32,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.403945"
+        "last_updated": "2026-09-09T06:32:15.299657"
     },
     {
         "id": "cricket_uefa_champions_league_",
@@ -49,7 +49,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.403966"
+        "last_updated": "2026-09-09T06:32:15.299679"
     },
     {
         "id": "cricket_uefa_champions_league_",
@@ -84,223 +84,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.403979"
-    },
-    {
-        "id": "football_soudi_pro_league_upco",
-        "title": "Football Soudi Pro League UPCOMING Al Ittihad VS Al-Fayha Sep 9, 2026, 12:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.403989"
-    },
-    {
-        "id": "cricket_england_league_cup_upc",
-        "title": "CRICKET England - League Cup UPCOMING AFC Bournemouth VS Lincoln City Sep 9, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-league-cupa",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cupa",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.403999"
-    },
-    {
-        "id": "cricket_england_league_cup_upc",
-        "title": "CRICKET England - League Cup UPCOMING Crystal Palace VS Middlesbrough Sep 9, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-league-cupaak",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cupaak",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404010"
-    },
-    {
-        "id": "football_england_league_cup_up",
-        "title": "Football England - League Cup UPCOMING Sunderland VS Hull City Sep 9, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-league-cupaakka",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cupaakka",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404020"
-    },
-    {
-        "id": "cricket_england_league_cup_upc",
-        "title": "CRICKET England - League Cup UPCOMING Bradford City VS Leyton Orient Sep 9, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-league-cupaakkak",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cupaakkak",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404035"
-    },
-    {
-        "id": "cricket_uefa_champions_league_",
-        "title": "CRICKET UEFA Champions League UPCOMING Borussia Dortmund VS Villarreal Sep 9, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekkl",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekkl",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404046"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Manchester City VS Porto Sep 9, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekkla",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekkla",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404057"
-    },
-    {
-        "id": "cricket_uefa_champions_league_",
-        "title": "CRICKET UEFA Champions League UPCOMING Real Betis VS Lille Sep 9, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklak",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklak",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404066"
-    },
-    {
-        "id": "cricket_uefa_champions_league_",
-        "title": "CRICKET UEFA Champions League UPCOMING Real Madrid VS Internazionale Sep 9, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 6,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Paramoun",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl001.com/live/69f42e961f739deff81510c0.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-                "stream_type": "hls"
-            },
-            {
-                "server_name": "TNT Sports 1 AQ",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-                "stream_type": "hls"
-            },
-            {
-                "server_name": "TNT",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Paramount AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekklakl",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404075"
-    },
-    {
-        "id": "cricket_england_league_cup_upc",
-        "title": "CRICKET England - League Cup UPCOMING Newcastle United VS Millwall Sep 9, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-league-cup",
-        "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cup",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cup",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "BeIN sports 3",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cup",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404085"
+        "last_updated": "2026-09-09T06:32:15.299690"
     },
     {
         "id": "cricket_caribbean_premier_leag",
-        "title": "CRICKET Caribbean Premier League 2026 UPCOMING ABF VS GAW Sep 9, 2026, 5:00 AM Starts in: 0d 3h 30m 40s LIVE",
+        "title": "CRICKET Caribbean Premier League 2026 UPCOMING ABF VS GAW Sep 9, 2026, 5:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
         "total_servers": 1,
@@ -313,11 +101,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404096"
+        "last_updated": "2026-09-09T06:32:15.299701"
     },
     {
         "id": "cricket_uefa_champions_league_",
-        "title": "CRICKET UEFA Champions League UPCOMING Barcelona VS Feyenoord Sep 9, 2026, 10:45 PM Starts in: 0d 21h 15m 40s LIVE",
+        "title": "CRICKET UEFA Champions League UPCOMING Barcelona VS Feyenoord Sep 9, 2026, 10:45 PM Starts in: 0d 16h 13m 37s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-leaguek",
         "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
         "total_servers": 1,
@@ -330,11 +118,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404105"
+        "last_updated": "2026-09-09T06:32:15.299712"
     },
     {
         "id": "cricket_uefa_champions_league_",
-        "title": "CRICKET UEFA Champions League UPCOMING Stuttgart VS Viking Sep 9, 2026, 10:45 PM Starts in: 0d 21h 15m 40s LIVE",
+        "title": "CRICKET UEFA Champions League UPCOMING Stuttgart VS Viking Sep 9, 2026, 10:45 PM Starts in: 0d 16h 13m 37s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-leaguekk",
         "image_url": "https://live.mhdtv.online/storage/images/events/devsqijhIFD708RlBmbM6Vs2w398prwbLOb5rEKH.png",
         "total_servers": 1,
@@ -347,6 +135,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-09T01:31:32.404114"
+        "last_updated": "2026-09-09T06:32:15.299721"
     }
 ]
