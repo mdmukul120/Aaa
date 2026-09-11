@@ -38,11 +38,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438327"
+        "last_updated": "2026-09-11T09:34:42.862101"
     },
     {
         "id": "cricket_caribbean_premier_leag",
-        "title": "CRICKET Caribbean Premier League 2026 UPCOMING SLK VS GAW Sep 10, 2026, 5:00 AM Starts in: --:--:-- LIVE",
+        "title": "CRICKET Caribbean Premier League 2026 UPCOMING TKR VS GAW Sep 11, 2026, 5:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
         "total_servers": 1,
@@ -55,11 +55,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438347"
+        "last_updated": "2026-09-11T09:34:42.862116"
     },
     {
         "id": "cricket_icc_womens_t20_asia_cu",
-        "title": "CRICKET ICC Women's T20 Asia Cup | Sami Final UPCOMING BAN W VS IND W Sep 10, 2026, 8:30 PM Starts in: --:--:-- LIVE",
+        "title": "CRICKET ICC Women's T20 Asia Cup | Sami Final UPCOMING PAK W VS SRI W Sep 11, 2026, 8:30 PM Starts in: 0d 10h 55m 52s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-asia-cup-sami-final-1788946594",
         "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
         "total_servers": 4,
@@ -90,168 +90,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438361"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Fenerbahçe VS Roma Sep 10, 2026, 10:45 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039047",
-        "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039047",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT 2",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039047",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039047",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438377"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING shakhtar donetsk VS PSV Sep 10, 2026, 10:45 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039200",
-        "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039200",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT 3",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039200",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039200",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438388"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Slavia Prague VS Lens Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039386",
-        "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039386",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438399"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING RB Leipzig VS Como Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039519",
-        "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039519",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT 3",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039519",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a9776215126529dede9bf51.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039519",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438408"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Bayern Munich VS Bodø/Glimt Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039628",
-        "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039628",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT 2",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039628",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039628",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438426"
-    },
-    {
-        "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Manchester United VS Sabah Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039789",
-        "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039789",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT 1",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039789",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a9776215126529dede9bf51.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039789",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-11T05:06:20.438437"
+        "last_updated": "2026-09-11T09:34:42.862125"
     }
 ]
