@@ -38,7 +38,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664012"
+        "last_updated": "2026-09-11T05:06:20.438327"
     },
     {
         "id": "cricket_caribbean_premier_leag",
@@ -55,7 +55,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664032"
+        "last_updated": "2026-09-11T05:06:20.438347"
     },
     {
         "id": "cricket_icc_womens_t20_asia_cu",
@@ -90,7 +90,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664047"
+        "last_updated": "2026-09-11T05:06:20.438361"
     },
     {
         "id": "football_uefa_champions_league",
@@ -119,7 +119,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664078"
+        "last_updated": "2026-09-11T05:06:20.438377"
     },
     {
         "id": "football_uefa_champions_league",
@@ -148,11 +148,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664100"
+        "last_updated": "2026-09-11T05:06:20.438388"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Slavia Prague VS Lens Sep 11, 2026, 1:00 AM Starts in: 0d 0h 30m 16s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Slavia Prague VS Lens Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039386",
         "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
         "total_servers": 1,
@@ -165,11 +165,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664121"
+        "last_updated": "2026-09-11T05:06:20.438399"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING RB Leipzig VS Como Sep 11, 2026, 1:00 AM Starts in: 0d 0h 30m 16s LIVE",
+        "title": "Football UEFA Champions League UPCOMING RB Leipzig VS Como Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039519",
         "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
         "total_servers": 3,
@@ -194,11 +194,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664141"
+        "last_updated": "2026-09-11T05:06:20.438408"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Bayern Munich VS Bodø/Glimt Sep 11, 2026, 1:00 AM Starts in: 0d 0h 30m 16s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Bayern Munich VS Bodø/Glimt Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039628",
         "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
         "total_servers": 3,
@@ -223,11 +223,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664170"
+        "last_updated": "2026-09-11T05:06:20.438426"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Manchester United VS Sabah Sep 11, 2026, 1:00 AM Starts in: 0d 0h 30m 16s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Manchester United VS Sabah Sep 11, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1789039789",
         "image_url": "https://live.mhdtv.online/storage/images/events/4fOUqmjIOPyafZFZVP5ysppxuSKz30KkKFhdLpwb.png",
         "total_servers": 3,
@@ -252,6 +252,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-11T00:32:30.664181"
+        "last_updated": "2026-09-11T05:06:20.438437"
     }
 ]
