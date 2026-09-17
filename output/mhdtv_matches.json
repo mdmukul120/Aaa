@@ -7,14 +7,14 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789546277",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306700"
+        "last_updated": "2026-09-17T01:52:49.165221"
     },
     {
         "id": "football_uefa_europa_league_up",
@@ -24,31 +24,43 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://live05.meung.app/live/02456966_tsc.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789546391",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306715"
+        "last_updated": "2026-09-17T01:52:49.165238"
     },
     {
         "id": "football_spain_la_liga_upcomin",
         "title": "Football Spain - La Liga UPCOMING Deportivo VS Sevilla Sep 16, 2026, 11:00 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789546494",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
-        "total_servers": 1,
+        "total_servers": 3,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789546494",
-                "stream_type": "hls"
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789546494",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "FanCode",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789546494",
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306725"
+        "last_updated": "2026-09-17T01:52:49.165247"
     },
     {
         "id": "football_spain_la_liga_upcomin",
@@ -58,319 +70,409 @@
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://tvsen5.aynaott.com/TnMn5kZz8aLm/tracks-v1a1/mono.ts.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789546617",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306739"
+        "last_updated": "2026-09-17T01:52:49.165263"
     },
     {
         "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Sunderland VS AZ Sep 17, 2026, 1:00 AM Starts in: 0d 1h 9m 56s LIVE",
+        "title": "Football UEFA Europa League UPCOMING Sunderland VS AZ Sep 17, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789573873",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789573873",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306747"
+        "last_updated": "2026-09-17T01:52:49.165272"
     },
     {
         "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Milan VS Benfica Sep 17, 2026, 1:00 AM Starts in: 0d 1h 9m 56s LIVE",
+        "title": "Football UEFA Europa League UPCOMING Milan VS Benfica Sep 17, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789573973",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789573973",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306755"
+        "last_updated": "2026-09-17T01:52:49.165280"
     },
     {
         "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Bayer Leverkusen VS Celje Sep 17, 2026, 1:00 AM Starts in: 0d 1h 9m 56s LIVE",
+        "title": "Football UEFA Europa League UPCOMING Bayer Leverkusen VS Celje Sep 17, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789574225",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a704ad865997681f18c2160.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1789574225",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306764"
+        "last_updated": "2026-09-17T01:52:49.165287"
     },
     {
         "id": "football_england_league_cup_up",
-        "title": "Football England League Cup UPCOMING Coventry City VS Aston Villa Sep 17, 2026, 1:00 AM Starts in: 0d 1h 9m 56s LIVE",
+        "title": "Football England League Cup UPCOMING Coventry City VS Aston Villa Sep 17, 2026, 1:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-league-cup-1789575286",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789575286",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306777"
-    },
-    {
-        "id": "football_england_league_cup_up",
-        "title": "Football England League Cup UPCOMING Manchester United VS Brighton Sep 17, 2026, 1:00 AM Starts in: 0d 1h 9m 56s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-league-cup-1789575540",
-        "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789575540",
+                "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789575286",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306786"
+        "last_updated": "2026-09-17T01:52:49.165300"
+    },
+    {
+        "id": "football_england_league_cup_up",
+        "title": "Football England League Cup UPCOMING Manchester United VS Brighton Sep 17, 2026, 1:00 AM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-league-cup-1789575540",
+        "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
+        "total_servers": 3,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789575540",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Bein Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789575540",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/6a9776215126529dede9bf51.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789575540",
+                "stream_type": "hls"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-17T01:52:49.165308"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Athletic Club VS Levante Sep 17, 2026, 1:30 AM Starts in: 0d 1h 39m 56s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Athletic Club VS Levante Sep 17, 2026, 1:30 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574679",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574679",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306795"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Barcelona VS Racing Santander Sep 17, 2026, 1:30 AM Starts in: 0d 1h 39m 56s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
-        "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574679",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306802"
+        "last_updated": "2026-09-17T01:52:49.165316"
+    },
+    {
+        "id": "football_spain_la_liga_upcomin",
+        "title": "Football Spain - La Liga UPCOMING Barcelona VS Racing Santander Sep 17, 2026, 1:30 AM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
+        "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
+        "total_servers": 4,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Bein Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "T Sports",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://tvsen5.aynaott.com/TnMn5kZz8aLm/tracks-v1a1/mono.ts.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
+                "stream_type": "hls"
+            },
+            {
+                "server_name": "Hd Server",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://live05.meung.app/live/18812304_tsc.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789574767",
+                "stream_type": "hls"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-17T01:52:49.165324"
     },
     {
         "id": "football_england_league_cup_up",
-        "title": "Football England League Cup UPCOMING Everton VS Wolverhampton Sep 17, 2026, 1:45 AM Starts in: 0d 1h 54m 56s LIVE",
+        "title": "Football England League Cup UPCOMING Everton VS Wolverhampton Sep 17, 2026, 1:45 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-league-cup-1789574913",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Main Stream",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://live05.meung.app/live/07808742_tsc.m3u8",
+                "server_name": "Download Now",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/england-league-cup-1789574913",
-                "stream_type": "hls"
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306810"
+        "last_updated": "2026-09-17T01:52:49.165331"
     },
     {
         "id": "cricket_caribbean_premier_leag",
-        "title": "CRICKET Caribbean Premier League 2026 UPCOMING BT VS JAK Sep 17, 2026, 5:00 AM Starts in: 0d 5h 9m 56s LIVE",
+        "title": "CRICKET Caribbean Premier League 2026 UPCOMING BT VS JAK Sep 17, 2026, 5:00 AM Starts in: 0d 3h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306818"
+        "last_updated": "2026-09-17T01:52:49.165340"
     },
     {
         "id": "cricket_icc_international_1st_",
-        "title": "Cricket ICC International 1ST ODI UPCOMING Zimbabwe VS Australia Sep 17, 2026, 1:30 PM Starts in: 0d 13h 39m 56s LIVE",
+        "title": "Cricket ICC International 1ST ODI UPCOMING Zimbabwe VS Australia Sep 17, 2026, 1:30 PM Starts in: 0d 11h 40m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
-        "total_servers": 1,
+        "total_servers": 3,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "Cricbuzz",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "TAPMAD HD",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://saseries.akamaized.net/hls/live/2110097/2353jkiL-tapmad/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306826"
+        "last_updated": "2026-09-17T01:52:49.165348"
     },
     {
         "id": "cricket_afghanistan_tour_of_in",
-        "title": "Cricket Afghanistan tour of India - T 20 UPCOMING India VS Afghanistan Sep 17, 2026, 8:00 PM Starts in: 0d 20h 9m 56s LIVE",
+        "title": "Cricket Afghanistan tour of India - T 20 UPCOMING India VS Afghanistan Sep 17, 2026, 8:00 PM Starts in: 0d 18h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
-        "total_servers": 1,
+        "total_servers": 6,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Willow",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "FanCode",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "WILLOW HD",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://tvsen5.aynascope.net/willowhd/mono.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
+                "stream_type": "hls"
+            },
+            {
+                "server_name": "ATN Sports",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://d3bq19vx8xhpwy.cloudfront.net/live/myStream/playlist.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/afghanistan-tour-of-india-t-20-1789357619",
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306835"
+        "last_updated": "2026-09-17T01:52:49.165357"
     },
     {
         "id": "cricket_icc_international_1st_",
-        "title": "Cricket ICC International 1ST T20 UPCOMING England VS Sri Lanka Sep 17, 2026, 11:30 PM Starts in: 0d 23h 39m 56s LIVE",
+        "title": "Cricket ICC International 1ST T20 UPCOMING England VS Sri Lanka Sep 17, 2026, 11:30 PM Starts in: 0d 21h 40m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
-        "total_servers": 1,
+        "total_servers": 4,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Sky cricket",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Willow",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306843"
+        "last_updated": "2026-09-17T01:52:49.165364"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Malaysia Sep 25, 2026, 3:00 PM Starts in: 8d 15h 9m 56s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Malaysia Sep 25, 2026, 3:00 PM Starts in: 8d 13h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131405",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131405",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306850"
+        "last_updated": "2026-09-17T01:52:49.165372"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Indonesia Sep 25, 2026, 7:00 PM Starts in: 8d 19h 9m 56s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Indonesia Sep 25, 2026, 7:00 PM Starts in: 8d 17h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131862",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131862",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306858"
+        "last_updated": "2026-09-17T01:52:49.165380"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Pakistan VS Thailand Sep 26, 2026, 3:00 PM Starts in: 9d 15h 9m 56s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Pakistan VS Thailand Sep 26, 2026, 3:00 PM Starts in: 9d 13h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132284",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132284",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306867"
+        "last_updated": "2026-09-17T01:52:49.165388"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Philippines VS Vietnam Sep 26, 2026, 7:00 PM Starts in: 9d 19h 9m 56s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Philippines VS Vietnam Sep 26, 2026, 7:00 PM Starts in: 9d 17h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132414",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132414",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306874"
+        "last_updated": "2026-09-17T01:52:49.165396"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Bangladesh VS Singapore Sep 28, 2026, 3:00 PM Starts in: 11d 15h 9m 56s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Bangladesh VS Singapore Sep 28, 2026, 3:00 PM Starts in: 11d 13h 10m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132563",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132563",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306882"
+        "last_updated": "2026-09-17T01:52:49.165403"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 11d 19h 39m 56s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 11d 17h 40m 42s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132696",
         "image_url": "https://live.mhdtv.online/storage/images/events/2JWEt34H0DQ7EJKwjZzuLR1Ra7Wwwjr25CbBcJV5.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132696",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-16T23:52:00.306889"
+        "last_updated": "2026-09-17T01:52:49.165410"
     }
 ]
