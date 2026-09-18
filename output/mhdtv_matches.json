@@ -1,38 +1,9 @@
 [
     {
-        "id": "cricket_icc_international_1st_",
-        "title": "Cricket ICC International 1ST ODI UPCOMING Zimbabwe VS Australia Sep 17, 2026, 1:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Cricbuzz",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TAPMAD HD",
-                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://saseries.akamaized.net/hls/live/2110097/2353jkiL-tapmad/master.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-odi-1789358418",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332024"
-    },
-    {
         "id": "football_germany_bundesliga_up",
-        "title": "Football Germany - Bundesliga UPCOMING Bayern München VS Union Berlin Sep 19, 2026, 12:30 AM Starts in: 0d 10h 32m 15s LIVE",
+        "title": "Football Germany - Bundesliga UPCOMING Bayern München VS Union Berlin Sep 19, 2026, 12:30 AM Starts in: 0d 6h 57m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1789720527",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -43,13 +14,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332045"
+        "last_updated": "2026-09-18T17:35:06.792517"
     },
     {
         "id": "football_france_ligue_1_upcomi",
-        "title": "Football France - Ligue 1 UPCOMING Lens VS Monaco Sep 19, 2026, 12:30 AM Starts in: 0d 10h 32m 15s LIVE",
+        "title": "Football France - Ligue 1 UPCOMING Lens VS Monaco Sep 19, 2026, 12:30 AM Starts in: 0d 6h 57m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/france-ligue-1-1789720619",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -60,13 +31,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332055"
+        "last_updated": "2026-09-18T17:35:06.792537"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Monza VS Sassuolo Sep 19, 2026, 12:45 AM Starts in: 0d 10h 47m 15s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Monza VS Sassuolo Sep 19, 2026, 12:45 AM Starts in: 0d 7h 12m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1789720443",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -77,13 +48,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332064"
+        "last_updated": "2026-09-18T17:35:06.792549"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Chelsea VS Brentford Sep 19, 2026, 1:00 AM Starts in: 0d 11h 2m 15s LIVE",
+        "title": "Football England - Premier League UPCOMING Chelsea VS Brentford Sep 19, 2026, 1:00 AM Starts in: 0d 7h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1789720272",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -94,13 +65,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332072"
+        "last_updated": "2026-09-18T17:35:06.792559"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Elche VS Espanyol Sep 19, 2026, 1:00 AM Starts in: 0d 11h 2m 15s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Elche VS Espanyol Sep 19, 2026, 1:00 AM Starts in: 0d 7h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789720357",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -111,13 +82,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332081"
+        "last_updated": "2026-09-18T17:35:06.792569"
     },
     {
         "id": "cricket_caribbean_premier_leag",
-        "title": "Cricket Caribbean Premier League 2026 UPCOMING GAW VS JAK Sep 19, 2026, 5:00 AM Starts in: 0d 15h 2m 15s LIVE",
+        "title": "Cricket Caribbean Premier League 2026 UPCOMING GAW VS JAK Sep 19, 2026, 5:00 AM Starts in: 0d 11h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -128,54 +99,83 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332090"
+        "last_updated": "2026-09-18T17:35:06.792580"
     },
     {
-        "id": "cricket_icc_international_1st_",
-        "title": "Cricket ICC International 1ST T20 UPCOMING England VS Sri Lanka Sep 19, 2026, 11:30 PM Starts in: 1d 9h 32m 15s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "id": "cricket_icc_international_3rd_",
+        "title": "Cricket ICC International 3RD T20 UPCOMING England VS Sri Lanka Sep 19, 2026, 11:30 PM Starts in: 1d 5h 57m 9s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 5,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
                 "stream_type": "iframe"
             },
             {
                 "server_name": "Sony",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
                 "stream_type": "iframe"
             },
             {
                 "server_name": "HD Server",
                 "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
                 "stream_type": "hls"
             },
             {
                 "server_name": "Sky cricket",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
                 "stream_type": "iframe"
             },
             {
                 "server_name": "Willow",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-1st-t20-1789358560",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332104"
+        "last_updated": "2026-09-18T17:35:06.792590"
+    },
+    {
+        "id": "cricket_icc_international_3rd_",
+        "title": "Cricket ICC International 3RD ODI UPCOMING Zimbabwe VS Australia Sep 20, 2026, 1:30 PM Starts in: 1d 19h 57m 9s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/icc-international-3rd-odi-1789751068",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
+        "total_servers": 3,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-odi-1789751068",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Cricbuzz",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-odi-1789751068",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "TAPMAD HD",
+                "m3u8_url": "https://api.sportzfy24.com/m3u8.php?id=https://saseries.akamaized.net/hls/live/2110097/2353jkiL-tapmad/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-3rd-odi-1789751068",
+                "stream_type": "hls"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-18T17:35:06.792606"
     },
     {
         "id": "cricket_asian_games_men_upcomi",
-        "title": "Cricket Asian Games Men UPCOMING AFG VS JPN Sep 24, 2026, 6:00 AM Starts in: 5d 16h 2m 15s LIVE",
+        "title": "Cricket Asian Games Men UPCOMING AFG VS JPN Sep 24, 2026, 6:00 AM Starts in: 5d 12h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1789719717",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -186,13 +186,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332113"
+        "last_updated": "2026-09-18T17:35:06.792616"
     },
     {
         "id": "cricket_asian_games_men_upcomi",
-        "title": "Cricket Asian Games Men UPCOMING HK VS MAS Sep 24, 2026, 11:00 AM Starts in: 5d 21h 2m 15s LIVE",
+        "title": "Cricket Asian Games Men UPCOMING HK VS MAS Sep 24, 2026, 11:00 AM Starts in: 5d 17h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1789719795",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -203,13 +203,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332121"
+        "last_updated": "2026-09-18T17:35:06.792625"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Malaysia Sep 25, 2026, 3:00 PM Starts in: 7d 1h 2m 15s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Malaysia Sep 25, 2026, 3:00 PM Starts in: 6d 21h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131405",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -220,13 +220,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332130"
+        "last_updated": "2026-09-18T17:35:06.792635"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Indonesia Sep 25, 2026, 7:00 PM Starts in: 7d 5h 2m 15s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Indonesia Sep 25, 2026, 7:00 PM Starts in: 7d 1h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131862",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -237,13 +237,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332137"
+        "last_updated": "2026-09-18T17:35:06.792644"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Pakistan VS Thailand Sep 26, 2026, 3:00 PM Starts in: 8d 1h 2m 15s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Pakistan VS Thailand Sep 26, 2026, 3:00 PM Starts in: 7d 21h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132284",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -254,13 +254,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332146"
+        "last_updated": "2026-09-18T17:35:06.792654"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Philippines VS Vietnam Sep 26, 2026, 7:00 PM Starts in: 8d 5h 2m 15s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Philippines VS Vietnam Sep 26, 2026, 7:00 PM Starts in: 8d 1h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132414",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -271,13 +271,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332153"
+        "last_updated": "2026-09-18T17:35:06.792663"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Bangladesh VS Singapore Sep 28, 2026, 3:00 PM Starts in: 10d 1h 2m 15s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Bangladesh VS Singapore Sep 28, 2026, 3:00 PM Starts in: 9d 21h 27m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132563",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -288,13 +288,13 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332161"
+        "last_updated": "2026-09-18T17:35:06.792673"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 10d 5h 32m 15s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 10d 1h 57m 9s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132696",
-        "image_url": "https://live.mhdtv.online/storage/images/events/xIFRNnWanelZx6K3a52ycHrrxkRN9WsaUljIXHbd.png",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VeDaDTNAT7Dd55AGS585x6TiuflQWAS4C2PvLWQA.png",
         "total_servers": 1,
         "servers": [
             {
@@ -305,6 +305,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-18T13:59:44.332172"
+        "last_updated": "2026-09-18T17:35:06.792682"
     }
 ]
