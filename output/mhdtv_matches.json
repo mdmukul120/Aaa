@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845382"
+        "last_updated": "2026-09-20T17:04:06.849512"
     },
     {
         "id": "cricket_icc_international_3rd_",
@@ -31,28 +31,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845401"
+        "last_updated": "2026-09-20T17:04:06.849532"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Getafe VS Málaga Sep 20, 2026, 6:00 PM Starts in: 0d 4h 14m 19s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Getafe VS Málaga Sep 20, 2026, 6:00 PM Starts in: 0d 0h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789901634",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
         "servers": [
             {
-                "server_name": "Default Server",
+                "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1789901634",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845419"
+        "last_updated": "2026-09-20T17:04:06.849550"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Real Madrid VS Atlético Sep 20, 2026, 6:00 PM Starts in: 0d 4h 14m 19s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Real Madrid VS Atlético Sep 20, 2026, 6:00 PM Starts in: 0d 0h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789901807",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -65,11 +65,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845433"
+        "last_updated": "2026-09-20T17:04:06.849563"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Liverpool VS Bournemouth Sep 20, 2026, 7:00 PM Starts in: 0d 5h 14m 19s LIVE",
+        "title": "Football England - Premier League UPCOMING Liverpool VS Bournemouth Sep 20, 2026, 7:00 PM Starts in: 0d 1h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1789900814",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -82,11 +82,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845444"
+        "last_updated": "2026-09-20T17:04:06.849574"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Man City VS Sunderland Sep 20, 2026, 7:00 PM Starts in: 0d 5h 14m 19s LIVE",
+        "title": "Football England - Premier League UPCOMING Man City VS Sunderland Sep 20, 2026, 7:00 PM Starts in: 0d 1h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1789900890",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -99,11 +99,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845455"
+        "last_updated": "2026-09-20T17:04:06.849585"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Leeds VS Palace Sep 20, 2026, 7:00 PM Starts in: 0d 5h 14m 19s LIVE",
+        "title": "Football England - Premier League UPCOMING Leeds VS Palace Sep 20, 2026, 7:00 PM Starts in: 0d 1h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1789900973",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -116,11 +116,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845465"
+        "last_updated": "2026-09-20T17:04:06.849595"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Man Utd VS Fulham Sep 20, 2026, 9:30 PM Starts in: 0d 7h 44m 19s LIVE",
+        "title": "Football England - Premier League UPCOMING Man Utd VS Fulham Sep 20, 2026, 9:30 PM Starts in: 0d 4h 28m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1789901075",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -133,11 +133,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845481"
+        "last_updated": "2026-09-20T17:04:06.849610"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Juventus VS Atalanta Sep 20, 2026, 10:00 PM Starts in: 0d 8h 14m 19s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Juventus VS Atalanta Sep 20, 2026, 10:00 PM Starts in: 0d 4h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1789901436",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -150,11 +150,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845492"
+        "last_updated": "2026-09-20T17:04:06.849622"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Villarreal VS Levante Sep 20, 2026, 10:00 PM Starts in: 0d 8h 14m 19s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Villarreal VS Levante Sep 20, 2026, 10:00 PM Starts in: 0d 4h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789901892",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -167,11 +167,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845503"
+        "last_updated": "2026-09-20T17:04:06.849633"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Deportivo VS Betis Sep 20, 2026, 10:00 PM Starts in: 0d 8h 14m 19s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Deportivo VS Betis Sep 20, 2026, 10:00 PM Starts in: 0d 4h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789901983",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -184,11 +184,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845513"
+        "last_updated": "2026-09-20T17:04:06.849642"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Real Sociedad VS Valencia Sep 21, 2026, 1:00 AM Starts in: 0d 11h 14m 19s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Real Sociedad VS Valencia Sep 21, 2026, 1:00 AM Starts in: 0d 7h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1789902108",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -201,11 +201,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845523"
+        "last_updated": "2026-09-20T17:04:06.849652"
     },
     {
         "id": "cricket_caribbean_premier_leag",
-        "title": "Cricket Caribbean Premier League 2026 UPCOMING GAW VS JAK Sep 21, 2026, 5:00 AM Starts in: 0d 15h 14m 19s LIVE",
+        "title": "Cricket Caribbean Premier League 2026 UPCOMING GAW VS JAK Sep 21, 2026, 5:00 AM Starts in: 0d 11h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/caribbean-premier-league-2026",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -218,11 +218,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845534"
+        "last_updated": "2026-09-20T17:04:06.849662"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC International T20 UPCOMING India VS Japan Sep 22, 2026, 10:00 AM Starts in: 1d 20h 14m 19s LIVE",
+        "title": "Cricket ICC International T20 UPCOMING India VS Japan Sep 22, 2026, 10:00 AM Starts in: 1d 16h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1789902469",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -235,11 +235,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845543"
+        "last_updated": "2026-09-20T17:04:06.849672"
     },
     {
         "id": "cricket_icc_international_3rd_",
-        "title": "Cricket ICC International 3RD T20 UPCOMING England VS Sri Lanka Sep 22, 2026, 7:30 PM Starts in: 2d 5h 44m 19s LIVE",
+        "title": "Cricket ICC International 3RD T20 UPCOMING England VS Sri Lanka Sep 22, 2026, 7:30 PM Starts in: 2d 2h 28m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-3rd-t20-1789751083",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -252,11 +252,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845553"
+        "last_updated": "2026-09-20T17:04:06.849682"
     },
     {
         "id": "cricket_asian_games_men_upcomi",
-        "title": "Cricket Asian Games Men UPCOMING AFG VS JPN Sep 24, 2026, 6:00 AM Starts in: 3d 16h 14m 19s LIVE",
+        "title": "Cricket Asian Games Men UPCOMING AFG VS JPN Sep 24, 2026, 6:00 AM Starts in: 3d 12h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1789719717",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -269,11 +269,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845563"
+        "last_updated": "2026-09-20T17:04:06.849691"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Malaysia Sep 25, 2026, 3:00 PM Starts in: 5d 1h 14m 19s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Malaysia Sep 25, 2026, 3:00 PM Starts in: 4d 21h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131405",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -286,11 +286,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845573"
+        "last_updated": "2026-09-20T17:04:06.849701"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Indonesia Sep 25, 2026, 7:00 PM Starts in: 5d 5h 14m 19s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Indonesia Sep 25, 2026, 7:00 PM Starts in: 5d 1h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1789131862",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -303,11 +303,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845583"
+        "last_updated": "2026-09-20T17:04:06.849710"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Pakistan VS Thailand Sep 26, 2026, 3:00 PM Starts in: 6d 1h 14m 19s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Pakistan VS Thailand Sep 26, 2026, 3:00 PM Starts in: 5d 21h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132284",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -320,11 +320,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845593"
+        "last_updated": "2026-09-20T17:04:06.849720"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Philippines VS Vietnam Sep 26, 2026, 7:00 PM Starts in: 6d 5h 14m 19s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Philippines VS Vietnam Sep 26, 2026, 7:00 PM Starts in: 6d 1h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132414",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -337,11 +337,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845604"
+        "last_updated": "2026-09-20T17:04:06.849730"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Bangladesh VS Singapore Sep 28, 2026, 3:00 PM Starts in: 8d 1h 14m 19s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Bangladesh VS Singapore Sep 28, 2026, 3:00 PM Starts in: 7d 21h 58m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132563",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -354,11 +354,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845614"
+        "last_updated": "2026-09-20T17:04:06.849740"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 8d 5h 44m 19s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 8d 2h 28m 20s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132696",
         "image_url": "https://live.mhdtv.online/storage/images/events/DO4JJDoH8WN7CUHZBfQdOMH0llvMySiRGGx6WYfC.png",
         "total_servers": 1,
@@ -371,6 +371,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-20T13:48:06.845624"
+        "last_updated": "2026-09-20T17:04:06.849777"
     }
 ]
