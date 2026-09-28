@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474245"
+        "last_updated": "2026-09-28T21:18:55.342213"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474264"
+        "last_updated": "2026-09-28T21:18:55.342232"
     },
     {
         "id": "cricket_icc_international_3rd_",
@@ -48,41 +48,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474276"
-    },
-    {
-        "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Azerbaijan VS Lithuania Sep 27, 2026, 7:00 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790500542",
-        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790500542",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474286"
-    },
-    {
-        "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Denmark VS Wales Sep 27, 2026, 10:00 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790500671",
-        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790500671",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474295"
+        "last_updated": "2026-09-28T21:18:55.342244"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
@@ -99,11 +65,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474306"
+        "last_updated": "2026-09-28T21:18:55.342256"
     },
     {
         "id": "football_fifa_asean_cup_2026_g",
-        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: 0d 4h 9m 28s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026- Group B UPCOMING Indonesia VS Malaysia Sep 28, 2026, 7:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-group-b-1789132696",
         "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
         "total_servers": 1,
@@ -116,62 +82,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474318"
+        "last_updated": "2026-09-28T21:18:55.342266"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Georgia VS Ukraine Sep 28, 2026, 10:00 PM Starts in: 0d 6h 39m 28s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790587654",
-        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790587654",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474333"
-    },
-    {
-        "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Latvia VS Cyprus Sep 28, 2026, 10:00 PM Starts in: 0d 6h 39m 28s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790587829",
-        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790587829",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474343"
-    },
-    {
-        "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Armenia VS Montenegro Sep 28, 2026, 10:00 PM Starts in: 0d 6h 39m 28s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790587920",
-        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790587920",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474354"
-    },
-    {
-        "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Romania VS Bosnia Sep 29, 2026, 12:45 AM Starts in: 0d 9h 24m 28s LIVE",
+        "title": "Football UEFA Nations League UPCOMING Romania VS Bosnia Sep 29, 2026, 12:45 AM Starts in: 0d 3h 27m 30s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790588153",
         "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
         "total_servers": 1,
@@ -184,11 +99,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474363"
+        "last_updated": "2026-09-28T21:18:55.342277"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Türkiye VS Italy Sep 29, 2026, 12:45 AM Starts in: 0d 9h 24m 28s LIVE",
+        "title": "Football UEFA Nations League UPCOMING Türkiye VS Italy Sep 29, 2026, 12:45 AM Starts in: 0d 3h 27m 30s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790588274",
         "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
         "total_servers": 1,
@@ -201,11 +116,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474378"
+        "last_updated": "2026-09-28T21:18:55.342293"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING France VS Belgium Sep 29, 2026, 12:45 AM Starts in: 0d 9h 24m 28s LIVE",
+        "title": "Football UEFA Nations League UPCOMING France VS Belgium Sep 29, 2026, 12:45 AM Starts in: 0d 3h 27m 30s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790588393",
         "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
         "total_servers": 1,
@@ -218,11 +133,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474389"
+        "last_updated": "2026-09-28T21:18:55.342309"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Sweden VS Poland Sep 29, 2026, 12:45 AM Starts in: 0d 9h 24m 28s LIVE",
+        "title": "Football UEFA Nations League UPCOMING Sweden VS Poland Sep 29, 2026, 12:45 AM Starts in: 0d 3h 27m 30s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790601297",
         "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
         "total_servers": 1,
@@ -235,6 +150,57 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-28T15:22:07.474399"
+        "last_updated": "2026-09-28T21:18:55.342320"
+    },
+    {
+        "id": "football_uefa_nations_league_u",
+        "title": "Football UEFA Nations League UPCOMING Northern Ireland VS Hungary Sep 29, 2026, 12:45 AM Starts in: 0d 3h 27m 30s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790617160",
+        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790617160",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-28T21:18:55.342331"
+    },
+    {
+        "id": "cricket_asian_games_men_upcomi",
+        "title": "Cricket Asian Games Men UPCOMING Sri Lanka VS Nepal Sep 29, 2026, 6:00 AM Starts in: 0d 8h 42m 30s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1790618654",
+        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/asian-games-men-1790618654",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-28T21:18:55.342342"
+    },
+    {
+        "id": "cricket_asian_games_men_upcomi",
+        "title": "Cricket Asian Games Men UPCOMING Bangladesh VS Malaysia Sep 29, 2026, 9:30 AM Starts in: 0d 12h 12m 30s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1790618819",
+        "image_url": "https://live.mhdtv.online/storage/images/events/MgbCTTNHWbRHp3aQQurn7STvEgyBxakAyvZkyBci.jpg",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/asian-games-men-1790618819",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-28T21:18:55.342351"
     }
 ]
