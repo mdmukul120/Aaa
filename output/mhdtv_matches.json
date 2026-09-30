@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413727"
+        "last_updated": "2026-09-30T22:42:27.391224"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -31,11 +31,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413746"
+        "last_updated": "2026-09-30T22:42:27.391244"
     },
     {
         "id": "football_africa_cup_of_nations",
-        "title": "Football Africa Cup of Nations Qualification UPCOMING South Africa VS Eritrea Sep 30, 2026, 10:00 PM Starts in: 0d 3h 9m 45s LIVE",
+        "title": "Football Africa Cup of Nations Qualification UPCOMING South Africa VS Eritrea Sep 30, 2026, 10:00 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/africa-cup-of-nations-qualification-1790772719",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -48,11 +48,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413759"
+        "last_updated": "2026-09-30T22:42:27.391258"
     },
     {
         "id": "football_friendlies_upcoming_a",
-        "title": "Football Friendlies UPCOMING Argentina VS Bolivia Oct 1, 2026, 6:00 AM Starts in: 0d 11h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Argentina VS Bolivia Oct 1, 2026, 6:00 AM Starts in: 0d 7h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790772338",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -65,11 +65,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413770"
+        "last_updated": "2026-09-30T22:42:27.391269"
     },
     {
         "id": "cricket_asian_games_men_upcomi",
-        "title": "Cricket Asian Games Men UPCOMING India VS Sri Lanka Oct 1, 2026, 10:30 AM Starts in: 0d 15h 39m 45s LIVE",
+        "title": "Cricket Asian Games Men UPCOMING Bangladesh VS Pakistan Oct 1, 2026, 6:00 AM Starts in: 0d 7h 19m 27s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1790796898",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/asian-games-men-1790796898",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-09-30T22:42:27.391280"
+    },
+    {
+        "id": "cricket_asian_games_men_upcomi",
+        "title": "Cricket Asian Games Men UPCOMING India VS Sri Lanka Oct 1, 2026, 10:30 AM Starts in: 0d 11h 49m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1790776124",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -82,11 +99,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413780"
+        "last_updated": "2026-09-30T22:42:27.391291"
     },
     {
         "id": "football_friendlies_upcoming_p",
-        "title": "Football Friendlies UPCOMING Panama VS New Zealand Oct 1, 2026, 12:10 PM Starts in: 0d 17h 19m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Panama VS New Zealand Oct 1, 2026, 12:10 PM Starts in: 0d 13h 29m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790774514",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -99,11 +116,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413789"
+        "last_updated": "2026-09-30T22:42:27.391330"
     },
     {
         "id": "football_friendlies_upcoming_e",
-        "title": "Football Friendlies UPCOMING Ecuador VS Japan Oct 1, 2026, 4:00 PM Starts in: 0d 21h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Ecuador VS Japan Oct 1, 2026, 4:00 PM Starts in: 0d 17h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790774708",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -116,11 +133,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413798"
+        "last_updated": "2026-09-30T22:42:27.391351"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Indonesia Oct 1, 2026, 6:31 PM Starts in: 0d 23h 40m 45s LIVE",
+        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Bangladesh VS Indonesia Oct 1, 2026, 6:31 PM Starts in: 0d 19h 50m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1790691814",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -133,11 +150,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413814"
+        "last_updated": "2026-09-30T22:42:27.391362"
     },
     {
         "id": "football_friendlies_upcoming_c",
-        "title": "Football Friendlies UPCOMING Colombia VS Paraguay Oct 3, 2026, 6:00 PM Starts in: 2d 23h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Colombia VS Paraguay Oct 3, 2026, 6:00 PM Starts in: 2d 19h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790774892",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -150,11 +167,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413824"
+        "last_updated": "2026-09-30T22:42:27.391372"
     },
     {
         "id": "football_friendlies_upcoming_i",
-        "title": "Football Friendlies UPCOMING India VS Brazil Oct 3, 2026, 8:00 PM Starts in: 3d 1h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING India VS Brazil Oct 3, 2026, 8:00 PM Starts in: 2d 21h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790774985",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -167,11 +184,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413833"
+        "last_updated": "2026-09-30T22:42:27.391382"
     },
     {
         "id": "football_friendlies_upcoming_c",
-        "title": "Football Friendlies UPCOMING Canada VS Peru Oct 4, 2026, 12:00 AM Starts in: 3d 5h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Canada VS Peru Oct 4, 2026, 12:00 AM Starts in: 3d 1h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790775101",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -184,11 +201,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413842"
+        "last_updated": "2026-09-30T22:42:27.391391"
     },
     {
         "id": "football_friendlies_upcoming_c",
-        "title": "Football Friendlies UPCOMING Cote dlvoire VS Peru Oct 4, 2026, 2:00 AM Starts in: 3d 7h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Cote dlvoire VS Peru Oct 4, 2026, 2:00 AM Starts in: 3d 3h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790775362",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -201,11 +218,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413851"
+        "last_updated": "2026-09-30T22:42:27.391400"
     },
     {
         "id": "football_friendlies_upcoming_a",
-        "title": "Football Friendlies UPCOMING Argentina VS Burkina Oct 4, 2026, 6:00 AM Starts in: 3d 11h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING Argentina VS Burkina Oct 4, 2026, 6:00 AM Starts in: 3d 7h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790775472",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -218,11 +235,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413859"
+        "last_updated": "2026-09-30T22:42:27.391408"
     },
     {
         "id": "football_friendlies_upcoming_u",
-        "title": "Football Friendlies UPCOMING USA VS Mexico Oct 4, 2026, 8:00 AM Starts in: 3d 13h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING USA VS Mexico Oct 4, 2026, 8:00 AM Starts in: 3d 9h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790776419",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -235,11 +252,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413867"
+        "last_updated": "2026-09-30T22:42:27.391417"
     },
     {
         "id": "football_friendlies_upcoming_i",
-        "title": "Football Friendlies UPCOMING India VS Uruguay Oct 6, 2026, 8:00 PM Starts in: 6d 1h 9m 45s LIVE",
+        "title": "Football Friendlies UPCOMING India VS Uruguay Oct 6, 2026, 8:00 PM Starts in: 5d 21h 19m 27s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790776572",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -252,6 +269,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-09-30T18:51:58.413875"
+        "last_updated": "2026-09-30T22:42:27.391425"
     }
 ]
