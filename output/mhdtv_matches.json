@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892504"
+        "last_updated": "2026-10-02T08:58:21.248264"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892520"
+        "last_updated": "2026-10-02T08:58:21.248283"
     },
     {
         "id": "football_africa_cup_of_nations",
@@ -48,7 +48,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892529"
+        "last_updated": "2026-10-02T08:58:21.248296"
     },
     {
         "id": "football_friendlies_upcoming_a",
@@ -65,24 +65,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892536"
-    },
-    {
-        "id": "cricket_asian_games_men_upcomi",
-        "title": "Cricket Asian Games Men UPCOMING Bangladesh VS Pakistan Oct 1, 2026, 6:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1790796898",
-        "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/asian-games-men-1790796898",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892543"
+        "last_updated": "2026-10-02T08:58:21.248306"
     },
     {
         "id": "cricket_asian_games_men_upcomi",
@@ -99,7 +82,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892550"
+        "last_updated": "2026-10-02T08:58:21.248316"
     },
     {
         "id": "football_friendlies_upcoming_p",
@@ -116,7 +99,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892557"
+        "last_updated": "2026-10-02T08:58:21.248326"
     },
     {
         "id": "football_friendlies_upcoming_e",
@@ -133,7 +116,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892568"
+        "last_updated": "2026-10-02T08:58:21.248334"
     },
     {
         "id": "football_fifa_asean_cup_2026_u",
@@ -150,164 +133,147 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892575"
-    },
-    {
-        "id": "football_fifa_asean_cup_2026_u",
-        "title": "Football FIFA ASEAN Cup 2026 UPCOMING Singapore VS Malaysia Oct 1, 2026, 7:15 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1790860532",
-        "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/fifa-asean-cup-2026-1790860532",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892582"
+        "last_updated": "2026-10-02T08:58:21.248351"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Azerbaijan VS Liechtenstein Oct 1, 2026, 10:00 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861116",
+        "title": "Football UEFA Nations League UPCOMING Poland VS Romania Oct 3, 2026, 12:43 AM Starts in: 0d 15h 47m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915631",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861116",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915631",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892589"
+        "last_updated": "2026-10-02T08:58:21.248362"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING TOYLET VS Kosovo Oct 2, 2026, 12:30 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861293",
+        "title": "Football UEFA Nations League UPCOMING Faroe Islands VS Slovakia Oct 3, 2026, 12:45 AM Starts in: 0d 15h 49m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915729",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861293",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915729",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892595"
+        "last_updated": "2026-10-02T08:58:21.248373"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Netherlands VS Greece Oct 2, 2026, 12:30 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861371",
+        "title": "Football UEFA Nations League UPCOMING Belgium VS Türkiye Oct 3, 2026, 12:45 AM Starts in: 0d 15h 49m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915839",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861371",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915839",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892601"
+        "last_updated": "2026-10-02T08:58:21.248389"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Norway VS Wales Oct 2, 2026, 12:44 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790863573",
+        "title": "Football UEFA Nations League UPCOMING Hungary VS Georgia Oct 3, 2026, 12:45 AM Starts in: 0d 15h 49m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915917",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790863573",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915917",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892608"
+        "last_updated": "2026-10-02T08:58:21.248400"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Germany VS Serbia Oct 2, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861487",
+        "title": "Football UEFA Nations League UPCOMING Sweden VS Bosnia Oct 3, 2026, 12:45 AM Starts in: 0d 15h 49m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790916011",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861487",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790916011",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892614"
+        "last_updated": "2026-10-02T08:58:21.248410"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Ireland VS Austria Oct 2, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861573",
+        "title": "Football UEFA Nations League UPCOMING Northern Ireland VS Ukraine Oct 3, 2026, 12:45 AM Starts in: 0d 15h 49m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790916158",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790861573",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790916158",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892621"
+        "last_updated": "2026-10-02T08:58:21.248420"
     },
     {
         "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Malta VS Gibraltar Oct 2, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790862441",
+        "title": "Football UEFA Nations League UPCOMING France VS Italy Oct 3, 2026, 12:45 AM Starts in: 0d 15h 49m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790916294",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790862441",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790916294",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892626"
+        "last_updated": "2026-10-02T08:58:21.248430"
     },
     {
-        "id": "football_uefa_nations_league_u",
-        "title": "Football UEFA Nations League UPCOMING Portugal VS Denmark Oct 2, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790862469",
+        "id": "cricket_asian_games_men_upcomi",
+        "title": "Cricket Asian Games Men UPCOMING Bangladesh VS Sri Lanka Oct 3, 2026, 6:00 AM Starts in: 0d 21h 4m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/asian-games-men-1790796898",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790862469",
+                "page_url": "https://live.mhdtv.online/watch/asian-games-men-1790796898",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892633"
+        "last_updated": "2026-10-02T08:58:21.248440"
     },
     {
         "id": "football_friendlies_upcoming_c",
-        "title": "Football Friendlies UPCOMING Colombia VS Paraguay Oct 3, 2026, 6:00 PM Starts in: 1d 15h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING Colombia VS Paraguay Oct 3, 2026, 6:00 PM Starts in: 1d 9h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790774892",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -320,11 +286,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892639"
+        "last_updated": "2026-10-02T08:58:21.248449"
     },
     {
         "id": "football_friendlies_upcoming_i",
-        "title": "Football Friendlies UPCOMING India VS Brazil Oct 3, 2026, 8:00 PM Starts in: 1d 17h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING India VS Brazil Oct 3, 2026, 8:00 PM Starts in: 1d 11h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790774985",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -337,11 +303,62 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892646"
+        "last_updated": "2026-10-02T08:58:21.248459"
+    },
+    {
+        "id": "football_uefa_nations_league_u",
+        "title": "Football UEFA Nations League UPCOMING Kazakhstan VS Moldova Oct 3, 2026, 8:00 PM Starts in: 1d 11h 4m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915260",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915260",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-02T08:58:21.248468"
+    },
+    {
+        "id": "football_uefa_nations_league_u",
+        "title": "Football UEFA Nations League UPCOMING Armenia VS Cyprus Oct 3, 2026, 10:00 PM Starts in: 1d 13h 4m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915369",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915369",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-02T08:58:21.248479"
+    },
+    {
+        "id": "football_uefa_nations_league_u",
+        "title": "Football UEFA Nations League UPCOMING Latvia VS Montenegro Oct 3, 2026, 10:00 PM Starts in: 1d 13h 4m 31s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915501",
+        "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-nations-league-1790915501",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-02T08:58:21.248490"
     },
     {
         "id": "football_friendlies_upcoming_c",
-        "title": "Football Friendlies UPCOMING Canada VS Peru Oct 4, 2026, 12:00 AM Starts in: 1d 21h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING Canada VS Peru Oct 4, 2026, 12:00 AM Starts in: 1d 15h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790775101",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -354,11 +371,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892652"
+        "last_updated": "2026-10-02T08:58:21.248499"
     },
     {
         "id": "football_friendlies_upcoming_c",
-        "title": "Football Friendlies UPCOMING Cote dlvoire VS Peru Oct 4, 2026, 2:00 AM Starts in: 1d 23h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING Cote dlvoire VS Peru Oct 4, 2026, 2:00 AM Starts in: 1d 17h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790775362",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -371,11 +388,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892659"
+        "last_updated": "2026-10-02T08:58:21.248508"
     },
     {
         "id": "football_friendlies_upcoming_a",
-        "title": "Football Friendlies UPCOMING Argentina VS Burkina Oct 4, 2026, 6:00 AM Starts in: 2d 3h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING Argentina VS Burkina Oct 4, 2026, 6:00 AM Starts in: 1d 21h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790775472",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -388,11 +405,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892665"
+        "last_updated": "2026-10-02T08:58:21.248517"
     },
     {
         "id": "football_friendlies_upcoming_u",
-        "title": "Football Friendlies UPCOMING USA VS Mexico Oct 4, 2026, 8:00 AM Starts in: 2d 5h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING USA VS Mexico Oct 4, 2026, 8:00 AM Starts in: 1d 23h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790776419",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -405,11 +422,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892670"
+        "last_updated": "2026-10-02T08:58:21.248526"
     },
     {
         "id": "football_friendlies_upcoming_i",
-        "title": "Football Friendlies UPCOMING India VS Uruguay Oct 6, 2026, 8:00 PM Starts in: 4d 17h 27m 4s LIVE",
+        "title": "Football Friendlies UPCOMING India VS Uruguay Oct 6, 2026, 8:00 PM Starts in: 4d 11h 4m 31s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/friendlies-1790776572",
         "image_url": "https://live.mhdtv.online/storage/images/events/VcYl909yd9xfr8fcL11MgSjyH1zcBEfQ8vY51EfY.png",
         "total_servers": 1,
@@ -422,6 +439,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-02T02:35:45.892676"
+        "last_updated": "2026-10-02T08:58:21.248534"
     }
 ]
