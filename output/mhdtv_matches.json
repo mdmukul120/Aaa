@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-12T07:28:49.952276"
+        "last_updated": "2026-10-12T16:56:13.774341"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-12T07:28:49.952297"
+        "last_updated": "2026-10-12T16:56:13.774362"
     },
     {
         "id": "cricket_icc_international_t20_",
@@ -48,11 +48,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-12T07:28:49.952308"
+        "last_updated": "2026-10-12T16:56:13.774374"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Atalanta VS Venezia Oct 12, 2026, 10:30 PM Starts in: 0d 15h 1m 43s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Atalanta VS Venezia Oct 12, 2026, 10:30 PM Starts in: 0d 5h 34m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1791740517",
         "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
         "total_servers": 1,
@@ -65,11 +65,79 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-12T07:28:49.952319"
+        "last_updated": "2026-10-12T16:56:13.774386"
+    },
+    {
+        "id": "football_afc_champions_league_",
+        "title": "Football AFC Champions League Elite UPCOMING Al Nassr VS Neftchi Oct 13, 2026, 12:15 AM Starts in: 0d 7h 19m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1791821466",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1791821466",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-12T16:56:13.774398"
+    },
+    {
+        "id": "football_italy_serie_a_upcomin",
+        "title": "Football Italy - Serie A UPCOMING Torino VS Udinese Oct 13, 2026, 12:45 AM Starts in: 0d 7h 49m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1791821259",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1791821259",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-12T16:56:13.774409"
+    },
+    {
+        "id": "football_england_premier_leagu",
+        "title": "Football England - Premier League UPCOMING Newcastle United VS Coventry City Oct 13, 2026, 1:00 AM Starts in: 0d 8h 4m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1791820984",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1791820984",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-12T16:56:13.774421"
+    },
+    {
+        "id": "football_spain_la_liga_upcomin",
+        "title": "Football Spain - La Liga UPCOMING Sevilla VS Levante Oct 13, 2026, 1:00 AM Starts in: 0d 8h 4m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1791821112",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1791821112",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-12T16:56:13.774437"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 14, 2026, 7:30 PM Starts in: 2d 12h 1m 43s LIVE",
+        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 14, 2026, 7:30 PM Starts in: 2d 2h 34m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791102429",
         "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
         "total_servers": 1,
@@ -82,6 +150,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-12T07:28:49.952330"
+        "last_updated": "2026-10-12T16:56:13.774448"
     }
 ]
