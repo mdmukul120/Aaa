@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-13T11:09:19.847506"
+        "last_updated": "2026-10-13T18:17:28.091440"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-13T11:09:19.847531"
+        "last_updated": "2026-10-13T18:17:28.091458"
     },
     {
         "id": "cricket_icc_international_t20_",
@@ -48,11 +48,181 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-13T11:09:19.847545"
+        "last_updated": "2026-10-13T18:17:28.091467"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Sabah VS Slavia Praha Oct 13, 2026, 10:30 PM Starts in: 0d 4h 14m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907050",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907050",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091476"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Sporting CP VS Lens Oct 13, 2026, 10:30 PM Starts in: 0d 4h 14m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907117",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907117",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091483"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Liverpool VS LASK Oct 13, 2026, 10:45 PM Starts in: 0d 4h 29m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907624",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907624",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091491"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Arsenal VS Lille Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907185",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907185",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091499"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Manchester United VS Atlético Madrid Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907244",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907244",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091518"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Barcelona VS Galatasaray Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907286",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907286",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091527"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Internazionale VS Club Brugge Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907340",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907340",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091535"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING RB Leipzig VS PSV Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907385",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907385",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091543"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Bayern München VS Viking Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907447",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907447",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091556"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Napoli VS Villarreal Oct 14, 2026, 1:00 AM Starts in: 0d 6h 44m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907497",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907497",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091565"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 14, 2026, 7:30 PM Starts in: 1d 8h 21m 7s LIVE",
+        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 14, 2026, 7:30 PM Starts in: 1d 1h 14m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791102429",
         "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
         "total_servers": 1,
@@ -65,6 +235,23 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-13T11:09:19.847559"
+        "last_updated": "2026-10-13T18:17:28.091572"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Feyenoord VS Como Oct 14, 2026, 10:45 PM Starts in: 1d 4h 29m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907552",
+        "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907552",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-13T18:17:28.091581"
     }
 ]
