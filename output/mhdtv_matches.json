@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264233"
+        "last_updated": "2026-10-14T06:31:17.089366"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264252"
+        "last_updated": "2026-10-14T06:31:17.089387"
     },
     {
         "id": "cricket_icc_international_t20_",
@@ -48,7 +48,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264261"
+        "last_updated": "2026-10-14T06:31:17.089398"
     },
     {
         "id": "football_uefa_champions_league",
@@ -65,7 +65,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264270"
+        "last_updated": "2026-10-14T06:31:17.089409"
     },
     {
         "id": "football_uefa_champions_league",
@@ -82,7 +82,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264277"
+        "last_updated": "2026-10-14T06:31:17.089418"
     },
     {
         "id": "football_uefa_champions_league",
@@ -99,7 +99,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264286"
+        "last_updated": "2026-10-14T06:31:17.089428"
     },
     {
         "id": "football_uefa_champions_league",
@@ -116,7 +116,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264294"
+        "last_updated": "2026-10-14T06:31:17.089438"
     },
     {
         "id": "football_uefa_champions_league",
@@ -133,7 +133,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264314"
+        "last_updated": "2026-10-14T06:31:17.089463"
     },
     {
         "id": "football_uefa_champions_league",
@@ -150,7 +150,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264323"
+        "last_updated": "2026-10-14T06:31:17.089475"
     },
     {
         "id": "football_uefa_champions_league",
@@ -167,7 +167,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264331"
+        "last_updated": "2026-10-14T06:31:17.089485"
     },
     {
         "id": "football_uefa_champions_league",
@@ -184,7 +184,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264338"
+        "last_updated": "2026-10-14T06:31:17.089495"
     },
     {
         "id": "football_uefa_champions_league",
@@ -201,7 +201,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264348"
+        "last_updated": "2026-10-14T06:31:17.089507"
     },
     {
         "id": "football_uefa_champions_league",
@@ -218,11 +218,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264356"
+        "last_updated": "2026-10-14T06:31:17.089516"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 14, 2026, 7:30 PM Starts in: 0d 18h 2m 45s LIVE",
+        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 14, 2026, 7:30 PM Starts in: 0d 13h 0m 17s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791102429",
         "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
         "total_servers": 1,
@@ -235,11 +235,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264365"
+        "last_updated": "2026-10-14T06:31:17.089527"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Feyenoord VS Como Oct 14, 2026, 10:45 PM Starts in: 0d 21h 17m 45s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Feyenoord VS Como Oct 14, 2026, 10:45 PM Starts in: 0d 16h 15m 17s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1791907552",
         "image_url": "https://live.mhdtv.online/storage/images/events/jY6NffPdkPU3PApk5neJmHiovjB5eMOJLjtU7FDi.png",
         "total_servers": 1,
@@ -252,6 +252,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-14T01:28:50.264372"
+        "last_updated": "2026-10-14T06:31:17.089536"
     }
 ]
