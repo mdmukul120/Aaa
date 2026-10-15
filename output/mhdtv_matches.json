@@ -14,11 +14,130 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249294"
+        "last_updated": "2026-10-15T11:58:37.102037"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING Milan VS RB Salzburg Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792050306",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792050306",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102053"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING Sunderland VS Torreense Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051658",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051658",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102061"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING Celje VS Omonoia Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051747",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051747",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102068"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING AZ VS Beer-Sheva Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051924",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051924",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102074"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING Sparta Praha VS Lillestrøm Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051959",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792051959",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102088"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING Palace VS OL Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792052045",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792052045",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102096"
+    },
+    {
+        "id": "football_uefa_europa_league_up",
+        "title": "Football UEFA Europa League UPCOMING Union VS Real Sociedad Oct 15, 2026, 10:30 PM Starts in: 0d 10h 32m 47s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792052158",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792052158",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-15T11:58:37.102108"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Bangladesh VS Zimbabwe Oct 17, 2026, 6:00 PM Starts in: 2d 11h 31m 16s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Bangladesh VS Zimbabwe Oct 17, 2026, 6:00 PM Starts in: 2d 6h 2m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791983167",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -31,11 +150,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249310"
+        "last_updated": "2026-10-15T11:58:37.102115"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 17, 2026, 7:30 PM Starts in: 2d 13h 1m 16s LIVE",
+        "title": "Cricket ICC International t20 UPCOMING India VS West indies Oct 17, 2026, 7:30 PM Starts in: 2d 7h 32m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791102429",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -48,11 +167,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249318"
+        "last_updated": "2026-10-15T11:58:37.102122"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 18, 2026, 2:00 PM Starts in: 3d 7h 31m 16s LIVE",
+        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 18, 2026, 2:00 PM Starts in: 3d 2h 2m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791372521",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -65,11 +184,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249325"
+        "last_updated": "2026-10-15T11:58:37.102129"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING South Africa VS Australia Oct 18, 2026, 2:00 PM Starts in: 3d 7h 31m 16s LIVE",
+        "title": "Cricket ICC International Test UPCOMING South Africa VS Australia Oct 18, 2026, 2:00 PM Starts in: 3d 2h 2m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1791102564",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -82,11 +201,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249333"
+        "last_updated": "2026-10-15T11:58:37.102135"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 20, 2026, 2:00 PM Starts in: 5d 7h 31m 16s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 20, 2026, 2:00 PM Starts in: 5d 2h 2m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -99,11 +218,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249339"
+        "last_updated": "2026-10-15T11:58:37.102141"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 7d 6h 31m 16s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 7d 1h 2m 47s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -116,6 +235,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-15T06:29:26.249345"
+        "last_updated": "2026-10-15T11:58:37.102147"
     }
 ]
