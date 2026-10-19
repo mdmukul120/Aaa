@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879363"
+        "last_updated": "2026-10-19T23:05:27.008113"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879380"
+        "last_updated": "2026-10-19T23:05:27.008129"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -48,11 +48,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879388"
+        "last_updated": "2026-10-19T23:05:27.008135"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Monza VS Cagliari Oct 19, 2026, 10:30 PM Starts in: 0d 2h 52m 29s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Monza VS Cagliari Oct 19, 2026, 10:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1792427095",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -65,11 +65,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879397"
+        "last_updated": "2026-10-19T23:05:27.008143"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Tottenham VS Coventry Oct 20, 2026, 1:00 AM Starts in: 0d 5h 22m 29s LIVE",
+        "title": "Football England - Premier League UPCOMING Tottenham VS Coventry Oct 20, 2026, 1:00 AM Starts in: 0d 1h 55m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792167798",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -82,11 +82,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879405"
+        "last_updated": "2026-10-19T23:05:27.008150"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 20, 2026, 2:00 PM Starts in: 0d 18h 22m 29s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 20, 2026, 2:00 PM Starts in: 0d 14h 55m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -99,11 +99,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879414"
+        "last_updated": "2026-10-19T23:05:27.008157"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 2d 17h 22m 29s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 2d 13h 55m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -116,11 +116,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879422"
+        "last_updated": "2026-10-19T23:05:27.008164"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 27, 2026, 2:00 PM Starts in: 7d 18h 22m 29s LIVE",
+        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 27, 2026, 2:00 PM Starts in: 7d 14h 55m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791372521",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -133,6 +133,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-19T19:38:20.879435"
+        "last_updated": "2026-10-19T23:05:27.008175"
     }
 ]
