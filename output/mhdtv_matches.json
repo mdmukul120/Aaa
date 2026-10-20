@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331013"
+        "last_updated": "2026-10-20T06:40:14.157255"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,7 +31,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331032"
+        "last_updated": "2026-10-20T06:40:14.157275"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -48,7 +48,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331043"
+        "last_updated": "2026-10-20T06:40:14.157287"
     },
     {
         "id": "football_italy_serie_a_upcomin",
@@ -65,7 +65,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331053"
+        "last_updated": "2026-10-20T06:40:14.157297"
     },
     {
         "id": "football_england_premier_leagu",
@@ -82,11 +82,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331064"
+        "last_updated": "2026-10-20T06:40:14.157306"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 20, 2026, 2:00 PM Starts in: 0d 12h 16m 7s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 20, 2026, 2:00 PM Starts in: 0d 7h 20m 34s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -99,11 +99,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331075"
+        "last_updated": "2026-10-20T06:40:14.157317"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 2d 11h 16m 7s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 2d 6h 20m 34s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -116,11 +116,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331086"
+        "last_updated": "2026-10-20T06:40:14.157328"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 27, 2026, 2:00 PM Starts in: 7d 12h 16m 7s LIVE",
+        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 27, 2026, 2:00 PM Starts in: 7d 7h 20m 34s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791372521",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -133,6 +133,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-20T01:44:41.331102"
+        "last_updated": "2026-10-20T06:40:14.157343"
     }
 ]
