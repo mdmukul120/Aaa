@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500057"
+        "last_updated": "2026-10-21T20:45:59.873450"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,11 +31,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500076"
+        "last_updated": "2026-10-21T20:45:59.873470"
     },
     {
         "id": "cricket_odi_tri_series_in_unit",
-        "title": "Cricket ODI Tri-Series in United Arab Emirates UPCOMING Afghanistan VS Bangladesh Oct 21, 2026, 5:30 PM Starts in: 0d 0h 7m 6s LIVE",
+        "title": "Cricket ODI Tri-Series in United Arab Emirates UPCOMING Afghanistan VS Bangladesh Oct 21, 2026, 5:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/odi-tri-series-in-united-arab-emirates-1792579858",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -48,11 +48,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500090"
+        "last_updated": "2026-10-21T20:45:59.873482"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Galatasaray VS LOSC Oct 21, 2026, 10:30 PM Starts in: 0d 5h 7m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Galatasaray VS LOSC Oct 21, 2026, 10:30 PM Starts in: 0d 1h 45m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792497633",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -65,11 +65,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500100"
+        "last_updated": "2026-10-21T20:45:59.873493"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Man Utd VS Como Oct 21, 2026, 10:30 PM Starts in: 0d 5h 7m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Man Utd VS Como Oct 21, 2026, 10:30 PM Starts in: 0d 1h 45m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792497791",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -82,11 +82,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500110"
+        "last_updated": "2026-10-21T20:45:59.873503"
+    },
+    {
+        "id": "football_spain_la_liga_upcomin",
+        "title": "Football Spain - La Liga UPCOMING Athletic Club VS Levante Oct 22, 2026, 12:00 AM Starts in: 0d 3h 15m 46s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1792605037",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792605037",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-21T20:45:59.873514"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING SCP VS LASK Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING SCP VS LASK Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573319",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -99,11 +116,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500120"
+        "last_updated": "2026-10-21T20:45:59.873523"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Betis VS Feyenoord Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Betis VS Feyenoord Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573428",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -116,11 +133,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500130"
+        "last_updated": "2026-10-21T20:45:59.873540"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Inter VS Shakhtar Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Inter VS Shakhtar Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573523",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -133,11 +150,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500146"
+        "last_updated": "2026-10-21T20:45:59.873550"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Bayern VS Arsenal Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Bayern VS Arsenal Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573622",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -150,11 +167,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500156"
+        "last_updated": "2026-10-21T20:45:59.873560"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Aston VS Viking Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Aston VS Viking Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573716",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -167,11 +184,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500166"
+        "last_updated": "2026-10-21T20:45:59.873569"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Club Brugge VS Lens Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Club Brugge VS Lens Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573804",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -184,11 +201,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500176"
+        "last_updated": "2026-10-21T20:45:59.873578"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Real Madrid VS RB Leipzig Oct 22, 2026, 1:00 AM Starts in: 0d 7h 37m 6s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Real Madrid VS RB Leipzig Oct 22, 2026, 1:00 AM Starts in: 0d 4h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1792573919",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -201,11 +218,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500186"
+        "last_updated": "2026-10-21T20:45:59.873588"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 0d 19h 37m 6s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 22, 2026, 1:00 PM Starts in: 0d 16h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -218,11 +235,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500196"
+        "last_updated": "2026-10-21T20:45:59.873597"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 25, 2026, 2:00 PM Starts in: 3d 20h 37m 6s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 25, 2026, 2:00 PM Starts in: 3d 17h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -235,11 +252,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500205"
+        "last_updated": "2026-10-21T20:45:59.873606"
     },
     {
         "id": "cricket_icc_international_t20_",
-        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 27, 2026, 2:00 PM Starts in: 5d 20h 37m 6s LIVE",
+        "title": "Cricket ICC international T20 UPCOMING Pakistan VS Sri Lanka Oct 27, 2026, 2:00 PM Starts in: 5d 17h 15m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-t20-1791372521",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -252,11 +269,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500214"
+        "last_updated": "2026-10-21T20:45:59.873615"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Afghanistan VS Zimbabwe Oct 27, 2026, 8:30 PM Starts in: 6d 3h 7m 6s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Afghanistan VS Zimbabwe Oct 27, 2026, 8:30 PM Starts in: 5d 23h 45m 46s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791983167",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -269,6 +286,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-21T17:24:36.500223"
+        "last_updated": "2026-10-21T20:45:59.873624"
     }
 ]
