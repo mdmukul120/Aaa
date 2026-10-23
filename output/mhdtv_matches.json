@@ -14,7 +14,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974648"
+        "last_updated": "2026-10-23T06:57:59.618658"
     },
     {
         "id": "cricket_icc_international_test",
@@ -31,249 +31,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974667"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING AZ VS Ararat Oct 22, 2026, 10:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669577",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669577",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974677"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Juventus VS Rennais Oct 22, 2026, 10:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669655",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669655",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974686"
-    },
-    {
-        "id": "football_europa_conference_lea",
-        "title": "Football Europa Conference League UPCOMING Brighton VS Jablonec Oct 22, 2026, 10:54 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/europa-conference-league-1792688087",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/europa-conference-league-1792688087",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974695"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Viktoria Plzeň VS Levski Sofia Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669794",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669794",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974714"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Olympiacos VS Sparta Praha Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669868",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669868",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974724"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Milan VS Bournemouth Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669982",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792669982",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974739"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Red Bull VS Celje Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670127",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670127",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974748"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Crystal VS Beşiktaş Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670235",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670235",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974760"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Real Sociedad VS Lillestrøm Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670455",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670455",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974772"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Celta VS Celtic Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670722",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792670722",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974781"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Benfica VS Omonoia Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792673759",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792673759",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974789"
-    },
-    {
-        "id": "football_uefa_europa_league_up",
-        "title": "Football UEFA Europa League UPCOMING Olympique VS Hoffenheim Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792673851",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/uefa-europa-league-1792673851",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974798"
-    },
-    {
-        "id": "football_europa_conference_lea",
-        "title": "Football Europa Conference League UPCOMING Monaco VS Freiburg Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/europa-conference-league-1792691979",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/europa-conference-league-1792691979",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974806"
-    },
-    {
-        "id": "football_europa_conference_lea",
-        "title": "Football Europa Conference League UPCOMING Sporting Braga VS Gent Oct 23, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/europa-conference-league-1792692190",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/europa-conference-league-1792692190",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974815"
+        "last_updated": "2026-10-23T06:57:59.618679"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Afghanistan VS Zimbabwe Oct 23, 2026, 5:30 PM Starts in: 0d 15h 33m 29s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Afghanistan VS Zimbabwe Oct 23, 2026, 5:30 PM Starts in: 0d 10h 34m 2s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791983167",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -286,11 +48,164 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974824"
+        "last_updated": "2026-10-23T06:57:59.618692"
+    },
+    {
+        "id": "football_soudi_pro_league_upco",
+        "title": "Football Soudi Pro League UPCOMING Al-Nassr VS Al-Faisaly Oct 23, 2026, 7:30 PM Starts in: 0d 12h 34m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league-1792726690",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league-1792726690",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618703"
+    },
+    {
+        "id": "football_soudi_pro_league_upco",
+        "title": "Football Soudi Pro League UPCOMING Al-Ittihad VS Diriyah Oct 23, 2026, 9:30 PM Starts in: 0d 14h 34m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league-1792726858",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league-1792726858",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618714"
+    },
+    {
+        "id": "football_soudi_pro_league_upco",
+        "title": "Football Soudi Pro League UPCOMING Al Hilal VS Al Qadsiah Oct 24, 2026, 12:00 AM Starts in: 0d 17h 4m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league-1792726985",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/soudi-pro-league-1792726985",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618726"
+    },
+    {
+        "id": "football_germany_bundesliga_up",
+        "title": "Football Germany - Bundesliga UPCOMING Stuttgart VS Borussia Oct 24, 2026, 12:30 AM Starts in: 0d 17h 34m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1792727940",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1792727940",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618736"
+    },
+    {
+        "id": "football_italy_serie_a_upcomin",
+        "title": "Football Italy - Serie A UPCOMING Torino VS Monza Oct 24, 2026, 12:45 AM Starts in: 0d 17h 49m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1792727804",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1792727804",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618753"
+    },
+    {
+        "id": "football_france_ligue_1_upcomi",
+        "title": "Football France - Ligue 1 UPCOMING Brest VS Nice Oct 24, 2026, 12:45 AM Starts in: 0d 17h 49m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/france-ligue-1-1792728049",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/france-ligue-1-1792728049",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618764"
+    },
+    {
+        "id": "football_england_premier_leagu",
+        "title": "Football England - Premier League UPCOMING Ipswich Town VS Nottingham Oct 24, 2026, 1:00 AM Starts in: 0d 18h 4m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792727160",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1792727160",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618775"
+    },
+    {
+        "id": "football_spain_la_liga_upcomin",
+        "title": "Football Spain - La Liga UPCOMING Deportivo VS Málaga Oct 24, 2026, 1:00 AM Starts in: 0d 18h 4m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1792727725",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792727725",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618790"
+    },
+    {
+        "id": "football_france_ligue_1_upcomi",
+        "title": "Football France - Ligue 1 UPCOMING Middlesbrough VS Bolton Oct 24, 2026, 1:00 AM Starts in: 0d 18h 4m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/france-ligue-1-1792728188",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/france-ligue-1-1792728188",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618802"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 24, 2026, 1:00 PM Starts in: 1d 11h 3m 29s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 24, 2026, 1:00 PM Starts in: 1d 6h 4m 2s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -303,11 +218,79 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974834"
+        "last_updated": "2026-10-23T06:57:59.618812"
+    },
+    {
+        "id": "football_england_premier_leagu",
+        "title": "Football England - Premier League UPCOMING Aston Villa VS Man City Oct 24, 2026, 5:30 PM Starts in: 1d 10h 34m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792727304",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1792727304",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618823"
+    },
+    {
+        "id": "football_england_premier_leagu",
+        "title": "Football England - Premier League UPCOMING Fulham VS Coventry Oct 24, 2026, 8:00 PM Starts in: 1d 13h 4m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792727408",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1792727408",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618833"
+    },
+    {
+        "id": "football_england_premier_leagu",
+        "title": "Football England - Premier League UPCOMING Arsenal VS Everton Oct 24, 2026, 8:00 PM Starts in: 1d 13h 4m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792727485",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1792727485",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618843"
+    },
+    {
+        "id": "football_england_premier_leagu",
+        "title": "Football England - Premier League UPCOMING Tottenham VS Chelsea Oct 24, 2026, 10:30 PM Starts in: 1d 15h 34m 2s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792727586",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1792727586",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-23T06:57:59.618853"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 25, 2026, 2:00 PM Starts in: 2d 12h 3m 29s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 25, 2026, 2:00 PM Starts in: 2d 7h 4m 2s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -320,11 +303,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974843"
+        "last_updated": "2026-10-23T06:57:59.618863"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
-        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 6d 12h 3m 29s LIVE",
+        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 6d 7h 4m 2s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -337,6 +320,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-23T01:58:34.974853"
+        "last_updated": "2026-10-23T06:57:59.618873"
     }
 ]
