@@ -1,7 +1,7 @@
 [
     {
         "id": "cricket_wcl_cricket_league_t20",
-        "title": "Cricket WCL Cricket League T20 2026 UPCOMING TEAM 1 VS TEAM 2 Oct 25, 2026, 11:30 AM Starts in: 0d 2h 10m 34s LIVE",
+        "title": "Cricket WCL Cricket League T20 2026 UPCOMING TEAM 1 VS TEAM 2 Oct 25, 2026, 11:30 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/wcl-cricket-league-t20-2026-1791997406",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -14,11 +14,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150081"
+        "last_updated": "2026-10-25T13:48:13.422392"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 25, 2026, 2:00 PM Starts in: 0d 4h 40m 34s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 25, 2026, 2:00 PM Starts in: 0d 0h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -31,11 +31,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150101"
+        "last_updated": "2026-10-25T13:48:13.422413"
+    },
+    {
+        "id": "football_spain_la_liga_upcomin",
+        "title": "Football Spain - La Liga UPCOMING Athletic Club VS Getafe Oct 25, 2026, 7:00 PM Starts in: 0d 5h 13m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1792931237",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792931237",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-25T13:48:13.422427"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Hull VS Brentford Oct 25, 2026, 8:00 PM Starts in: 0d 10h 40m 34s LIVE",
+        "title": "Football England - Premier League UPCOMING Hull VS Brentford Oct 25, 2026, 8:00 PM Starts in: 0d 6h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792844908",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -48,11 +65,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150113"
+        "last_updated": "2026-10-25T13:48:13.422439"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Liverpool VS Brighton Oct 25, 2026, 8:00 PM Starts in: 0d 10h 40m 34s LIVE",
+        "title": "Football England - Premier League UPCOMING Liverpool VS Brighton Oct 25, 2026, 8:00 PM Starts in: 0d 6h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792845018",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -65,11 +82,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150123"
+        "last_updated": "2026-10-25T13:48:13.422451"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Bournemouth VS Man City Oct 25, 2026, 8:00 PM Starts in: 0d 10h 40m 34s LIVE",
+        "title": "Football England - Premier League UPCOMING Bournemouth VS Man City Oct 25, 2026, 8:00 PM Starts in: 0d 6h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792845151",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -82,11 +99,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150133"
+        "last_updated": "2026-10-25T13:48:13.422463"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Crystal VS Newcastle Oct 25, 2026, 8:00 PM Starts in: 0d 10h 40m 34s LIVE",
+        "title": "Football England - Premier League UPCOMING Crystal VS Newcastle Oct 25, 2026, 8:00 PM Starts in: 0d 6h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792845308",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -99,11 +116,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150143"
+        "last_updated": "2026-10-25T13:48:13.422475"
+    },
+    {
+        "id": "football_italy_serie_a_upcomin",
+        "title": "Football Italy - Serie A UPCOMING Atalanta VS Frosinone Oct 25, 2026, 8:00 PM Starts in: 0d 6h 13m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1792935964",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1792935964",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-25T13:48:13.422492"
     },
     {
         "id": "football_germany_bundesliga_up",
-        "title": "Football Germany - Bundesliga UPCOMING Hoffenheim VS Leverkusen Oct 25, 2026, 8:30 PM Starts in: 0d 11h 10m 34s LIVE",
+        "title": "Football Germany - Bundesliga UPCOMING Hoffenheim VS Leverkusen Oct 25, 2026, 8:30 PM Starts in: 0d 6h 43m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1792844378",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -116,11 +150,28 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150153"
+        "last_updated": "2026-10-25T13:48:13.422504"
+    },
+    {
+        "id": "football_france_ligue_1_upcomi",
+        "title": "Football France - Ligue 1 UPCOMING Monaco VS Lille Oct 25, 2026, 9:00 PM Starts in: 0d 7h 13m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/france-ligue-1-1792934318",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/france-ligue-1-1792934318",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-25T13:48:13.422516"
     },
     {
         "id": "football_germany_bundesliga_up",
-        "title": "Football Germany - Bundesliga UPCOMING Bayern VS Freiburg Oct 25, 2026, 10:30 PM Starts in: 0d 13h 10m 34s LIVE",
+        "title": "Football Germany - Bundesliga UPCOMING Bayern VS Freiburg Oct 25, 2026, 10:30 PM Starts in: 0d 8h 43m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1792844657",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -133,11 +184,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150168"
+        "last_updated": "2026-10-25T13:48:13.422527"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Sunderland VS Leeds Oct 25, 2026, 10:30 PM Starts in: 0d 13h 10m 34s LIVE",
+        "title": "Football England - Premier League UPCOMING Sunderland VS Leeds Oct 25, 2026, 10:30 PM Starts in: 0d 8h 43m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1792845429",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -150,11 +201,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150179"
+        "last_updated": "2026-10-25T13:48:13.422538"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Barcelona VS Real Mardtid Oct 26, 2026, 2:00 AM Starts in: 0d 16h 40m 34s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Barcelona VS Real Mardtid Oct 26, 2026, 2:00 AM Starts in: 0d 12h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -167,11 +218,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150190"
+        "last_updated": "2026-10-25T13:48:13.422550"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 27, 2026, 1:00 PM Starts in: 2d 3h 40m 34s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 27, 2026, 1:00 PM Starts in: 1d 23h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -184,11 +235,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150199"
+        "last_updated": "2026-10-25T13:48:13.422561"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING South Africa VS Australia Oct 27, 2026, 2:30 PM Starts in: 2d 5h 10m 34s LIVE",
+        "title": "Cricket ICC International Test UPCOMING South Africa VS Australia Oct 27, 2026, 2:30 PM Starts in: 2d 0h 43m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1791102564",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -201,11 +252,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150210"
+        "last_updated": "2026-10-25T13:48:13.422573"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Oct 28, 2026, 10:00 AM Starts in: 3d 0h 40m 34s LIVE",
+        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Oct 28, 2026, 10:00 AM Starts in: 2d 20h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -218,11 +269,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150219"
+        "last_updated": "2026-10-25T13:48:13.422584"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
-        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 4d 4h 40m 34s LIVE",
+        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 4d 0h 13m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -235,6 +286,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-25T09:20:51.150228"
+        "last_updated": "2026-10-25T13:48:13.422595"
     }
 ]
