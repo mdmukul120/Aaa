@@ -26,240 +26,67 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520842"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Barcelona VS Real Mardtid Oct 26, 2026, 2:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 9,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "DS Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fast Server IOS",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live1.quickscoreboardz.com/live/channel5/playlist.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "hls"
-            },
-            {
-                "server_name": "Bein Sports 3",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "ESPN IOS",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TAPMAD asia",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://d8j84o343a5m2.cloudfront.net/live/testtapmad3/master.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "hls"
-            },
-            {
-                "server_name": "Fancode",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Premium Sports",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "D SPORTS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792866729",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520861"
-    },
-    {
-        "id": "football_afc_champions_league_",
-        "title": "Football AFC Champions League Elite UPCOMING Al Ittihad VS Neftchi Oct 26, 2026, 7:49 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1793022565",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1793022565",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520873"
-    },
-    {
-        "id": "football_afc_champions_league_",
-        "title": "Football AFC Champions League Elite UPCOMING Al Nassr VS Al Wasl Oct 27, 2026, 12:15 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1792988328",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1792988328",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520883"
-    },
-    {
-        "id": "football_primeira_liga_upcomin",
-        "title": "Football Primeira Liga UPCOMING Benfica VS Santa Clara Oct 27, 2026, 12:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/primeira-liga-1792988516",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/primeira-liga-1792988516",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520892"
-    },
-    {
-        "id": "football_the_70th_ballon_dor_c",
-        "title": "Football The 70th Ballon d'Or ceremony UPCOMING Ballon d'Or ceremony VS Ballon d'Or ceremony Oct 27, 2026, 1:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/the-70th-ballon-dor-ceremony-1793022101",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 4,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/the-70th-ballon-dor-ceremony-1793022101",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fast server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/the-70th-ballon-dor-ceremony-1793022101",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "CBS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/the-70th-ballon-dor-ceremony-1793022101",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "CBS Fast",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/the-70th-ballon-dor-ceremony-1793022101",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520904"
-    },
-    {
-        "id": "football_france_ligue_1_upcomi",
-        "title": "Football France - Ligue 1 UPCOMING PSG VS Olympique Oct 27, 2026, 1:30 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/france-ligue-1-1792988978",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/france-ligue-1-1792988978",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/france-ligue-1-1792988978",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fast server",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live2.jorvakstreamcache.com/live/channel1.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/france-ligue-1-1792988978",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520914"
+        "last_updated": "2026-10-27T10:55:08.302729"
     },
     {
         "id": "cricket_icc_international_odi_",
         "title": "Cricket ICC International ODI UPCOMING Sri Lanka VS Pakistan Oct 27, 2026, 2:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
+        "total_servers": 7,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
                 "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520929"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Osasuna VS Sevilla Oct 27, 2026, 2:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1792988745",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
+            },
             {
-                "server_name": "Download Now",
+                "server_name": "Willow Sports AQ",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792988745",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
                 "stream_type": "iframe"
             },
             {
-                "server_name": "Primer Sp[orts",
+                "server_name": "PTV Sports",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live.msnetworks.net/ptv-sports/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
+                "stream_type": "hls"
+            },
+            {
+                "server_name": "WILLOW AQ",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792988745",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
                 "stream_type": "iframe"
             },
             {
-                "server_name": "Bein Sports 2 AQ",
+                "server_name": "TapMad 🇵🇰🇧🇩",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://d8j84o343a5m2.cloudfront.net/live/testtapmad3/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
+                "stream_type": "hls"
+            },
+            {
+                "server_name": "Willow SD",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1792988745",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "T Sports HD",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520940"
+        "last_updated": "2026-10-27T10:55:08.302749"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 27, 2026, 1:00 PM Starts in: 0d 7h 27m 31s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 27, 2026, 1:00 PM Starts in: 0d 2h 7m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 6,
+        "total_servers": 9,
         "servers": [
             {
                 "server_name": "Download Now",
@@ -280,33 +107,51 @@
                 "stream_type": "iframe"
             },
             {
+                "server_name": "SONY LIv AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
+                "stream_type": "iframe"
+            },
+            {
                 "server_name": "Fast server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
                 "stream_type": "iframe"
             },
             {
-                "server_name": "TapMad 🇵🇰🇧🇩",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tvsen7.aynaott.com/rEBp38Ax/tracks-v1a1/mono.ts.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
-                "stream_type": "hls"
-            },
-            {
                 "server_name": "SONLiv Hindi AQ",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "TapMad 🇵🇰🇧🇩",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://d8j84o343a5m2.cloudfront.net/live/testtapmad2/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
+                "stream_type": "hls"
+            },
+            {
+                "server_name": "Cricbuzz fast",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "SONY 1 HD",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520950"
+        "last_updated": "2026-10-27T10:55:08.302763"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING South Africa VS Australia Oct 27, 2026, 2:30 PM Starts in: 0d 8h 57m 31s LIVE",
+        "title": "Cricket ICC International Test UPCOMING South Africa VS Australia Oct 27, 2026, 2:30 PM Starts in: 0d 3h 37m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1791102564",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 5,
+        "total_servers": 6,
         "servers": [
             {
                 "server_name": "Download Now",
@@ -321,10 +166,16 @@
                 "stream_type": "iframe"
             },
             {
-                "server_name": "TAPMAD Mobile",
-                "m3u8_url": "https://tencent-cdn.tapmad.com/v1/01a145abfb3a1ea540a81c2b41b751/01a145ae0ac115fc600b1e3e9683da/main.m3u8",
+                "server_name": "Willow AQ",
+                "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-test-1791102564",
-                "stream_type": "hls"
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Sky Cricket",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1791102564",
+                "stream_type": "iframe"
             },
             {
                 "server_name": "Cricbuzz",
@@ -340,11 +191,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520960"
+        "last_updated": "2026-10-27T10:55:08.302775"
     },
     {
         "id": "cricket_icc_womens_t20_upcomin",
-        "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 27, 2026, 8:30 PM Starts in: 0d 14h 57m 31s LIVE",
+        "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 27, 2026, 8:30 PM Starts in: 0d 9h 37m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -357,11 +208,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520970"
+        "last_updated": "2026-10-27T10:55:08.302787"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Oct 28, 2026, 10:00 AM Starts in: 1d 4h 27m 31s LIVE",
+        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Oct 28, 2026, 10:00 AM Starts in: 0d 23h 7m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -374,11 +225,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520980"
+        "last_updated": "2026-10-27T10:55:08.302798"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
-        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 2d 8h 27m 31s LIVE",
+        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 2d 3h 7m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -427,11 +278,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.520991"
+        "last_updated": "2026-10-27T10:55:08.302810"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 30, 2026, 2:00 PM Starts in: 3d 8h 27m 31s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 30, 2026, 2:00 PM Starts in: 3d 3h 7m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -480,11 +331,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.521000"
+        "last_updated": "2026-10-27T10:55:08.302827"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 9d 9h 57m 31s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 9d 4h 37m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -497,11 +348,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.521009"
+        "last_updated": "2026-10-27T10:55:08.302915"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 9d 14h 27m 31s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 9d 9h 7m 0s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -514,6 +365,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-27T05:35:32.521017"
+        "last_updated": "2026-10-27T10:55:08.302934"
     }
 ]
