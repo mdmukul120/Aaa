@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.077865"
+        "last_updated": "2026-10-28T17:16:41.056517"
     },
     {
         "id": "cricket_icc_international_test",
@@ -73,7 +73,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.077886"
+        "last_updated": "2026-10-28T17:16:41.056537"
     },
     {
         "id": "cricket_icc_international_test",
@@ -114,11 +114,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.077898"
+        "last_updated": "2026-10-28T17:16:41.056548"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Milan VS Bologna Oct 28, 2026, 11:30 PM Starts in: 0d 12h 11m 19s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Milan VS Bologna Oct 28, 2026, 11:30 PM Starts in: 0d 6h 17m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161518",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -131,11 +131,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.077911"
+        "last_updated": "2026-10-28T17:16:41.056559"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Venezia VS Internazionale Oct 28, 2026, 11:30 PM Starts in: 0d 12h 11m 19s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Venezia VS Internazionale Oct 28, 2026, 11:30 PM Starts in: 0d 6h 17m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161633",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -148,11 +148,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.077923"
+        "last_updated": "2026-10-28T17:16:41.056569"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Parma VS Udinese Oct 28, 2026, 11:30 PM Starts in: 0d 12h 11m 19s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Parma VS Udinese Oct 28, 2026, 11:30 PM Starts in: 0d 6h 17m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161725",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -165,11 +165,215 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.077996"
+        "last_updated": "2026-10-28T17:16:41.056579"
+    },
+    {
+        "id": "football_efl_cup_upcoming_man_",
+        "title": "Football EFL CUP UPCOMING Man City VS Brighton Oct 29, 2026, 1:30 AM Starts in: 0d 8h 17m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056589"
+    },
+    {
+        "id": "football_dfb_pokal_upcoming_ba",
+        "title": "Football DFB POKAL UPCOMING Bayern VS Magdeburg Oct 29, 2026, 1:30 AM Starts in: 0d 8h 17m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196284",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196284",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056604"
+    },
+    {
+        "id": "football_dfb_pokal_upcoming_le",
+        "title": "Football DFB POKAL UPCOMING Leverkusen VS Nürnberg Oct 29, 2026, 1:30 AM Starts in: 0d 8h 17m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196360",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196360",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056620"
+    },
+    {
+        "id": "football_efl_cup_upcoming_crys",
+        "title": "Football EFL CUP UPCOMING Crystal VS Fulham Oct 29, 2026, 1:45 AM Starts in: 0d 8h 32m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195423",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195423",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056631"
+    },
+    {
+        "id": "football_efl_cup_upcoming_asto",
+        "title": "Football EFL CUP UPCOMING Aston VS Bournemouth Oct 29, 2026, 1:45 AM Starts in: 0d 8h 32m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056640"
+    },
+    {
+        "id": "football_efl_cup_upcoming_sund",
+        "title": "Football EFL CUP UPCOMING Sunderland VS Brentford Oct 29, 2026, 1:45 AM Starts in: 0d 8h 32m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195666",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195666",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056649"
+    },
+    {
+        "id": "football_italy_serie_a_upcomin",
+        "title": "Football Italy - Serie A UPCOMING Napoli VS Monza Oct 29, 2026, 1:45 AM Starts in: 0d 8h 32m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793195967",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793195967",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056658"
+    },
+    {
+        "id": "football_italy_serie_a_upcomin",
+        "title": "Football Italy - Serie A UPCOMING Juventus VS Genoa Oct 29, 2026, 1:45 AM Starts in: 0d 8h 32m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793196034",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793196034",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056668"
+    },
+    {
+        "id": "football_efl_cup_upcoming_live",
+        "title": "Football EFL CUP UPCOMING Liverpool VS Chelsea Oct 29, 2026, 2:00 AM Starts in: 0d 8h 47m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056676"
+    },
+    {
+        "id": "football_taça_da_liga_upcoming",
+        "title": "Football Taça da Liga UPCOMING Porto VS Academico Oct 29, 2026, 2:30 AM Starts in: 0d 9h 17m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/taca-da-liga-1793196176",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/taca-da-liga-1793196176",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056687"
+    },
+    {
+        "id": "football_brasileirão_upcoming_",
+        "title": "Football Brasileirão UPCOMING Santos VS Palmeiras Oct 29, 2026, 4:30 AM Starts in: 0d 11h 17m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/brasileirao-1793196751",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/brasileirao-1793196751",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056697"
+    },
+    {
+        "id": "football_major_league_upcoming",
+        "title": "Football Major League UPCOMING Miami VS Cincinnati Oct 29, 2026, 5:30 AM Starts in: 0d 12h 17m 7s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/major-league-1793197122",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/major-league-1793197122",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-10-28T17:16:41.056707"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
-        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 1d 2h 41m 19s LIVE",
+        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 0d 20h 47m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -218,11 +422,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078020"
+        "last_updated": "2026-10-28T17:16:41.056718"
     },
     {
         "id": "cricket_icc_womens_t20_upcomin",
-        "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 29, 2026, 8:30 PM Starts in: 1d 9h 11m 19s LIVE",
+        "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 29, 2026, 8:30 PM Starts in: 1d 3h 17m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -235,11 +439,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078040"
+        "last_updated": "2026-10-28T17:16:41.056729"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 30, 2026, 1:00 PM Starts in: 2d 1h 41m 19s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 30, 2026, 1:00 PM Starts in: 1d 19h 47m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 9,
@@ -300,11 +504,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078053"
+        "last_updated": "2026-10-28T17:16:41.056738"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 30, 2026, 2:00 PM Starts in: 2d 2h 41m 19s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 30, 2026, 2:00 PM Starts in: 1d 20h 47m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -353,11 +557,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078065"
+        "last_updated": "2026-10-28T17:16:41.056748"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Sri Lanka VS Pakistan Oct 31, 2026, 2:00 AM Starts in: 2d 14h 41m 19s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Sri Lanka VS Pakistan Oct 31, 2026, 2:00 AM Starts in: 2d 8h 47m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -406,11 +610,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078076"
+        "last_updated": "2026-10-28T17:16:41.056758"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 8d 4h 11m 19s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 7d 22h 17m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -423,11 +627,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078087"
+        "last_updated": "2026-10-28T17:16:41.056767"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 8d 8h 41m 19s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 8d 2h 47m 7s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -440,6 +644,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-28T11:21:15.078097"
+        "last_updated": "2026-10-28T17:16:41.056775"
     }
 ]
