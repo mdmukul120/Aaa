@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206187"
+        "last_updated": "2026-10-29T07:10:33.631351"
     },
     {
         "id": "cricket_icc_international_test",
@@ -73,7 +73,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206206"
+        "last_updated": "2026-10-29T07:10:33.631366"
     },
     {
         "id": "cricket_icc_international_test",
@@ -114,419 +114,14 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206217"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Milan VS Bologna Oct 28, 2026, 11:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161518",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161518",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT 1 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161518",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69f42e961f739deff81510c0.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69f42e961f739deff81510c0.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=3glrw7hnewg6qdy&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161518",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206228"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Venezia VS Internazionale Oct 28, 2026, 11:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161633",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161633",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FUBO TV AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161633",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F69f42e961f739deff81510c0.m3u8&flv=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F69f42e961f739deff81510c0.flv&cdn=alibaba&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=3glrw7hnewg6qdy&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161633",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206237"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Parma VS Udinese Oct 28, 2026, 11:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161725",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161725",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "PARAMOUNT AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161725",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6acdcf4a1ba0f2f86b254fe9.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6acdcf4a1ba0f2f86b254fe9.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=965mkyhk97xdr1g&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793161725",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206246"
-    },
-    {
-        "id": "football_efl_cup_upcoming_man_",
-        "title": "Football EFL CUP UPCOMING Man City VS Brighton Oct 29, 2026, 1:30 AM Starts in: 0d 0h 16m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 4,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "DAZN AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Bein Sports 2 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6ad087284c3981dd68475913.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6ad087284c3981dd68475913.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=k82rekh2zo82rep&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195347",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206256"
-    },
-    {
-        "id": "football_dfb_pokal_upcoming_ba",
-        "title": "Football DFB POKAL UPCOMING Bayern VS Magdeburg Oct 29, 2026, 1:30 AM Starts in: 0d 0h 16m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196284",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196284",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "DAZN AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196284",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=6ypq3nhvxo7gmd7&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196284",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206272"
-    },
-    {
-        "id": "football_dfb_pokal_upcoming_le",
-        "title": "Football DFB POKAL UPCOMING Leverkusen VS Nürnberg Oct 29, 2026, 1:30 AM Starts in: 0d 0h 16m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196360",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/dfb-pokal-1793196360",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206289"
-    },
-    {
-        "id": "football_efl_cup_upcoming_crys",
-        "title": "Football EFL CUP UPCOMING Crystal VS Fulham Oct 29, 2026, 1:45 AM Starts in: 0d 0h 31m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195423",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195423",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "CBS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195423",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6acdcf4a1ba0f2f86b254fe9.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6acdcf4a1ba0f2f86b254fe9.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=dj2ryoh7vjeoq1z&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195423",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206299"
-    },
-    {
-        "id": "football_efl_cup_upcoming_asto",
-        "title": "Football EFL CUP UPCOMING Aston VS Bournemouth Oct 29, 2026, 1:45 AM Starts in: 0d 0h 31m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 4,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "CBS SPORTS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a9a5525864ea536c2577392.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a9a5525864ea536c2577392.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=4wyrn4hyzdo5q86&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
-                "stream_type": "hls"
-            },
-            {
-                "server_name": "CBS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195525",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206308"
-    },
-    {
-        "id": "football_efl_cup_upcoming_sund",
-        "title": "Football EFL CUP UPCOMING Sunderland VS Brentford Oct 29, 2026, 1:45 AM Starts in: 0d 0h 31m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195666",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195666",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "CBS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195666",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F6a9776215126529dede9bf51.m3u8&flv=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F6a9776215126529dede9bf51.flv&cdn=alibaba&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=8yomo4hye2gwq0j&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195666",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206346"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Napoli VS Monza Oct 29, 2026, 1:45 AM Starts in: 0d 0h 31m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793195967",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793195967",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206360"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Juventus VS Genoa Oct 29, 2026, 1:45 AM Starts in: 0d 0h 31m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793196034",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793196034",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "SPORT 2 CZ AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793196034",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F6a7c0d8f65997681f18cacc4.m3u8&flv=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F6a7c0d8f65997681f18cacc4.flv&cdn=alibaba&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=4wyrn4h618pzq86&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793196034",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206381"
-    },
-    {
-        "id": "football_efl_cup_upcoming_live",
-        "title": "Football EFL CUP UPCOMING Liverpool VS Chelsea Oct 29, 2026, 2:00 AM Starts in: 0d 0h 46m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 4,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "CBS AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Bein Sports 3 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69f42e961f739deff81510c0.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69f42e961f739deff81510c0.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=2y8m4zhv0gwkql0&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/efl-cup-1793195760",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206391"
-    },
-    {
-        "id": "football_taça_da_liga_upcoming",
-        "title": "Football Taça da Liga UPCOMING Porto VS Academico Oct 29, 2026, 2:30 AM Starts in: 0d 1h 16m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/taca-da-liga-1793196176",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/taca-da-liga-1793196176",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206402"
-    },
-    {
-        "id": "football_brasileirão_upcoming_",
-        "title": "Football Brasileirão UPCOMING Santos VS Palmeiras Oct 29, 2026, 4:30 AM Starts in: 0d 3h 16m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/brasileirao-1793196751",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/brasileirao-1793196751",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Primer Sports 2 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/brasileirao-1793196751",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F6a2a59b347bbddd62a8dc4e4.m3u8&flv=https%3A%2F%2Fplayback.livetl004.com%2Flive%2F6a2a59b347bbddd62a8dc4e4.flv&cdn=alibaba&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=dj2ryohlek21q1z&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/brasileirao-1793196751",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206413"
-    },
-    {
-        "id": "football_major_league_upcoming",
-        "title": "Football Major League UPCOMING Miami VS Cincinnati Oct 29, 2026, 5:30 AM Starts in: 0d 4h 16m 10s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/major-league-1793197122",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/major-league-1793197122",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206421"
+        "last_updated": "2026-10-29T07:10:33.631374"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
-        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 0d 12h 46m 10s LIVE",
+        "title": "Cricket ODI Tri-series in Pakistan UPCOMING England VS Sri Lanka Oct 29, 2026, 2:00 PM Starts in: 0d 6h 51m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 7,
+        "total_servers": 8,
         "servers": [
             {
                 "server_name": "Download Now",
@@ -539,6 +134,12 @@
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "P Tv HD",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live.msnetworks.net/ptv-sports/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/odi-tri-series-in-pakistan-1792654402",
+                "stream_type": "hls"
             },
             {
                 "server_name": "TAPMAD Mobile",
@@ -572,11 +173,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206432"
+        "last_updated": "2026-10-29T07:10:33.631382"
     },
     {
         "id": "cricket_icc_womens_t20_upcomin",
-        "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 29, 2026, 8:30 PM Starts in: 0d 19h 16m 10s LIVE",
+        "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 29, 2026, 8:30 PM Starts in: 0d 13h 21m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -589,11 +190,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206442"
+        "last_updated": "2026-10-29T07:10:33.631389"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 30, 2026, 1:00 PM Starts in: 1d 11h 46m 10s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Oct 30, 2026, 1:00 PM Starts in: 1d 5h 51m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 9,
@@ -654,11 +255,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206451"
+        "last_updated": "2026-10-29T07:10:33.631396"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 30, 2026, 2:00 PM Starts in: 1d 12h 46m 10s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Pakistan VS England Oct 30, 2026, 2:00 PM Starts in: 1d 6h 51m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985742",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -707,11 +308,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206460"
+        "last_updated": "2026-10-29T07:10:33.631402"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING Sri Lanka VS Pakistan Oct 31, 2026, 2:00 AM Starts in: 2d 0h 46m 10s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING Sri Lanka VS Pakistan Oct 31, 2026, 2:00 AM Starts in: 1d 18h 51m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1792986509",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -760,11 +361,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206469"
+        "last_updated": "2026-10-29T07:10:33.631414"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 7d 14h 16m 10s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 7d 8h 21m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -777,11 +378,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206477"
+        "last_updated": "2026-10-29T07:10:33.631420"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 7d 18h 46m 10s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 7d 12h 51m 43s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -794,6 +395,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-29T01:18:32.206485"
+        "last_updated": "2026-10-29T07:10:33.631426"
     }
 ]
