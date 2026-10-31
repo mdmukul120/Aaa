@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347476"
+        "last_updated": "2026-10-31T22:55:46.381314"
     },
     {
         "id": "cricket_icc_international_test",
@@ -73,7 +73,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347497"
+        "last_updated": "2026-10-31T22:55:46.381329"
     },
     {
         "id": "cricket_icc_international_test",
@@ -114,7 +114,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347508"
+        "last_updated": "2026-10-31T22:55:46.381336"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
@@ -179,7 +179,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347519"
+        "last_updated": "2026-10-31T22:55:46.381342"
     },
     {
         "id": "cricket_icc_womens_t20_upcomin",
@@ -214,7 +214,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347530"
+        "last_updated": "2026-10-31T22:55:46.381348"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -273,7 +273,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347541"
+        "last_updated": "2026-10-31T22:55:46.381355"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -326,7 +326,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347551"
+        "last_updated": "2026-10-31T22:55:46.381360"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -379,326 +379,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347567"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Chelsea VS Man Utd Oct 31, 2026, 6:30 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793368536",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 5,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368536",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fubo Sports AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368536",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://playyyz5.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.flv&cdn=tencent&protocol=hls&b=gavangtvaa.com&sport=football&t=streamer&o=https%3A%2F%2Fgavangtvaa.com&match=2y8m4zh5d9n0ql0&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F1330x60.gif&bottomMd=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F928x90.gif&bottomSm=https%3A%2F%2Fimgixycdn.com%2Fbanner%2F450x50.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368536",
-                "stream_type": "hls"
-            },
-            {
-                "server_name": "TNT Sports 1 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368536",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "ESPN HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368536",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347578"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Atlético VS Levante Oct 31, 2026, 7:00 PM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1793446636",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793446636",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347594"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Monza VS Bologna Oct 31, 2026, 8:00 PM Starts in: 0d 0h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793447005",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793447005",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347606"
-    },
-    {
-        "id": "football_germany_bundesliga_up",
-        "title": "Football Germany - Bundesliga UPCOMING RB Leipzig VS Schalke 04 Oct 31, 2026, 8:30 PM Starts in: 0d 0h 37m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1793447397",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1793447397",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347618"
-    },
-    {
-        "id": "football_germany_bundesliga_up",
-        "title": "Football Germany - Bundesliga UPCOMING Stuttgart VS Leverkusen Oct 31, 2026, 8:30 PM Starts in: 0d 0h 37m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1793447514",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1793447514",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347629"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Bournemouth VS Leeds Oct 31, 2026, 9:00 PM Starts in: 0d 1h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793368620",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368620",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347639"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Sunderland VS Coventry Oct 31, 2026, 9:00 PM Starts in: 0d 1h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793368778",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368778",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fubo Tv AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368778",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live05.miekgo.app/live/33982309.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368778",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347649"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Man City VS Brighton Oct 31, 2026, 9:00 PM Starts in: 0d 1h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793368876",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368876",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Fubo Tv AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368876",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live05.miekgo.app/live/08552895.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368876",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347659"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Brentford VS Nottingham Oct 31, 2026, 9:00 PM Starts in: 0d 1h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793368962",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368962",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FUBO AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368962",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "FAST SERVER",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live05.miekgo.app/live/02456966.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793368962",
-                "stream_type": "hls"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347669"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Hull VS Ipswich Oct 31, 2026, 9:00 PM Starts in: 0d 1h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369037",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369037",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347679"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Rayo VS Celta Oct 31, 2026, 9:15 PM Starts in: 0d 1h 22m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1793446733",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793446733",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347688"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Roma VS Udinese Oct 31, 2026, 11:00 PM Starts in: 0d 3h 7m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793447108",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793447108",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347698"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Crystal VS Tottenham Oct 31, 2026, 11:30 PM Starts in: 0d 3h 37m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369136",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369136",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347708"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Betis VS Málaga Oct 31, 2026, 11:30 PM Starts in: 0d 3h 37m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1793446852",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793446852",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347721"
-    },
-    {
-        "id": "football_germany_bundesliga_up",
-        "title": "Football Germany - Bundesliga UPCOMING Bayern VS Dortmund Oct 31, 2026, 11:30 PM Starts in: 0d 3h 37m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1793447269",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1793447269",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347730"
+        "last_updated": "2026-10-31T22:55:46.381371"
     },
     {
         "id": "football_soudi_pro_league_upco",
-        "title": "Football Soudi Pro League UPCOMING Al Hilal VS Al Fateh Nov 1, 2026, 12:00 AM Starts in: 0d 4h 7m 52s LIVE",
+        "title": "Football Soudi Pro League UPCOMING Al Hilal VS Al Fateh Nov 1, 2026, 12:00 AM Starts in: 0d 1h 7m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/soudi-pro-league-1793448046",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -711,11 +396,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347742"
+        "last_updated": "2026-10-31T22:55:46.381379"
     },
     {
         "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Internazionale VS Milan Nov 1, 2026, 1:45 AM Starts in: 0d 5h 52m 52s LIVE",
+        "title": "Football Italy - Serie A UPCOMING Internazionale VS Milan Nov 1, 2026, 1:45 AM Starts in: 0d 2h 52m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793447897",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -728,31 +413,43 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347752"
+        "last_updated": "2026-10-31T22:55:46.381385"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Aston VS Fulham Nov 1, 2026, 2:00 AM Starts in: 0d 6h 7m 52s LIVE",
+        "title": "Football England - Premier League UPCOMING Aston VS Fulham Nov 1, 2026, 2:00 AM Starts in: 0d 3h 7m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369363",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
+        "total_servers": 3,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369363",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "Fubo Sports",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369363",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "PEACOCK AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369363",
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347762"
+        "last_updated": "2026-10-31T22:55:46.381392"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Barcelona VS Deportivo Nov 1, 2026, 2:00 AM Starts in: 0d 6h 7m 52s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Barcelona VS Deportivo Nov 1, 2026, 2:00 AM Starts in: 0d 3h 7m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1793447749",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 4,
+        "total_servers": 6,
         "servers": [
             {
                 "server_name": "Download Now",
@@ -768,40 +465,35 @@
             },
             {
                 "server_name": "Fast Server",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://live2.domaincdn.cc/livecdn/channel-4.m3u8",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://pull.niues.live/live/stream-620797_lhd.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793447749",
                 "stream_type": "hls"
+            },
+            {
+                "server_name": "Fancode",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793447749",
+                "stream_type": "iframe"
             },
             {
                 "server_name": "Caze TV",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793447749",
                 "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347771"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Arsenal VS Liverpool Nov 1, 2026, 10:30 PM Starts in: 1d 2h 37m 52s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369334",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
+            },
             {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369334",
-                "stream_type": "iframe"
+                "server_name": "TapMad 🇵🇰🇧🇩",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tencent-cdn.tapmad.com/v1/01a145d823d515fc600b1e3e9683de/01a145dc15751ea540a81c2b41b754/main.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793447749",
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347782"
+        "last_updated": "2026-10-31T22:55:46.381397"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: 2d 6h 7m 52s LIVE",
+        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: 2d 3h 7m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -814,11 +506,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347792"
+        "last_updated": "2026-10-31T22:55:46.381403"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 4d 19h 37m 52s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 4d 16h 37m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -831,11 +523,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347801"
+        "last_updated": "2026-10-31T22:55:46.381409"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 5d 0h 7m 52s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 4d 21h 7m 21s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -848,6 +540,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-10-31T19:57:16.347810"
+        "last_updated": "2026-10-31T22:55:46.381414"
     }
 ]
