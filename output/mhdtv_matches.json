@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918248"
+        "last_updated": "2026-11-01T15:02:09.536161"
     },
     {
         "id": "cricket_icc_international_test",
@@ -73,7 +73,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918265"
+        "last_updated": "2026-11-01T15:02:09.536180"
     },
     {
         "id": "cricket_icc_international_test",
@@ -114,7 +114,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918272"
+        "last_updated": "2026-11-01T15:02:09.536191"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
@@ -179,17 +179,29 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918279"
+        "last_updated": "2026-11-01T15:02:09.536202"
     },
     {
         "id": "cricket_icc_womens_t20_upcomin",
         "title": "Cricket ICC Women's T20 UPCOMING Afghanistan VS Zimbabwe Oct 29, 2026, 8:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 4,
+        "total_servers": 5,
         "servers": [
             {
                 "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Fancode",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Willow AQ",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
                 "stream_type": "iframe"
@@ -205,16 +217,10 @@
                 "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://t-prod-bd.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/ProdPK_export_270.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
                 "stream_type": "hls"
-            },
-            {
-                "server_name": "WILLOW AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-womens-t20-1792986901",
-                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918286"
+        "last_updated": "2026-11-01T15:02:09.536212"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -273,7 +279,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918292"
+        "last_updated": "2026-11-01T15:02:09.536222"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -326,11 +332,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918298"
+        "last_updated": "2026-11-01T15:02:09.536231"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
-        "title": "Cricket Hong Kong Sixes 2026 UPCOMING Hong Kong Sixes VS Hong Kong Sixes Nov 1, 2026, 12:30 PM Starts in: 0d 4h 25m 32s LIVE",
+        "title": "Cricket Hong Kong Sixes 2026 UPCOMING Hong Kong Sixes VS Hong Kong Sixes Nov 1, 2026, 12:30 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/hong-kong-sixes-2026-1793517333",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -343,11 +349,46 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918313"
+        "last_updated": "2026-11-01T15:02:09.536248"
+    },
+    {
+        "id": "cricket_womens_big_bash_2026_u",
+        "title": "Cricket Women's Big Bash 2026 UPCOMING Big Bash VS Big Bash Nov 1, 2026, 2:59 PM Starts in: --:--:-- LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/womens-big-bash-2026-1793523117",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 4,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/womens-big-bash-2026-1793523117",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Fast Server",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/womens-big-bash-2026-1793523117",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Willow AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/womens-big-bash-2026-1793523117",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Sky Cricket",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/womens-big-bash-2026-1793523117",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-01T15:02:09.536259"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: 1d 17h 55m 32s LIVE",
+        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: 1d 11h 0m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -360,11 +401,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918320"
+        "last_updated": "2026-11-01T15:02:09.536269"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 4d 7h 25m 32s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 4d 0h 30m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -377,11 +418,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918327"
+        "last_updated": "2026-11-01T15:02:09.536279"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 4d 11h 55m 32s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 4d 5h 0m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -394,6 +435,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-01T08:06:44.918332"
+        "last_updated": "2026-11-01T15:02:09.536287"
     }
 ]
