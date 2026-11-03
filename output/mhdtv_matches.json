@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980630"
+        "last_updated": "2026-11-03T08:42:19.611019"
     },
     {
         "id": "cricket_icc_international_test",
@@ -73,7 +73,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980650"
+        "last_updated": "2026-11-03T08:42:19.611038"
     },
     {
         "id": "cricket_odi_tri_series_in_paki",
@@ -138,7 +138,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980662"
+        "last_updated": "2026-11-03T08:42:19.611049"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -191,7 +191,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980672"
+        "last_updated": "2026-11-03T08:42:19.611058"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
@@ -208,7 +208,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980683"
+        "last_updated": "2026-11-03T08:42:19.611070"
     },
     {
         "id": "cricket_womens_big_bash_2026_u",
@@ -243,74 +243,40 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980695"
+        "last_updated": "2026-11-03T08:42:19.611081"
     },
     {
         "id": "cricket_nepal_premier_league_2",
         "title": "Cricket Nepal Premier League 2026 UPCOMING Team A VS Team B Nov 2, 2026, 9:57 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/nepal-premier-league-2026-1793635083",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
+        "total_servers": 3,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/nepal-premier-league-2026-1793635083",
                 "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980705"
-    },
-    {
-        "id": "football_afc_champions_league_",
-        "title": "Football AFC Champions League Elite UPCOMING Al Ittihad VS Al Ain Nov 3, 2026, 12:15 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1793642061",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
+            },
             {
-                "server_name": "Download Now",
+                "server_name": "Fan code 2 AQ",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/afc-champions-league-elite-1793642061",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980722"
-    },
-    {
-        "id": "football_italy_serie_a_upcomin",
-        "title": "Football Italy - Serie A UPCOMING Atalanta VS Parma Nov 3, 2026, 1:45 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/italy-serie-a-1793641787",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793641787",
+                "page_url": "https://live.mhdtv.online/watch/nepal-premier-league-2026-1793635083",
                 "stream_type": "iframe"
             },
             {
-                "server_name": "Bein Sports 2 AQ",
+                "server_name": "FanCode AQ",
                 "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793641787",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TNT Sports 1",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/italy-serie-a-1793641787",
+                "page_url": "https://live.mhdtv.online/watch/nepal-premier-league-2026-1793635083",
                 "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980733"
+        "last_updated": "2026-11-03T08:42:19.611091"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: 0d 0h 13m 5s LIVE",
+        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 3,
@@ -335,57 +301,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980744"
-    },
-    {
-        "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Deportivo VS Osasuna Nov 3, 2026, 2:00 AM Starts in: 0d 0h 13m 5s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1793641690",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793641690",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Bein Sports 3 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793641690",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Premier Sports 1 AQ",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1793641690",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980754"
-    },
-    {
-        "id": "football_primeira_liga_upcomin",
-        "title": "Football Primeira Liga UPCOMING Benfica VS Alverca Nov 3, 2026, 2:15 AM Starts in: 0d 0h 28m 5s LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/primeira-liga-1793641909",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/primeira-liga-1793641909",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980763"
+        "last_updated": "2026-11-03T08:42:19.611108"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Sporting CP VS Shakhtar Nov 3, 2026, 11:45 PM Starts in: 0d 21h 58m 5s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Sporting CP VS Shakhtar Nov 3, 2026, 11:45 PM Starts in: 0d 15h 6m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793641466",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -398,11 +318,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980774"
+        "last_updated": "2026-11-03T08:42:19.611119"
     },
     {
         "id": "football_uefa_champions_league",
-        "title": "Football UEFA Champions League UPCOMING Stuttgart VS Galatasaray Nov 3, 2026, 11:45 PM Starts in: 0d 21h 58m 5s LIVE",
+        "title": "Football UEFA Champions League UPCOMING Stuttgart VS Galatasaray Nov 3, 2026, 11:45 PM Starts in: 0d 15h 6m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793641572",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -415,11 +335,130 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980783"
+        "last_updated": "2026-11-03T08:42:19.611129"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Inter VS Feyenoord Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793689102",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793689102",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611139"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Bodø/Glimt VS LOSC Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793689221",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793689221",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611155"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Bayern VS Atlético Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793689398",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793689398",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611166"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING PSG VS Villarreal Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793690784",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793690784",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611175"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Barcelona VS Aston Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793690928",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793690928",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611184"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Man Utd VS Roma Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691077",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691077",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611194"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING LASK VS Slovan Nov 4, 2026, 2:00 AM Starts in: 0d 17h 21m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691211",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691211",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611202"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 4, 2026, 8:00 AM Starts in: 1d 6h 13m 5s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 4, 2026, 8:00 AM Starts in: 0d 23h 21m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 8,
@@ -474,11 +513,45 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980794"
+        "last_updated": "2026-11-03T08:42:19.611212"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Liverpool VS Fenerbahçe Nov 4, 2026, 11:45 PM Starts in: 1d 15h 6m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691394",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691394",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611223"
+    },
+    {
+        "id": "football_uefa_champions_league",
+        "title": "Football UEFA Champions League UPCOMING Real Madrid VS AEK Nov 4, 2026, 11:45 PM Starts in: 1d 15h 6m 35s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691528",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/uefa-champions-league-1793691528",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-03T08:42:19.611233"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Nov 5, 2026, 9:30 AM Starts in: 2d 7h 43m 5s LIVE",
+        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Nov 5, 2026, 9:30 AM Starts in: 2d 0h 51m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 5,
@@ -515,11 +588,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980847"
+        "last_updated": "2026-11-03T08:42:19.611242"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING Afghanistan VS Zimbabwe Nov 5, 2026, 11:00 AM Starts in: 2d 9h 13m 5s LIVE",
+        "title": "Cricket ICC International Test UPCOMING Afghanistan VS Zimbabwe Nov 5, 2026, 11:00 AM Starts in: 2d 2h 21m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 5,
@@ -556,11 +629,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980861"
+        "last_updated": "2026-11-03T08:42:19.611251"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 2d 13h 43m 5s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 2d 6h 51m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -573,11 +646,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980871"
+        "last_updated": "2026-11-03T08:42:19.611260"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 2d 18h 13m 5s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 2d 11h 21m 35s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -590,6 +663,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-03T01:50:21.980880"
+        "last_updated": "2026-11-03T08:42:19.611268"
     }
 ]
