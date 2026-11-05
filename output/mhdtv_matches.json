@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675143"
+        "last_updated": "2026-11-05T08:57:16.170707"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
@@ -43,7 +43,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675164"
+        "last_updated": "2026-11-05T08:57:16.170726"
     },
     {
         "id": "cricket_womens_big_bash_2026_u",
@@ -78,7 +78,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675176"
+        "last_updated": "2026-11-05T08:57:16.170736"
     },
     {
         "id": "cricket_nepal_premier_league_2",
@@ -107,40 +107,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675187"
-    },
-    {
-        "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Newcastle VS Everton Nov 3, 2026, 2:00 AM Starts in: --:--:-- LIVE",
-        "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
-        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 3,
-        "servers": [
-            {
-                "server_name": "Download Now",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "Sky Sports HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "DAZN HD",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1793369577",
-                "stream_type": "iframe"
-            }
-        ],
-        "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675196"
+        "last_updated": "2026-11-05T08:57:16.170745"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Nov 5, 2026, 9:30 AM Starts in: 0d 7h 33m 35s LIVE",
+        "title": "Cricket ICC International Test UPCOMING Bangladesh VS West indies Nov 5, 2026, 9:30 AM Starts in: 0d 0h 34m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 5,
@@ -152,16 +123,10 @@
                 "stream_type": "iframe"
             },
             {
-                "server_name": "Fancode",
+                "server_name": "FanCode AQ",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
                 "stream_type": "iframe"
-            },
-            {
-                "server_name": "TAPMAD Mobile",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
-                "stream_type": "hls"
             },
             {
                 "server_name": "T Sports",
@@ -170,18 +135,24 @@
                 "stream_type": "iframe"
             },
             {
+                "server_name": "TAPMAD Mobile",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://seriealeague.akamaized.net/hls/live/2107107/A1@25853-tapmad/master.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
+                "stream_type": "hls"
+            },
+            {
                 "server_name": "T Sports HD",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/tracks-v1a1/mono.ts.m3u8",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-test-1792899511",
                 "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675207"
+        "last_updated": "2026-11-05T08:57:16.170753"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING Afghanistan VS Zimbabwe Nov 5, 2026, 11:00 AM Starts in: 0d 9h 3m 35s LIVE",
+        "title": "Cricket ICC International Test UPCOMING Afghanistan VS Zimbabwe Nov 5, 2026, 11:00 AM Starts in: 0d 2h 4m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 5,
@@ -193,7 +164,19 @@
                 "stream_type": "iframe"
             },
             {
-                "server_name": "Fancode",
+                "server_name": "WILLOW AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "TAPMAD HD",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://tencent-cdn.tapmad.com/v1/01a14a5b5bd11ea540a81c2b41b75b/01a14a5b94ea15fc600b1e3e9683eb/main.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
+                "stream_type": "hls"
+            },
+            {
+                "server_name": "HD Server",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
                 "stream_type": "iframe"
@@ -203,26 +186,14 @@
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
                 "stream_type": "iframe"
-            },
-            {
-                "server_name": "HD Server",
-                "m3u8_url": "",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
-                "stream_type": "iframe"
-            },
-            {
-                "server_name": "TAPMAD HD",
-                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://t-prod-bd.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/ProdPK_export_270.m3u8",
-                "page_url": "https://live.mhdtv.online/watch/icc-international-test-1793554918",
-                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675217"
+        "last_updated": "2026-11-05T08:57:16.170761"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 0d 13h 33m 35s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Pakistan Nov 5, 2026, 3:30 PM Starts in: 0d 6h 34m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987186",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -235,11 +206,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675232"
+        "last_updated": "2026-11-05T08:57:16.170769"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 0d 18h 3m 35s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Bhutan Nov 5, 2026, 8:00 PM Starts in: 0d 11h 4m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1792987328",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -252,11 +223,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675242"
+        "last_updated": "2026-11-05T08:57:16.170781"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 7, 2026, 8:00 AM Starts in: 2d 6h 3m 35s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 7, 2026, 8:00 AM Starts in: 1d 23h 4m 26s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 9,
@@ -317,6 +288,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-05T01:58:16.675252"
+        "last_updated": "2026-11-05T08:57:16.170790"
     }
 ]
