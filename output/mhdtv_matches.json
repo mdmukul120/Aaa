@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878547"
+        "last_updated": "2026-11-06T09:58:47.814924"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
@@ -43,7 +43,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878565"
+        "last_updated": "2026-11-06T09:58:47.814943"
     },
     {
         "id": "cricket_womens_big_bash_2026_u",
@@ -78,7 +78,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878573"
+        "last_updated": "2026-11-06T09:58:47.814955"
     },
     {
         "id": "cricket_nepal_premier_league_2",
@@ -113,7 +113,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878580"
+        "last_updated": "2026-11-06T09:58:47.814965"
     },
     {
         "id": "cricket_icc_international_test",
@@ -154,7 +154,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878587"
+        "last_updated": "2026-11-06T09:58:47.814975"
     },
     {
         "id": "cricket_icc_international_test",
@@ -195,7 +195,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878593"
+        "last_updated": "2026-11-06T09:58:47.814984"
     },
     {
         "id": "football_saff_championship_upc",
@@ -230,11 +230,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878599"
+        "last_updated": "2026-11-06T09:58:47.814992"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 7, 2026, 8:00 AM Starts in: 1d 5h 11m 16s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 7, 2026, 8:00 AM Starts in: 0d 22h 2m 56s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 9,
@@ -295,6 +295,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-06T02:50:26.878611"
+        "last_updated": "2026-11-06T09:58:47.815007"
     }
 ]
