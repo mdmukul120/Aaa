@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601245"
+        "last_updated": "2026-11-07T14:29:05.204816"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
@@ -43,7 +43,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601264"
+        "last_updated": "2026-11-07T14:29:05.204836"
     },
     {
         "id": "cricket_womens_big_bash_2026_u",
@@ -78,7 +78,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601273"
+        "last_updated": "2026-11-07T14:29:05.204848"
     },
     {
         "id": "cricket_nepal_premier_league_2",
@@ -113,7 +113,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601281"
+        "last_updated": "2026-11-07T14:29:05.204858"
     },
     {
         "id": "cricket_icc_international_test",
@@ -154,7 +154,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601288"
+        "last_updated": "2026-11-07T14:29:05.204868"
     },
     {
         "id": "cricket_icc_international_test",
@@ -195,7 +195,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601295"
+        "last_updated": "2026-11-07T14:29:05.204878"
     },
     {
         "id": "football_saff_championship_upc",
@@ -230,11 +230,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601302"
+        "last_updated": "2026-11-07T14:29:05.204887"
     },
     {
         "id": "cricket_icc_international_odi_",
-        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 7, 2026, 8:00 AM Starts in: 0d 0h 7m 40s LIVE",
+        "title": "Cricket ICC International ODI UPCOMING India VS New Zealand Nov 7, 2026, 8:00 AM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-odi-1791985909",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 7,
@@ -283,45 +283,115 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601315"
+        "last_updated": "2026-11-07T14:29:05.204903"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Spurs VS Leeds Nov 7, 2026, 6:30 PM Starts in: 0d 10h 37m 40s LIVE",
+        "title": "Football England - Premier League UPCOMING Spurs VS Leeds Nov 7, 2026, 6:30 PM Starts in: 0d 4h 4m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1794022040",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
+        "total_servers": 5,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/england-premier-league-1794022040",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "SKY SPORT PL AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1794022040",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "FUBo Tv AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1794022040",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "TNT 1 AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1794022040",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "HD Server",
+                "m3u8_url": "https://api.touchcric.vip/m3u8.php?id=https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
+                "page_url": "https://live.mhdtv.online/watch/england-premier-league-1794022040",
+                "stream_type": "hls"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601323"
+        "last_updated": "2026-11-07T14:29:05.204913"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Málaga VS Racing Nov 7, 2026, 7:00 PM Starts in: 0d 11h 7m 40s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Málaga VS Racing Nov 7, 2026, 7:00 PM Starts in: 0d 4h 34m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1794022654",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
-        "total_servers": 1,
+        "total_servers": 3,
         "servers": [
             {
                 "server_name": "Download Now",
                 "m3u8_url": "",
                 "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1794022654",
                 "stream_type": "iframe"
+            },
+            {
+                "server_name": "Premier Sports 1",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1794022654",
+                "stream_type": "iframe"
+            },
+            {
+                "server_name": "Bein Sports 2 AQ",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1794022654",
+                "stream_type": "iframe"
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601337"
+        "last_updated": "2026-11-07T14:29:05.204929"
+    },
+    {
+        "id": "football_germany_bundesliga_up",
+        "title": "Football Germany - Bundesliga UPCOMING Bayern München VS Mainz 05 Nov 7, 2026, 8:30 PM Starts in: 0d 6h 4m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1794055872",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1794055872",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-07T14:29:05.204942"
+    },
+    {
+        "id": "football_germany_bundesliga_up",
+        "title": "Football Germany - Bundesliga UPCOMING Dortmund VS Elversberg Nov 7, 2026, 8:30 PM Starts in: 0d 6h 4m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1794055961",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1794055961",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-07T14:29:05.204952"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Fulham VS Newcastle Nov 7, 2026, 9:00 PM Starts in: 0d 13h 7m 40s LIVE",
+        "title": "Football England - Premier League UPCOMING Fulham VS Newcastle Nov 7, 2026, 9:00 PM Starts in: 0d 6h 34m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1794022138",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -334,11 +404,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601346"
+        "last_updated": "2026-11-07T14:29:05.204962"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Arsenal VS Hull Nov 7, 2026, 9:00 PM Starts in: 0d 13h 7m 40s LIVE",
+        "title": "Football England - Premier League UPCOMING Arsenal VS Hull Nov 7, 2026, 9:00 PM Starts in: 0d 6h 34m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1794022221",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -351,11 +421,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601353"
+        "last_updated": "2026-11-07T14:29:05.204971"
     },
     {
         "id": "football_england_championship_",
-        "title": "Football England - Championship UPCOMING Charlton VS Sheffield Nov 7, 2026, 9:00 PM Starts in: 0d 13h 7m 40s LIVE",
+        "title": "Football England - Championship UPCOMING Charlton VS Sheffield Nov 7, 2026, 9:00 PM Starts in: 0d 6h 34m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-championship-1794026513",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -368,11 +438,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601360"
+        "last_updated": "2026-11-07T14:29:05.204980"
     },
     {
         "id": "football_spain_la_liga_upcomin",
-        "title": "Football Spain - La Liga UPCOMING Espanyol VS Deportivo Nov 7, 2026, 9:15 PM Starts in: 0d 13h 22m 40s LIVE",
+        "title": "Football Spain - La Liga UPCOMING Espanyol VS Deportivo Nov 7, 2026, 9:15 PM Starts in: 0d 6h 49m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1794022757",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -385,11 +455,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601367"
+        "last_updated": "2026-11-07T14:29:05.204989"
     },
     {
         "id": "football_england_premier_leagu",
-        "title": "Football England - Premier League UPCOMING Man City VS Nottm Forest Nov 7, 2026, 11:30 PM Starts in: 0d 15h 37m 40s LIVE",
+        "title": "Football England - Premier League UPCOMING Man City VS Nottm Forest Nov 7, 2026, 11:30 PM Starts in: 0d 9h 4m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/england-premier-league-1794022336",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -402,11 +472,45 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601375"
+        "last_updated": "2026-11-07T14:29:05.204998"
+    },
+    {
+        "id": "football_germany_bundesliga_up",
+        "title": "Football Germany - Bundesliga UPCOMING Stuttgart VS Werder Nov 7, 2026, 11:30 PM Starts in: 0d 9h 4m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/germany-bundesliga-1794056100",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/germany-bundesliga-1794056100",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-07T14:29:05.205007"
+    },
+    {
+        "id": "football_spain_la_liga_upcomin",
+        "title": "Football Spain - La Liga UPCOMING Real Madrid VS Valencia Nov 8, 2026, 2:00 AM Starts in: 0d 11h 34m 18s LIVE",
+        "slug_url": "https://live.mhdtv.online/watch/spain-la-liga-1794056209",
+        "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
+        "total_servers": 1,
+        "servers": [
+            {
+                "server_name": "Download Now",
+                "m3u8_url": "",
+                "page_url": "https://live.mhdtv.online/watch/spain-la-liga-1794056209",
+                "stream_type": "iframe"
+            }
+        ],
+        "status": "LIVE",
+        "last_updated": "2026-11-07T14:29:05.205017"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Pakistan VS Maldives Nov 8, 2026, 3:30 PM Starts in: 1d 7h 37m 40s LIVE",
+        "title": "Football SAFF Championship UPCOMING Pakistan VS Maldives Nov 8, 2026, 3:30 PM Starts in: 1d 1h 4m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1794018600",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -419,11 +523,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601381"
+        "last_updated": "2026-11-07T14:29:05.205026"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Sri Lanka VS Bhutan Nov 8, 2026, 8:00 PM Starts in: 1d 12h 7m 40s LIVE",
+        "title": "Football SAFF Championship UPCOMING Sri Lanka VS Bhutan Nov 8, 2026, 8:00 PM Starts in: 1d 5h 34m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1794018753",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -436,11 +540,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601388"
+        "last_updated": "2026-11-07T14:29:05.205036"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING India VS Maldives Nov 11, 2026, 3:30 PM Starts in: 4d 7h 37m 40s LIVE",
+        "title": "Football SAFF Championship UPCOMING India VS Maldives Nov 11, 2026, 3:30 PM Starts in: 4d 1h 4m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1794018883",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -453,11 +557,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601394"
+        "last_updated": "2026-11-07T14:29:05.205045"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Sri Lanka Nov 11, 2026, 8:00 PM Starts in: 4d 12h 7m 40s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Sri Lanka Nov 11, 2026, 8:00 PM Starts in: 4d 5h 34m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1794019041",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -470,6 +574,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-07T07:55:08.601400"
+        "last_updated": "2026-11-07T14:29:05.205054"
     }
 ]
