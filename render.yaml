@@ -1,0 +1,22 @@
+# Render.com — Blueprint: Dashboard → New → Blueprint → এই repo বাছুন
+services:
+  - type: web
+    name: shobdo-ai
+    runtime: python
+    plan: free                  # ৫১২ MB RAM · ১৫ মিনিট নিষ্ক্রিয় থাকলে ঘুমায়, ভিজিটে জাগে
+    region: singapore           # বাংলাদেশের কাছের রিজিয়ন
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: SUPABASE_URL
+        sync: false             # Dashboard → Environment-এ বসাতে হবে
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: LOW_MEM
+        value: "1"              # ৫১২ MB-র জন্য কম্প্যাক্ট মডেল (~৭১ MB RAM)
+      - key: AUTOLEARN
+        value: "0"
+      - key: PYTHON_VERSION
+        value: "3.12.6"

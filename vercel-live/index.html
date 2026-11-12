@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>শব্দ AI — Vercel</title>
+<style>
+:root{--bg:#060a14;--card:#0d1526;--stroke:#1e2a48;--txt:#e9efff;--muted:#8e9cbd;--a:#7c5cff;--b:#22d3ee;--ok:#34d399;--warn:#fbbf24}
+*{box-sizing:border-box}body{margin:0;font-family:"Noto Sans Bengali",system-ui,sans-serif;color:var(--txt);background:var(--bg);
+background-image:radial-gradient(800px 420px at 15% -10%,rgba(124,92,255,.2),transparent 60%),radial-gradient(700px 420px at 90% 0%,rgba(34,211,238,.13),transparent 55%);min-height:100vh;line-height:1.6}
+.w{max-width:980px;margin:0 auto;padding:22px 16px 60px}
+header{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#7c5cff,#22d3ee);display:grid;place-items:center;font-size:20px}
+h1{font-size:19px;margin:0}h1 span{display:block;font-size:12px;color:var(--muted);font-weight:400}
+.pill{margin-left:auto;font-size:12px;border:1px solid var(--stroke);background:#0b1222;padding:5px 11px;border-radius:99px;color:var(--muted)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#f87171;margin-right:6px}
+.dot.on{background:var(--ok)}
+.card{border:1px solid var(--stroke);background:var(--card);border-radius:16px;padding:16px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 10px}
+.sub{font-size:12.5px;color:var(--muted);margin:-6px 0 12px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:14px}
+.cell{border:1px solid var(--stroke);background:#0b1222;border-radius:12px;padding:9px 11px}
+.cell s{text-decoration:none;display:block;font-size:11px;color:var(--muted)}.cell b{font-size:16px;font-variant-numeric:tabular-nums}
+textarea,input{width:100%;background:#0a1226;border:1px solid var(--stroke);color:var(--txt);border-radius:11px;padding:11px 12px;font-family:inherit;font-size:15px;outline:none}
+textarea:focus,input:focus{border-color:#6b5cff;box-shadow:0 0 0 3px rgba(124,92,255,.14)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.btn{border:1px solid var(--stroke);background:#141e39;color:var(--txt);border-radius:10px;padding:8px 13px;font-family:inherit;font-size:13px;cursor:pointer}
+.btn.p{background:linear-gradient(135deg,#7c5cff,#22d3ee);border:0;font-weight:600}
+.btn:disabled{opacity:.5}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;min-height:36px}
+.chip{--w:0%;border:1px solid var(--stroke);border-radius:10px;padding:7px 11px;cursor:pointer;font-family:inherit;font-size:14px;color:var(--txt);
+background:linear-gradient(90deg,rgba(124,92,255,.4) var(--w),rgba(255,255,255,.04) var(--w))}
+.chip small{display:block;font-size:10px;color:#aebbe0}
+.out{margin-top:12px;border:1px dashed #2b3a60;border-radius:12px;padding:12px;font-size:15px;display:none;white-space:pre-wrap}
+.out .new{color:#8ef0ff}
+.ans{display:none;margin-top:12px;border:1px solid #24345a;border-radius:12px;padding:12px;background:#0a1226;font-size:14px}
+.src a{display:block;font-size:12.5px;color:#a9c1ff;text-decoration:none;margin-top:5px}
+.setup{border:1px solid #6b4f1d;background:#2a1f0e;color:#ffd89b;border-radius:14px;padding:14px;margin-bottom:14px;font-size:13px}
+.setup input{margin-top:8px;background:#1a1408;border-color:#6b4f1d;color:#ffe9c2;font-family:ui-monospace,monospace;font-size:12px}
+.log{margin-top:10px;font-family:ui-monospace,monospace;font-size:11.5px;color:#93a7d4;background:#070d1c;border:1px solid #16203a;border-radius:10px;padding:9px;max-height:120px;overflow:auto;white-space:pre-wrap}
+footer{color:#5f6f96;font-size:12px;border-top:1px solid #131c34;padding-top:14px;margin-top:20px}
+a{color:#a9c1ff}
+@media(max-width:640px){.grid4{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+  <div class="logo">🗣️</div>
+  <h1>শব্দ AI<span>ইন্টারনেট-শিক্ষিত বাংলা + English ভাষা-মডেল</span></h1>
+  <span class="pill"><span class="dot" id="dot"></span><span id="st">সংযোগ পরীক্ষা হচ্ছে…</span></span>
+</header>
+
+<div class="setup" id="setup" style="display:none">
+  <b>ব্যাকএন্ড সংযুক্ত করুন</b> — মডেল-সার্ভারটা Vercel-এ চলতে পারে না, তাই আলাদা হোস্টে (Hugging Face Spaces / Fly.io) চালিয়ে তার URL এখানে বসান।
+  <input id="api" placeholder="https://your-backend.hf.space">
+  <div class="row"><button class="btn p" id="save">সংযোগ করো</button><span style="font-size:12px;opacity:.8">বিস্তারিত: <code>deploy/DEPLOY.md</code></span></div>
+</div>
+
+<div class="grid4">
+  <div class="cell"><s>শেখা টোকেন</s><b id="t">—</b></div>
+  <div class="cell"><s>শব্দভান্ডার</s><b id="v">—</b></div>
+  <div class="cell"><s>ডকুমেন্ট</s><b id="d">—</b></div>
+  <div class="cell"><s>DB সাইজ</s><b id="db">—</b></div>
+</div>
+
+<div class="card">
+  <h2>⚡ পরবর্তী শব্দ অনুমান</h2>
+  <p class="sub">লিখতে থাকুন — পরের শব্দের সম্ভাবনা দেখাবে। Tab চাপলে সেরা শব্দ বসবে।</p>
+  <textarea id="q" rows="2">বাংলা ভাষা </textarea>
+  <div class="chips" id="chips"></div>
+  <div class="row">
+    <button class="btn p" id="gen">✍️ লেখা চালিয়ে যাও</button>
+    <button class="btn" id="learngen">🎲 মিশ্র ডেটা শেখাও</button>
+    <span style="align-self:center;font-size:12px;color:var(--muted)">সৃজনশীলতা <input type="range" id="temp" min="0.4" max="1.4" step="0.05" value=".85" style="width:110px;vertical-align:middle"></span>
+  </div>
+  <div class="out" id="out"></div>
+</div>
+
+<div class="card">
+  <h2>🔎 জিজ্ঞাসা</h2>
+  <p class="sub">প্রশ্ন করলে Supabase-এ খোঁজে, না পেলে ইন্টারনেট থেকে এনে গুছিয়ে উত্তর দেয় ও নিজেকে শেখায়।</p>
+  <div class="row" style="margin-top:0">
+    <input id="ask" placeholder="যেমন: পদ্মা সেতু কবে উদ্বোধন হয়?">
+    <button class="btn p" id="askb">জিজ্ঞাসা</button>
+  </div>
+  <div class="ans" id="ans"><div id="anstxt"></div><div class="src" id="srcs"></div></div>
+</div>
+
+<div class="card">
+  <h2>🌐 ইন্টারনেট থেকে শেখাও</h2>
+  <div class="row" style="margin-top:0">
+    <button class="btn" data-m="wiki_bn">🇧🇩 বাংলা উইকি</button>
+    <button class="btn" data-m="wiki_en">🌍 English Wiki</button>
+    <button class="btn" data-m="news_bn">📰 বাংলা সংবাদ</button>
+    <button class="btn" data-m="auto">🎲 মিশ্র</button>
+  </div>
+  <div class="log" id="log" style="display:none"></div>
+</div>
+
+<footer>
+  UI: <b>Vercel</b> · ডেটা: <b>Supabase</b> · মডেল সার্ভার: আলাদা হোস্ট · কোড: <b>GitHub</b><br>
+  ফুল ড্যাশবোর্ড (তালিকা, প্রগ্রেস, সার্চ) চালু আছে মডেল-সার্ভারের নিজের ঠিকানায়।
+</footer>
+</div>
+<script>
+const $=s=>document.querySelector(s), fmt=n=>(n||n===0)?Number(n).toLocaleString("en-US"):"—";
+let BASE=(localStorage.getItem("shobdo_api")||window.SHOBDO_API_BASE||"").replace(/\/+$/,"");
+const u=p=>BASE+p;
+async function api(p,o={}){const r=await fetch(u(p),{headers:{"content-type":"application/json"},...o});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||r.status);return j}
+function conn(ok,msg){$("#dot").className="dot"+(ok?" on":"");$("#st").textContent=msg;$("#setup").style.display=ok?"none":"block";$("#api").value=BASE}
+
+async function stats(){try{const s=await api("/api/stats");
+$("#t").textContent=fmt(s.model.tokens);$("#v").textContent=fmt(s.model.vocab);
+$("#d").textContent=fmt(s.db.doc_count);$("#db").textContent=s.db.db_total||"—";
+conn(true,"সংযুক্ত · "+fmt(s.model.tokens)+" টোকেন")}catch(e){conn(false,"ব্যাকএন্ড অফলাইন")}}
+
+let preds=[];
+async function predict(){const text=$("#q").value;
+ if(!text.trim()){$("#chips").innerHTML="";return}
+ try{const r=await api("/api/predict",{method:"POST",body:JSON.stringify({text})});preds=r.suggestions||[];
+ const mx=Math.max(...preds.map(p=>p.p),.0001);
+ $("#chips").innerHTML=preds.map((p,i)=>`<button class="chip" data-w="${p.word}" style="--w:${(p.p/mx*100).toFixed(1)}%">${p.word}<small>${(p.p*100).toFixed(1)}%</small></button>`).join("");
+ document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("#q").value=$("#q").value.replace(/\s+$/,"")+" "+c.dataset.w+" ";predict()});
+ }catch(e){$("#chips").innerHTML='<span style="font-size:12px;color:#f87171">ব্যাকএন্ড সংযুক্ত নয়</span>'}}
+$("#q").addEventListener("input",()=>setTimeout(predict,180));
+$("#q").addEventListener("keydown",e=>{if(e.key==="Tab"&&preds[0]){e.preventDefault();$("#q").value=$("#q").value.replace(/\s+$/,"")+" "+preds[0].word+" ";predict()}});
+
+$("#gen").onclick=async()=>{const b=$("#gen");b.disabled=true;b.textContent="লিখছে…";
+ try{const r=await api("/api/generate",{method:"POST",body:JSON.stringify({text:$("#q").value,temperature:+$("#temp").value})});
+ const o=$("#out");o.style.display="block";o.innerHTML=`<span style="color:#7c8bb0">${$("#q").value} </span><span class="new" id="nw"></span>`;
+ const txt=r.continuation||"(কিছু পাওয়া যায়নি)";let i=0;const t=setInterval(()=>{i+=2;$("#nw").textContent=txt.slice(0,i);if(i>=txt.length)clearInterval(t)},20);
+ }catch(e){alert("ব্যাকএন্ড সংযুক্ত নয়")}b.disabled=false;b.textContent="✍️ লেখা চালিয়ে যাও"};
+
+$("#askb").onclick=async()=>{const q=$("#ask").value.trim();if(!q)return;const b=$("#askb");b.disabled=true;b.textContent="খুঁজছি…";
+ try{const r=await api("/api/ask",{method:"POST",body:JSON.stringify({q})});
+ $("#ans").style.display="block";$("#anstxt").textContent=r.summary||"উত্তর পাওয়া যায়নি";
+ $("#srcs").innerHTML=(r.sources||[]).map(s=>`<a href="${s.url}" target="_blank" rel="noopener">🔗 ${s.title}</a>`).join("");
+ stats();predict()}catch(e){alert("ব্যাকএন্ড সংযুক্ত নয়")}
+ b.disabled=false;b.textContent="জিজ্ঞাসা"};
+
+document.querySelectorAll("[data-m]").forEach(b=>b.onclick=async()=>{
+ $("#log").style.display="block";$("#log").textContent="শুরু হচ্ছে…";
+ try{await api("/api/learn",{method:"POST",body:JSON.stringify({mode:b.dataset.m,count:12})});
+ const t=setInterval(async()=>{try{const s=await api("/api/learn/status");
+ $("#log").textContent=(s.log||[]).slice(-6).join("\n");
+ if(!s.running){clearInterval(t);stats();predict()}}catch(e){}},1500)}catch(e){$("#log").textContent="ব্যাকএন্ড সংযুক্ত নয়"}});
+
+$("#save").onclick=async()=>{const v=$("#api").value.trim();if(!/^https?:\/\//.test(v))return alert("http:// দিয়ে শুরু হওয়া URL দিন");
+ BASE=v.replace(/\/+$/,"");localStorage.setItem("shobdo_api",BASE);
+ try{const r=await fetch(u("/healthz"));const j=await r.json();if(!j.ok)throw 0;conn(true,"সংযুক্ত");stats();predict()}catch(e){alert("সংযোগ হয়নি — URL/CORS দেখুন")}};
+
+$("#api").value=BASE;stats();predict();setInterval(stats,30000);
+</script>
+</body>
+</html>

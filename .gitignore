@@ -1,0 +1,14 @@
+# সিক্রেট — কখনো গিটে নয়
+.env
+.env.local
+
+# বড় জেনারেট করা ফাইল (ডেটা Supabase-এ থাকে, boot-এ নিজেই রিস্টোর হয়)
+data/*.pkl.gz
+data/corpus.jsonl
+data/*.tmp
+
+__pycache__/
+*.pyc
+.venv/
+deploy/*.zip
+*.zip

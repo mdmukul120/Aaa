@@ -1,0 +1,10 @@
+# সিক্রেট ও অপ্রয়োজনীয় ফাইল ইমেজে যাবে না
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.pyo
+.git/
+data/*.tmp
+.venv/
