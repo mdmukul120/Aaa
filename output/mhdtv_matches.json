@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639643"
+        "last_updated": "2026-11-12T00:18:06.617786"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
@@ -43,7 +43,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639665"
+        "last_updated": "2026-11-12T00:18:06.617804"
     },
     {
         "id": "cricket_womens_big_bash_2026_u",
@@ -78,7 +78,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639677"
+        "last_updated": "2026-11-12T00:18:06.617830"
     },
     {
         "id": "cricket_nepal_premier_league_2",
@@ -113,7 +113,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639688"
+        "last_updated": "2026-11-12T00:18:06.617839"
     },
     {
         "id": "cricket_icc_international_test",
@@ -154,7 +154,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639699"
+        "last_updated": "2026-11-12T00:18:06.617846"
     },
     {
         "id": "cricket_icc_international_test",
@@ -195,7 +195,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639709"
+        "last_updated": "2026-11-12T00:18:06.617852"
     },
     {
         "id": "football_saff_championship_upc",
@@ -230,7 +230,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639718"
+        "last_updated": "2026-11-12T00:18:06.617859"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -283,7 +283,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639733"
+        "last_updated": "2026-11-12T00:18:06.617871"
     },
     {
         "id": "cricket_abu_dhabi_t10_upcoming",
@@ -318,7 +318,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639744"
+        "last_updated": "2026-11-12T00:18:06.617877"
     },
     {
         "id": "football_saff_championship_upc",
@@ -347,7 +347,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639754"
+        "last_updated": "2026-11-12T00:18:06.617884"
     },
     {
         "id": "football_saff_championship_upc",
@@ -364,7 +364,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639765"
+        "last_updated": "2026-11-12T00:18:06.617890"
     },
     {
         "id": "cricket_icc_international_test",
@@ -393,7 +393,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639774"
+        "last_updated": "2026-11-12T00:18:06.617896"
     },
     {
         "id": "football_acc_mens_u19_asia_cup",
@@ -410,7 +410,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639785"
+        "last_updated": "2026-11-12T00:18:06.617902"
     },
     {
         "id": "football_saff_championship_upc",
@@ -427,11 +427,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639794"
+        "last_updated": "2026-11-12T00:18:06.617908"
     },
     {
         "id": "football_saff_championship_upc",
-        "title": "Football SAFF Championship UPCOMING Bangladesh VS Sri Lanka Nov 11, 2026, 8:00 PM Starts in: 0d 2h 1m 15s LIVE",
+        "title": "Football SAFF Championship UPCOMING Bangladesh VS Sri Lanka Nov 11, 2026, 8:00 PM Starts in: --:--:-- LIVE",
         "slug_url": "https://live.mhdtv.online/watch/saff-championship-1794019041",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -444,11 +444,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639804"
+        "last_updated": "2026-11-12T00:18:06.617914"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING England VS Australia Nov 13, 2026, 9:30 AM Starts in: 1d 15h 31m 15s LIVE",
+        "title": "Cricket ICC International Test UPCOMING England VS Australia Nov 13, 2026, 9:30 AM Starts in: 1d 9h 14m 36s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1794069235",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -461,6 +461,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-11T18:01:27.639813"
+        "last_updated": "2026-11-12T00:18:06.617920"
     }
 ]
