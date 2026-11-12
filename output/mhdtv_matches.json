@@ -26,7 +26,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780331"
+        "last_updated": "2026-11-12T16:05:24.976938"
     },
     {
         "id": "cricket_hong_kong_sixes_2026_u",
@@ -43,7 +43,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780350"
+        "last_updated": "2026-11-12T16:05:24.976958"
     },
     {
         "id": "cricket_womens_big_bash_2026_u",
@@ -78,7 +78,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780360"
+        "last_updated": "2026-11-12T16:05:24.976969"
     },
     {
         "id": "cricket_nepal_premier_league_2",
@@ -113,7 +113,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780368"
+        "last_updated": "2026-11-12T16:05:24.976979"
     },
     {
         "id": "cricket_icc_international_test",
@@ -154,7 +154,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780376"
+        "last_updated": "2026-11-12T16:05:24.976988"
     },
     {
         "id": "cricket_icc_international_test",
@@ -195,7 +195,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780384"
+        "last_updated": "2026-11-12T16:05:24.976997"
     },
     {
         "id": "football_saff_championship_upc",
@@ -230,7 +230,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780392"
+        "last_updated": "2026-11-12T16:05:24.977006"
     },
     {
         "id": "cricket_icc_international_odi_",
@@ -283,7 +283,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780405"
+        "last_updated": "2026-11-12T16:05:24.977020"
     },
     {
         "id": "cricket_abu_dhabi_t10_upcoming",
@@ -318,7 +318,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780413"
+        "last_updated": "2026-11-12T16:05:24.977029"
     },
     {
         "id": "football_saff_championship_upc",
@@ -347,7 +347,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780420"
+        "last_updated": "2026-11-12T16:05:24.977038"
     },
     {
         "id": "football_saff_championship_upc",
@@ -364,7 +364,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780427"
+        "last_updated": "2026-11-12T16:05:24.977046"
     },
     {
         "id": "cricket_icc_international_test",
@@ -393,7 +393,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780434"
+        "last_updated": "2026-11-12T16:05:24.977054"
     },
     {
         "id": "football_acc_mens_u19_asia_cup",
@@ -410,7 +410,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780442"
+        "last_updated": "2026-11-12T16:05:24.977063"
     },
     {
         "id": "football_saff_championship_upc",
@@ -427,7 +427,7 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780449"
+        "last_updated": "2026-11-12T16:05:24.977071"
     },
     {
         "id": "football_saff_championship_upc",
@@ -444,11 +444,11 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780456"
+        "last_updated": "2026-11-12T16:05:24.977079"
     },
     {
         "id": "cricket_icc_international_test",
-        "title": "Cricket ICC International Test UPCOMING England VS Australia Nov 13, 2026, 9:30 AM Starts in: 1d 2h 11m 29s LIVE",
+        "title": "Cricket ICC International Test UPCOMING England VS Australia Nov 13, 2026, 9:30 AM Starts in: 0d 17h 27m 18s LIVE",
         "slug_url": "https://live.mhdtv.online/watch/icc-international-test-1794069235",
         "image_url": "https://live.mhdtv.online/storage/images/events/bPH2WRzw1yr9ngimw1TZfxvcy1Hi4p91CrZ3GGRD.png",
         "total_servers": 1,
@@ -461,6 +461,6 @@
             }
         ],
         "status": "LIVE",
-        "last_updated": "2026-11-12T07:21:13.780464"
+        "last_updated": "2026-11-12T16:05:24.977088"
     }
 ]
