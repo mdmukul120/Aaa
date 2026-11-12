@@ -34,18 +34,27 @@ Static-এ Python সার্ভার চলে না — তাই ব্য
 https://render.com → **Sign up with GitHub**
 
 1. **New +** → **Blueprint** → repo **shobdo-ai** বাছুন → `render.yaml` নিজেই সব সেট করবে
-   *(`LOW_MEM=1` দেওয়া আছে — মডেল ~৭১ MB র‍্যামে চলে, ৫০০ MB-র মধ্যে আরামসে)*
+   *(`LOW_MEM=1` দেওয়া আছে — নিউরাল + n-gram মডেল মিলিয়ে ৫১২ MB-র অনেক নিচে থাকে)*
 2. **Environment**-এ বসান:
    ```
    SUPABASE_URL         = https://yknfbloljepwrqthcvpd.supabase.co
    SUPABASE_SERVICE_KEY = <service_role key>
+   ADMIN_TOKEN          = <লম্বা এলোমেলো গোপন শব্দ>   # "শেখাও" ও "অটো-লার্ন" বোতামের পাসওয়ার্ড
    ```
+   `ADMIN_TOKEN` না দিলে যে-কেউ আপনার সার্ভারকে দিয়ে ইন্টারনেট থেকে শেখাতে/ডেটাবেস ভরাতে পারবে।
+   (Blueprint দিয়ে বানালে Render নিজেই একটা মান বানিয়ে দেয় — Environment ট্যাবে দেখে নিন।)
+   UI-তে প্রথমবার "শেখাও" চাপলে টোকেন চাইবে; একবার দিলে ব্রাউজার মনে রাখে।
 3. **Deploy** → ১–২ মিনিটে: `https://shobdo-ai.onrender.com`
 4. `.../healthz` খুলে `{"ok":true,...}` দেখলেই ব্যাকএন্ড চালু ✅
 5. Vercel UI-র হলুদ বার-এ এই URL বসিয়ে **সংযোগ করো**
 
 **ফ্রি প্ল্যান:** ১৫ মিনিট নিষ্ক্রিয় থাকলে ঘুমায়; পরের ভিজিটে ১০–৩০ সেকেন্ডে জাগে
-(মডেল Supabase Storage থেকে ১.২ MB নামে — ট্রেইনিং লাগে না)।
+(n-gram মডেল Supabase Storage থেকে নামে; নিউরাল ওজন রিপোর `models/` ফোল্ডারেই আছে)।
+শেখা n-gram মডেল ১০ মিনিট পরপর Storage-এ ওঠে — ঘুমিয়ে পড়লেও শেখা হারায় না।
+
+**নিউরাল মডেল নিজে নিজে আপডেট:** GitHub repo → Settings → Secrets and variables → Actions-এ
+`SUPABASE_URL` ও `SUPABASE_SERVICE_KEY` বসান। তারপর *Actions → Train neural model* প্রতি সপ্তাহে
+Supabase-এর সব লেখা দিয়ে মডেল ফাইন-টিউন করে Storage-এ তোলে; সার্ভার ৩০ মিনিটের মধ্যে নিজেই নেয়।
 
 ## ৩. Koyeb — ফ্রি, Dockerfile দিয়ে
 

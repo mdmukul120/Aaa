@@ -4,6 +4,8 @@
 
 # বড় জেনারেট করা ফাইল (ডেটা Supabase-এ থাকে, boot-এ নিজেই রিস্টোর হয়)
 data/*.pkl.gz
+data/*.npz
+data/shobdo-neural.json
 data/corpus.jsonl
 data/*.tmp
 

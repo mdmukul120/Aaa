@@ -92,7 +92,7 @@ def insert_documents(docs: list[dict]) -> set[str] | None:
                 "title": d.get("title", ""), "lang": d.get("lang", "en"),
                 "content": d["content"],
                 "char_count": len(d["content"]),
-                "token_count": d.get("token_count", 0),
+                "token_count": d.get("token_count") or len(d["content"].split()),
             } for d in batch]
             try:
                 res = _req("POST", "documents", params={"on_conflict": "url"}, body=rows,
@@ -115,7 +115,7 @@ def insert_documents(docs: list[dict]) -> set[str] | None:
     return None if (failed or not configured()) else new
 
 
-def download_corpus(page_size: int = 400, max_docs: int = 30000) -> int:
+def download_corpus(page_size: int = 400, max_docs: int = 60000) -> int:
     """Supabase থেকে সব ডকুমেন্ট এনে data/corpus.jsonl বানায়/বাড়ায়।
 
     হোস্টের ফাইল সিস্টেম অস্থায়ী হলেও (Render/Fly/HF Spaces) কিছু হারায় না —
@@ -186,17 +186,18 @@ def ensure_bucket(name: str = BUCKET) -> bool:
 
 
 def upload_model(local_path, name: str = "shobdo-model.pkl.gz") -> bool:
-    """মডেল ফাইল Supabase Storage-এ রাখে (গিটে কমিট না করেই সব হোস্টে পাওয়া যাবে)।"""
+    """ফাইল Supabase Storage-এ রাখে (গিটে কমিট না করেই সব হোস্টে পাওয়া যাবে)।"""
     if not configured() or not local_path.exists():
         return False
     if not ensure_bucket():
         return False
+    ctype = "application/json" if name.endswith(".json") else "application/octet-stream"
     try:
         with local_path.open("rb") as f:
             r = requests.post(_storage(f"object/{BUCKET}/{name}"),
-                              headers={**_headers(), "content-type": "application/gzip",
+                              headers={**_headers(), "content-type": ctype,
                                        "x-upsert": "true", "cache-control": "max-age=300"},
-                              data=f, timeout=180)
+                              data=f, timeout=300)
         ok = r.status_code in (200, 201)
         print(f"[storage] upload {name}: {'OK' if ok else r.status_code}")
         return ok
@@ -205,13 +206,13 @@ def upload_model(local_path, name: str = "shobdo-model.pkl.gz") -> bool:
         return False
 
 
-def download_model(local_path, name: str = "shobdo-model.pkl.gz") -> bool:
-    """হোস্ট চালু হওয়ার সময় Storage থেকে মডেল নামায় (কয়েক সেকেন্ডে)।"""
+def download_model(local_path, name: str = "shobdo-model.pkl.gz", min_size: int = 1000) -> bool:
+    """হোস্ট চালু হওয়ার সময় Storage থেকে ফাইল নামায় (কয়েক সেকেন্ডে)।"""
     if not configured():
         return False
     try:
         r = requests.get(_storage(f"object/{BUCKET}/{name}"), headers=_headers(), timeout=180)
-        if r.status_code != 200 or len(r.content) < 1000:
+        if r.status_code != 200 or len(r.content) < min_size:
             return False
         local_path.parent.mkdir(parents=True, exist_ok=True)
         tmp = local_path.with_suffix(local_path.suffix + ".tmp")
@@ -222,6 +223,20 @@ def download_model(local_path, name: str = "shobdo-model.pkl.gz") -> bool:
     except Exception as e:  # noqa: BLE001
         print("[storage] download failed:", e)
         return False
+
+
+def fetch_json(name: str) -> dict | None:
+    """Storage-এর ছোট JSON ফাইল (যেমন নিউরাল মডেলের মেটা) পড়ে; না থাকলে None।"""
+    if not configured():
+        return None
+    try:
+        r = requests.get(_storage(f"object/{BUCKET}/{name}"), headers=_headers(), timeout=20)
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        return data if isinstance(data, dict) else None
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def recent_documents(limit: int = 20) -> list[dict]:

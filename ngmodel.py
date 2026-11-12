@@ -7,7 +7,8 @@ P(w | a,b) = λ3·P3(a,b,w) + λ2·P2(b,w) + λs·Ps(a,w) + λ1·P1(w)
   Ps = c(a,w)/c(a)       skip-gram — আগের দুই শব্দের প্রথমটি (মাঝের শব্দ বাদ)
   P1 = c(w)/N            unigram — সাধারণ জনপ্রিয়তা
 
-বাংলা ও ইংরেজি — একই টোকেনাইজার। মডেল ফাইল gzip করা JSON, তাই ছোট ও বহনযোগ্য।
+বাংলা ও ইংরেজি — একই টোকেনাইজার। মডেল ফাইল gzip করা pickle।
+নিউরাল মডেল (neural.py) একই টোকেনাইজার ব্যবহার করে — তাই দুই মডেলের "শব্দ" একই।
 """
 from __future__ import annotations
 
@@ -17,27 +18,49 @@ import math
 import pickle
 import random
 import re
+import unicodedata
 from collections import Counter
 
-from config import MAX_BIGRAM_CTX, MAX_SKIP_CTX, MAX_TRIGRAM_CTX, MODEL_PATH
+from config import LOW_MEM, MAX_BIGRAM_CTX, MAX_SKIP_CTX, MAX_TRIGRAM_CTX, MODEL_PATH
 
 SEP = "\u0001"
 PUNCT = set("।,.;:!?…'\"“”‘’()[]{}<>—–-/%&*+=|\\@#$^_~`")
+SENT_END = ("।", ".", "!", "?")
 
-# ইংরেজি শব্দ | বাংলা শব্দ | সংখ্যা | একক যুক্তি-চিহ্ন
-TOKEN_RE = re.compile(r"[A-Za-z]+(?:['’][A-Za-z]+)*|[\u0980-\u09FF]+|\d+(?:[.,]\d+)*|[^\s]")
-WORD_RE = re.compile(r"^([A-Za-z]+(?:['’][A-Za-z]+)*|[\u0980-\u09FF]+|\d+(?:[.,]\d+)*)$")
+# ইংরেজি শব্দ | বাংলা শব্দ (ভেতরের ZWJ/ZWNJ সহ — যেমন "র‍্যাব") | সংখ্যা | একক চিহ্ন
+_BN = r"[\u0980-\u09FF]+(?:[\u200c\u200d]+[\u0980-\u09FF]+)*"
+_EN = r"[A-Za-z]+(?:'[A-Za-z]+)*"
+_NUM = r"\d+(?:[.,]\d+)*"
+TOKEN_RE = re.compile(rf"{_EN}|{_BN}|{_NUM}|[^\s]")
+WORD_RE = re.compile(rf"^(?:{_EN}|{_BN}|{_NUM})$")
 SENT_SPLIT = re.compile(r"(?<=[.!?।])\s+|\n+")
+
+# অদৃশ্য অক্ষর যেগুলো শব্দের অংশ নয় (ZWSP, BOM, soft hyphen, word joiner, LRM/RLM)
+_INVISIBLE = re.compile("[\u200b\u200e\u200f\u2060\ufeff\u00ad]")
+# শব্দের ভেতরে নয় এমন জায়গার ZWJ/ZWNJ (শুরুতে, শেষে, বা অ-বাংলা অক্ষরের পাশে)
+_STRAY_ZW = re.compile(r"(?<![\u0980-\u09FF])[\u200c\u200d]+|[\u200c\u200d]+(?![\u0980-\u09FF])")
+
+
+# টোকেনাইজার বদলালে এই সংখ্যা বাড়ান — পুরোনো সেভ করা মডেল তখন নিজে থেকেই নতুন করে গড়া হয়
+TOK_VERSION = 2
+
+
+def normalize(text: str) -> str:
+    """ইউনিকোড এক রূপে আনা — একই শব্দ যেন দুই রকম বানানে আলাদা না গোনা হয়।
+
+    NFC বাংলার য়/ড়/ঢ়-কে সবসময় (য/ড/ঢ + ়) রূপে আনে, ো/ৌ-কে এক অক্ষরে জোড়ে।
+    """
+    text = unicodedata.normalize("NFC", text)
+    text = text.replace("\u00a0", " ").replace("’", "'").replace("‘", "'")
+    text = _INVISIBLE.sub("", text)
+    return _STRAY_ZW.sub("", text)
 
 
 def tokenize(text: str) -> list[str]:
     out: list[str] = []
-    for m in TOKEN_RE.finditer(text.replace("\u00a0", " ")):
+    for m in TOKEN_RE.finditer(normalize(text)):
         t = m.group(0)
-        if WORD_RE.match(t):
-            out.append(t.lower() if t.isascii() else t.replace("’", "'"))
-        else:
-            out.append(t)
+        out.append(t.lower() if "a" <= t[0].lower() <= "z" else t)
     return out
 
 
@@ -55,6 +78,35 @@ def detokenize(tokens: list[str]) -> str:
     return out
 
 
+def rank_words(scores: dict[str, float], k: int = 6) -> list[dict]:
+    """স্কোর থেকে সেরা k পরামর্শ: শব্দ আগে, যুক্তিচিহ্ন সর্বোচ্চ একটি।"""
+    if not scores:
+        return []
+    total = sum(scores.values()) or 1.0
+    top = sorted(scores.items(), key=lambda kv: -kv[1])[:k + 6]
+    words = [(w, s) for w, s in top if WORD_RE.match(w)]
+    puncts = [(w, s) for w, s in top if not WORD_RE.match(w)]
+    top = words[:k - 1] + puncts[:1]
+    top += words[k - 1:] + puncts[1:]            # জায়গা ফাঁকা থাকলে বাকিগুলো দিয়ে ভরা
+    top = sorted(top[:k], key=lambda kv: -kv[1])
+    return [{"word": w, "p": round(s / total, 4)} for w, s in top]
+
+
+class _SafeUnpickler(pickle.Unpickler):
+    """মডেল ফাইলে শুধু সাধারণ dict/Counter থাকে — অন্য কোনো ক্লাস লোড করা হয় না,
+    তাই বদলে দেওয়া/নষ্ট ফাইল দিয়ে সার্ভারে কোড চালানো যায় না।"""
+
+    _ALLOWED = {("collections", "Counter"), ("collections", "defaultdict"),
+                ("collections", "OrderedDict"), ("builtins", "dict"), ("builtins", "list"),
+                ("builtins", "set"), ("builtins", "tuple"), ("builtins", "int"),
+                ("builtins", "float"), ("builtins", "str")}
+
+    def find_class(self, module: str, name: str):
+        if (module, name) in self._ALLOWED:
+            return super().find_class(module, name)
+        raise pickle.UnpicklingError(f"অনুমোদিত নয়: {module}.{name}")
+
+
 class NGramModel:
     def __init__(self) -> None:
         self.uni: Counter = Counter()
@@ -66,6 +118,7 @@ class NGramModel:
         self.skip_tot: dict[str, int] = {}
         self.tokens = 0
         self.sentences = 0
+        self.use_skip = not LOW_MEM   # কম-মেমরি হোস্টে skip-gram রাখা হয় না
 
     # ------------------------------------------------------------------ #
     def update(self, text: str) -> int:
@@ -82,7 +135,8 @@ class NGramModel:
                 self.uni[w] += 1
                 self._add(self.bi, self.bi_tot, prev1, w)
                 self._add(self.tri, self.tri_tot, prev2 + SEP + prev1, w)
-                self._add(self.skip, self.skip_tot, prev2, w)
+                if self.use_skip:
+                    self._add(self.skip, self.skip_tot, prev2, w)
                 prev2, prev1 = prev1, w
         return n
 
@@ -109,24 +163,33 @@ class NGramModel:
             self.skip_tot = dict(keep)
 
     # ------------------------------------------------------------------ #
+    def size(self) -> int:
+        """মেমরির মোটামুটি মাপ: মোট (কনটেক্সট → শব্দ) এন্ট্রি।"""
+        return (sum(len(v) for v in self.bi.values())
+                + sum(len(v) for v in self.tri.values())
+                + sum(len(v) for v in self.skip.values()))
+
     def compact(self, max_vocab: int = 30000, min_ctx: int = 2,
                 max_per_ctx: int = 6, keep_skip: bool = False) -> None:
-        """কম-মেমরি হোস্টের জন্য মডেল ছোট করা (৫১২ MB র্যামে আরামে চলে)।"""
+        """কম-মেমরি হোস্টের জন্য মডেল ছোট করা।
+
+        `min_ctx`-এর কম বার দেখা জোড়া বাদ যায়। কনটেক্সটের আসল মোট গণনা (tot)
+        অপরিবর্তিত থাকে — তাই বাকি শব্দগুলোর সম্ভাবনা বিকৃত হয় না, আর বারবার
+        compact করলেও সংখ্যা ক্ষয়ে যায় না।
+        """
         keep_words = {w for w, _ in self.uni.most_common(max_vocab)} | {"</s>", "<s>"}
 
         def _cut(store, tot, per_ctx):
             out, otot = {}, {}
-            for k, v in tot.items():
-                if v < min_ctx:
-                    continue
-                items = [(w, c) for w, c in store.get(k, {}).items()
-                         if w in keep_words and c >= min_ctx]
+            for k, d in store.items():
+                items = [(w, c) for w, c in d.items() if c >= min_ctx and w in keep_words]
                 if not items:
                     continue
-                items.sort(key=lambda kv: -kv[1])
-                items = items[:per_ctx]
+                if len(items) > per_ctx:
+                    items.sort(key=lambda kv: -kv[1])
+                    items = items[:per_ctx]
                 out[k] = dict(items)
-                otot[k] = sum(c for _, c in items)
+                otot[k] = tot.get(k, 0) or sum(c for _, c in items)
             return out, otot
 
         self.uni = Counter({w: c for w, c in self.uni.items() if w in keep_words})
@@ -136,16 +199,44 @@ class NGramModel:
             self.skip, self.skip_tot = _cut(self.skip, self.skip_tot, 4)
         else:
             self.skip, self.skip_tot = {}, {}
-        self.tokens = max(self.tokens, sum(self.uni.values()))
+
+    def fit_budget(self, max_entries: int, max_vocab: int = 30000) -> bool:
+        """মডেল `max_entries`-এর বেশি বড় হলে তবেই ছোট করে (কম-মেমরি হোস্ট)।
+
+        আগে প্রতিবার শেখার পরই compact() চলত — তাতে একবার দেখা নতুন সব শব্দজোড়া
+        সঙ্গে সঙ্গে মুছে যেত, অর্থাৎ মডেল কিছুই শিখত না। এখন নতুন জোড়া জমা থাকে
+        (পরে আবার দেখা গেলে গণনা বাড়ে); শুধু বাজেট ছাড়ালে বিরল জোড়া ছাঁটা হয়।
+        """
+        if self.size() <= max_entries:
+            if len(self.uni) > max_vocab * 2:
+                keep = dict(self.uni.most_common(max_vocab))
+                keep.setdefault("</s>", self.uni.get("</s>", 0))
+                self.uni = Counter(keep)
+            return False
+        self.skip, self.skip_tot = {}, {}
+        for min_ctx, per_ctx in ((2, 8), (2, 6), (3, 6), (4, 5), (6, 4)):
+            self.compact(max_vocab=max_vocab, min_ctx=min_ctx, max_per_ctx=per_ctx)
+            if self.size() <= max_entries * 0.8:
+                break
+        return True
 
     # ------------------------------------------------------------------ #
+    @staticmethod
+    def context(toks: list[str]) -> tuple[str, str]:
+        """শেষ দুই শব্দ; বাক্য শেষ হয়ে থাকলে নতুন বাক্যের শুরু (<s>, <s>)।"""
+        if not toks or toks[-1] in SENT_END:
+            return "<s>", "<s>"
+        b = toks[-1]
+        a = toks[-2] if len(toks) >= 2 and toks[-2] not in SENT_END else "<s>"
+        return a, b
+
     def _score(self, a: str, b: str) -> dict[str, float]:
         tri = self.tri.get(a + SEP + b) or {}
         bi = self.bi.get(b) or {}
         sk = self.skip.get(a) or {}
         t_tot = self.tri_tot.get(a + SEP + b, 0)
         b_tot = self.bi_tot.get(b, 0)
-        s_tot = self.skip_tot.get(a, 0)
+        s_tot = self.skip_tot.get(a, 0) if sk else 0
 
         lam3 = t_tot / (t_tot + 1.4) if t_tot else 0.0
         lam2 = (1 - lam3) * (b_tot / (b_tot + 1.4)) if b_tot else 0.0
@@ -183,16 +274,25 @@ class NGramModel:
         hits.sort(key=lambda kv: -kv[1])
         return {w: c / N for w, c in hits[:12]}
 
-    def predict(self, text: str, k: int = 6) -> list[dict]:
-        toks = tokenize(text)
-        b = toks[-1] if toks else "<s>"
-        a = toks[-2] if len(toks) >= 2 else "<s>"
+    def word_probs(self, text: str) -> dict[str, float]:
+        """পরের শব্দের (স্বাভাবিকীকরণ-ছাড়া) সম্ভাবনা — নিউরাল মডেলের সাথে মেশানোর জন্য।
 
-        scores = self._score(a, b) if b != "<s>" else {}
+        শেখা চলাকালীন অন্য থ্রেড ডিকশনারি বদলালে একবার-দু'বার আবার চেষ্টা করে।
+        """
+        for _ in range(4):
+            try:
+                return self._word_probs(text)
+            except RuntimeError:  # dictionary changed size during iteration
+                continue
+        return {}
+
+    def _word_probs(self, text: str) -> dict[str, float]:
+        a, b = self.context(tokenize(text))
+        scores = self._score(a, b)
         if not scores and b != "<s>":
             scores = self._prefix_fallback(b)
         if not scores:
-            # কনটেক্সট অজানা → শেষ শব্দের unigram + সাধারণ জনপ্রিয়তা
+            # কনটেক্সট অজানা → সাধারণ জনপ্রিয়তা
             scores = {w: c / (self.tokens or 1)
                       for w, c in self.uni.most_common(60) if w != "</s>"}
 
@@ -204,26 +304,27 @@ class NGramModel:
                     scores[w] = 0.4 * c / N
                 if sum(1 for x in scores if WORD_RE.match(x)) >= 8:
                     break
+        return scores
 
-        total = sum(scores.values()) or 1.0
-        top = sorted(scores.items(), key=lambda kv: -kv[1])[:k + 2]
-        # যুক্তিচিহ্ন (। , . ইত্যাদি) সর্বোচ্চ একটি, তাও সবার শেষে
-        words = [(w, s) for w, s in top if WORD_RE.match(w)]
-        puncts = [(w, s) for w, s in top if not WORD_RE.match(w)]
-        top = (words[:k - 1] + puncts[:1]) if len(words) >= k - 1 else words + puncts
-        top = sorted(top[:k], key=lambda kv: -kv[1])
-        return [{"word": w, "p": round(s / total, 4)} for w, s in top]
+    def predict(self, text: str, k: int = 6) -> list[dict]:
+        return rank_words(self.word_probs(text), k)
 
     # ------------------------------------------------------------------ #
     def generate(self, prompt: str, max_tokens: int = 30,
                  temperature: float = 0.85, top_k: int = 60) -> str:
+        for _ in range(4):
+            try:
+                return self._generate(prompt, max_tokens, temperature, top_k)
+            except RuntimeError:
+                continue
+        return ""
+
+    def _generate(self, prompt: str, max_tokens: int, temperature: float, top_k: int) -> str:
         toks = tokenize(prompt)
         gen: list[str] = []
         used: Counter = Counter()
         for _ in range(max_tokens):
-            seq = toks + gen
-            a = seq[-2] if len(seq) >= 2 else "<s>"
-            b = seq[-1] if seq else "<s>"
+            a, b = self.context(toks + gen)
             scores = self._score(a, b)
             if not scores:
                 break
@@ -241,11 +342,9 @@ class NGramModel:
                 if r <= acc:
                     pick = w
                     break
-            if pick == "</s>":
-                break
             gen.append(pick)
             used[pick] += 1
-            if pick in ("।", ".", "!", "?") and len(gen) >= 6:
+            if pick in SENT_END and len(gen) >= 6:
                 break
         return detokenize(gen)
 
@@ -261,10 +360,17 @@ class NGramModel:
             "sentences": self.sentences,
         }
 
+    tok_version = 0          # load() সেট করে; নতুন মডেলে বর্তমান সংস্করণ
+
+    def is_current(self) -> bool:
+        """ফাইলটা বর্তমান টোকেনাইজার দিয়ে বানানো? (পুরোনো হলে নতুন করে গড়তে হবে —
+        নইলে মডেলের শব্দ আর ইনপুটের শব্দ মেলে না)।"""
+        return self.tokens == 0 or (self.tok_version or TOK_VERSION) >= TOK_VERSION
+
     def save(self, path=MODEL_PATH) -> None:
         """দ্রুত বাইনারি সেভ (pickle + gzip level 1) — বড় মডেলেও কয়েক সেকেন্ড।"""
         payload = {
-            "version": 3,
+            "version": 3, "tok_version": TOK_VERSION,
             "tokens": self.tokens, "sentences": self.sentences,
             "uni": dict(self.uni),
             "bi": self.bi, "tri": self.tri, "skip": self.skip,
@@ -282,13 +388,16 @@ class NGramModel:
             return m
         try:
             with gzip.open(path, "rb") as f:
-                p = pickle.load(f)
-        except (OSError, EOFError, pickle.UnpicklingError):
+                p = _SafeUnpickler(f).load()
+        except (OSError, EOFError, pickle.UnpicklingError, AttributeError, ImportError, IndexError):
             try:  # পুরোনো JSON ফরম্যাট
                 with gzip.open(path, "rt", encoding="utf-8") as f:
                     p = json.load(f)
             except (OSError, ValueError):
                 return m
+        if not isinstance(p, dict):
+            return m
+        m.tok_version = int(p.get("tok_version") or 1)
         m.tokens = p.get("tokens", 0)
         m.sentences = p.get("sentences", p.get("docs", 0))
         m.uni = p.get("uni") if isinstance(p.get("uni"), Counter) else Counter(p.get("uni") or {})
@@ -309,7 +418,7 @@ def perplexity(model: NGramModel, text: str) -> float:
     floor = 1.0 / max(1, model.tokens + 1)
     logp = 0.0
     for i in range(2, len(toks)):
-        a, b, w = toks[i - 2], toks[i - 1], toks[i]
-        p = model._score(a, b).get(w) or floor
+        a, b = model.context(toks[:i])
+        p = model._score(a, b).get(toks[i]) or floor
         logp += math.log(max(p, floor))
     return math.exp(-logp / (len(toks) - 2))

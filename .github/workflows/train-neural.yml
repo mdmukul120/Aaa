@@ -1,0 +1,82 @@
+# নিউরাল মডেল ট্রেইনিং — GitHub-এর ফ্রি রানারে (Render ফ্রি সার্ভারে ট্রেইন করা সম্ভব নয়)।
+#
+# কী করে:  Supabase-এর সব ডকুমেন্ট নামায় → রিপোর models/shobdo-neural.npz থেকে শুরু করে
+#          ফাইন-টিউন করে → অদেখা লেখায় নির্ভুলতা মাপে → Supabase Storage-এ তোলে।
+#          লাইভ সার্ভার ৩০ মিনিটের মধ্যে নতুন মডেল নিজেই নামিয়ে নেয় (ডিপ্লয় লাগে না)।
+#
+# একবার সেট করতে হবে:  Settings → Secrets and variables → Actions → New repository secret
+#     SUPABASE_URL            (যেমন https://xxxx.supabase.co)
+#     SUPABASE_SERVICE_KEY    (service_role key)
+name: Train neural model
+
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "সর্বোচ্চ কত মিনিট ট্রেইন হবে"
+        default: "150"
+      fresh:
+        description: "একদম শূন্য থেকে (নতুন টোকেনাইজার সহ)? সাধারণত না"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "30 21 * * 5"      # প্রতি শনিবার ভোর ৩:৩০ (বাংলাদেশ সময়)
+
+permissions:
+  contents: read
+
+concurrency:
+  group: train-neural
+  cancel-in-progress: false
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Secrets আছে?
+        id: cfg
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_KEY" ]; then
+            echo "::warning::SUPABASE_URL / SUPABASE_SERVICE_KEY secret সেট নেই — ট্রেইনিং বাদ।"
+            echo "ready=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.cfg.outputs.ready == 'yes'
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-train.txt
+
+      - name: Install
+        if: steps.cfg.outputs.ready == 'yes'
+        run: pip install -r requirements-train.txt
+
+      - name: Train + evaluate + upload
+        if: steps.cfg.outputs.ready == 'yes'
+        env:
+          MINUTES: ${{ inputs.minutes || '150' }}
+          FRESH: ${{ inputs.fresh && 'yes' || 'no' }}
+        run: |
+          INIT="--init models/shobdo-neural.npz"
+          if [ "$FRESH" = "yes" ]; then INIT=""; fi
+          python train_neural.py --from-supabase $INIT \
+            --out data/shobdo-neural.npz --minutes "$MINUTES" --upload
+
+      - uses: actions/upload-artifact@v4
+        if: steps.cfg.outputs.ready == 'yes' && always()
+        with:
+          name: shobdo-neural
+          path: |
+            data/shobdo-neural.npz
+            data/shobdo-neural.json
+          if-no-files-found: ignore
+          retention-days: 30
