@@ -15,8 +15,14 @@ services:
       - key: SUPABASE_SERVICE_KEY
         sync: false
       - key: LOW_MEM
-        value: "1"              # ৫১২ MB-র জন্য কম্প্যাক্ট মডেল (~৭১ MB RAM)
+        value: "1"              # ৫১২ MB-র জন্য কম্প্যাক্ট n-gram মডেল
       - key: AUTOLEARN
         value: "0"
+      - key: ADMIN_TOKEN
+        generateValue: true     # "শেখাও"/"অটো-লার্ন" বোতামের জন্য; মান দেখুন Dashboard → Environment
+      - key: MAX_DOCS
+        value: "40000"          # এর বেশি ডকুমেন্ট হলে শেখা থামে (১ GB ফ্রি ডেটাবেস রক্ষা)
+      - key: NEURAL
+        value: "1"              # নিউরাল মডেল (models/shobdo-neural.npz) + n-gram মিশ্রণ
       - key: PYTHON_VERSION
         value: "3.12.6"

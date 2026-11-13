@@ -1,10 +1,13 @@
 """ইন্টারনেট থেকে পেজ আনা + মূল লেখা আলাদা করা (crawler + extractor)."""
 from __future__ import annotations
 
+import ipaddress
 import json
 import re
+import socket
 import time
-from urllib.parse import quote
+import xml.etree.ElementTree as ET
+from urllib.parse import quote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -89,17 +92,81 @@ def extract_article(html: str, url: str) -> dict | None:
     return {"title": title or url, "content": body_text[:MAX_DOC_CHARS], "url": url}
 
 
-def fetch(url: str, timeout: int = 20) -> str | None:
+MAX_BYTES = 2_000_000
+MAX_REDIRECTS = 5
+
+
+def is_public_url(url: str) -> bool:
+    """শুধু পাবলিক ইন্টারনেটের http/https ঠিকানা অনুমোদিত।
+
+    সার্ভারকে দিয়ে ভেতরের ঠিকানা (127.0.0.1, 10.x, 169.254.169.254 ইত্যাদি) পড়ানো
+    ঠেকায় — যেকোনো ব্যবহারকারী URL দিতে পারে বলে এটা জরুরি (SSRF)।
+    """
     try:
-        r = requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
-        if r.status_code != 200:
-            return None
-        ctype = r.headers.get("content-type", "")
-        if "html" not in ctype and "xml" not in ctype and "text" not in ctype:
-            return None
-        return r.text[:2_000_000]
+        u = urlparse(url)
+        if u.scheme not in ("http", "https") or not u.hostname:
+            return False
+        if u.port not in (None, 80, 443, 8080, 8443):
+            return False
+        infos = socket.getaddrinfo(u.hostname, u.port or (443 if u.scheme == "https" else 80),
+                                   type=socket.SOCK_STREAM)
+        addrs = {i[4][0] for i in infos}
+        return bool(addrs) and all(ipaddress.ip_address(a.split("%")[0]).is_global for a in addrs)
+    except (OSError, ValueError):
+        return False
+
+
+def _decode(raw: bytes, ctype: str) -> str:
+    """সঠিক এনকোডিংয়ে ডিকোড: হেডার → পেজের ভেতরের ঘোষণা → UTF-8।
+
+    (requests হেডারে charset না পেলে text/* কে ISO-8859-1 ধরে নেয় — তাতে বাংলা লেখা
+    নষ্ট হয়ে যায়, তাই নিজেরা ঠিক করি।)
+    """
+    m = re.search(r"charset=([\w-]+)", ctype, re.I)
+    enc = m.group(1) if m else None
+    if not enc:
+        head = raw[:2048].decode("ascii", "ignore")
+        m = re.search(r"(?:charset|encoding)=[\"']?([\w-]+)", head, re.I)
+        enc = m.group(1) if m else "utf-8"
+    try:
+        return raw.decode(enc, errors="replace")
+    except LookupError:
+        return raw.decode("utf-8", errors="replace")
+
+
+def fetch_raw(url: str, timeout: int = 20) -> tuple[bytes, str] | None:
+    """নিরাপদ GET: প্রতিটি redirect ধাপে ঠিকানা যাচাই, সর্বোচ্চ ২ MB।"""
+    try:
+        for _ in range(MAX_REDIRECTS + 1):
+            if not is_public_url(url):
+                return None
+            with requests.get(url, headers=HEADERS, timeout=timeout,
+                              allow_redirects=False, stream=True) as r:
+                if r.status_code in (301, 302, 303, 307, 308):
+                    loc = r.headers.get("location")
+                    if not loc:
+                        return None
+                    url = urljoin(url, loc)
+                    continue
+                if r.status_code != 200:
+                    return None
+                ctype = r.headers.get("content-type", "")
+                if "html" not in ctype and "xml" not in ctype and "text" not in ctype:
+                    return None
+                raw = b""
+                for chunk in r.iter_content(65536):
+                    raw += chunk
+                    if len(raw) >= MAX_BYTES:
+                        break
+                return raw[:MAX_BYTES], ctype
+        return None
     except Exception:  # noqa: BLE001
         return None
+
+
+def fetch(url: str, timeout: int = 20) -> str | None:
+    got = fetch_raw(url, timeout)
+    return _decode(*got) if got else None
 
 
 # --------------------------------------------------------------------------- #
@@ -318,7 +385,7 @@ def wiki_seeds(lang: str, count: int, offset: int = 0) -> list[dict]:
 
 
 def wiki_random(lang: str, count: int) -> list[dict]:
-    """랜dom নিবন্ধের ভূমিকা-অংশ আনে (প্রতি রিকোয়েস্টে ১০টি)।"""
+    """র‍্যান্ডম নিবন্ধের ভূমিকা-অংশ আনে (প্রতি রিকোয়েস্টে ১০টি)।"""
     out: list[dict] = []
     tries = 0
     while len(out) < count and tries < 8:
@@ -389,34 +456,93 @@ def wiki_search(query: str, lang: str, limit: int = 3) -> list[dict]:
 # --------------------------------------------------------------------------- #
 # RSS / Atom feeds
 # --------------------------------------------------------------------------- #
-def feed_links(feed_url: str, limit: int = 20) -> list[dict]:
-    xml = fetch(feed_url)
-    if not xml:
+def _local(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1].lower() if isinstance(tag, str) else ""
+
+
+def _strip_html(s: str) -> str:
+    return clean_text(BeautifulSoup(s or "", "html.parser").get_text(" ", strip=True))
+
+
+def parse_feed(xml: str | bytes, limit: int = 20) -> list[dict]:
+    """RSS 2.0 / Atom / RDF ফিড থেকে (title, url, summary)।
+
+    শুধু স্ট্যান্ডার্ড লাইব্রেরি (xml.etree) — আগে BeautifulSoup-এর "xml" পার্সার
+    ব্যবহার হতো, যার জন্য lxml লাগে; lxml না থাকলে সব ফিড নীরবে খালি আসত।
+    """
+    raw = xml.encode("utf-8") if isinstance(xml, str) else xml
+    if b"<!ENTITY" in raw[:4096]:
         return []
-    items: list[dict] = []
+    if isinstance(xml, str):       # str হলে ভেতরের encoding ঘোষণা আর প্রযোজ্য নয়
+        raw = re.sub(rb"^\s*<\?xml[^>]*\?>", b"", raw, count=1)
     try:
-        soup = BeautifulSoup(xml, "xml")
-        for it in soup.find_all(["item", "entry"])[:limit * 2]:
-            title = (it.find("title").get_text(strip=True) if it.find("title") else "")
-            link_el = it.find("link")
-            link = ""
-            if link_el is not None:
-                link = link_el.get("href") or link_el.get_text(strip=True)
-            if not link:
-                guid = it.find("guid")
-                link = guid.get_text(strip=True) if guid else ""
-            summary = ""
-            for tag in ("description", "summary", "encoded", "content"):
-                el = it.find(tag)
-                if el is not None:
-                    summary = BeautifulSoup(el.get_text() or "", "html.parser").get_text(" ", strip=True)
-                    if len(summary) > 120:
-                        break
-            if link.startswith("http"):
-                items.append({"title": title, "url": link, "summary": clean_text(summary)})
-    except Exception:  # noqa: BLE001
+        root = ET.fromstring(raw.lstrip())
+    except ET.ParseError:
+        return _parse_feed_loose(raw.decode("utf-8", "replace"), limit)
+    items: list[dict] = []
+    for it in root.iter():
+        if _local(it.tag) not in ("item", "entry"):
+            continue
+        title = link = guid = ""
+        summary = ""
+        for ch in it:
+            name = _local(ch.tag)
+            text = "".join(ch.itertext()).strip()
+            if name == "title" and not title:
+                title = _strip_html(text)
+            elif name == "link":
+                href = ch.get("href")
+                if href:                                   # Atom
+                    if ch.get("rel") in (None, "alternate") or not link:
+                        link = href.strip()
+                elif text and not link:                    # RSS
+                    link = text
+            elif name in ("guid", "id") and not guid:
+                guid = text
+            elif name in ("description", "summary", "encoded", "content"):
+                t = _strip_html(text)
+                if len(t) > len(summary):
+                    summary = t
+        url = link if link.startswith("http") else guid if guid.startswith("http") else ""
+        if url:
+            items.append({"title": title, "url": url, "summary": summary})
+            if len(items) >= limit:
+                break
+    return items
+
+
+def _parse_feed_loose(text: str, limit: int) -> list[dict]:
+    """ভাঙা XML-এর জন্য ঢিলেঢালা বিকল্প (regex)।"""
+    items: list[dict] = []
+    for m in re.finditer(r"<(item|entry)\b.*?</\1>", text, re.S | re.I):
+        block = m.group(0)
+
+        def grab(tag: str) -> str:
+            g = re.search(rf"<{tag}\b[^>]*>(.*?)</{tag}>", block, re.S | re.I)
+            v = g.group(1) if g else ""
+            return re.sub(r"^<!\[CDATA\[|\]\]>$", "", v.strip()).strip()
+
+        link = grab("link")
+        if not link.startswith("http"):
+            g = re.search(r"<link\b[^>]*href=[\"']([^\"']+)", block, re.I)
+            link = g.group(1) if g else grab("guid")
+        if link.startswith("http"):
+            items.append({"title": _strip_html(grab("title")), "url": link.strip(),
+                          "summary": _strip_html(grab("description") or grab("summary"))})
+            if len(items) >= limit:
+                break
+    return items
+
+
+def feed_links(feed_url: str, limit: int = 20) -> list[dict]:
+    got = fetch_raw(feed_url)
+    if not got:
         return []
-    return items[:limit]
+    try:
+        return parse_feed(got[0], limit)
+    except Exception as e:  # noqa: BLE001
+        print(f"[feed] {feed_url}: {e}")
+        return []
 
 
 def learn_feed(feed_url: str, domain: str, lang: str, count: int = 15) -> list[dict]:

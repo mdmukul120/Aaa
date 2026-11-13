@@ -249,7 +249,7 @@
       <p>বিশ্বের বড় সাইটগুলোর লেখা থেকে ডেটা এনে Supabase-এ জমা রাখে, মুহূর্তে ভাষা শেখে এবং আপনি যা লিখছেন তার পরবর্তী শব্দ অনুমান করে।</p>
     </div>
     <div class="flow">
-      <b>🌐 ইন্টারনেট</b><span class="arrow">→</span><b>🗄 Supabase</b><span class="arrow">→</span><b>🧠 n-gram LM</b><span class="arrow">→</span><b>⚡ প্রেডিকশন</b>
+      <b>🌐 ইন্টারনেট</b><span class="arrow">→</span><b>🗄 Supabase</b><span class="arrow">→</span><b>🧠 নিউরাল + n-gram</b><span class="arrow">→</span><b>⚡ প্রেডিকশন</b>
     </div>
   </section>
 
@@ -271,7 +271,7 @@
 
         <div class="suggest-head">
           <span>সম্ভাব্য পরবর্তী শব্দ</span>
-          <span class="meter"><span id="predMs">—</span> · মডেল কনটেক্সট: <b id="predCtx">0</b> টোকেন</span>
+          <span class="meter"><b id="engineTag" title="কোন মডেল উত্তর দিচ্ছে">—</b> · <span id="predMs">—</span> · n-gram কনটেক্সট: <b id="predCtx">0</b> টোকেন</span>
         </div>
         <div class="chips" id="suggestions"><span class="empty">লিখলে এখানে পরামর্শ আসবে…</span></div>
 
@@ -389,12 +389,22 @@ function showConn(show) { $("#connbar").classList.toggle("show", !!show); }
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" : Number(n).toLocaleString("en-US");
 
-async function api(path, opts = {}) {
-  const res = await fetch(apiUrl(path), {headers: {"content-type": "application/json"}, ...opts});
+async function api(path, opts = {}, retry = true) {
+  const headers = {"content-type": "application/json"};
+  const tok = localStorage.getItem("shobdo_admin");
+  if (tok) headers["x-admin-token"] = tok;
+  const res = await fetch(apiUrl(path), {headers, ...opts});
   const data = await res.json().catch(() => ({}));
+  if (res.status === 401 && data.admin_required && retry) {
+    /* সার্ভারে ADMIN_TOKEN সেট করা — শেখানো/অটো-লার্নের জন্য টোকেন লাগবে */
+    const t = prompt("এই কাজের জন্য অ্যাডমিন টোকেন লাগবে (সার্ভারের ADMIN_TOKEN):");
+    if (t) { localStorage.setItem("shobdo_admin", t.trim()); return api(path, opts, false); }
+  }
+  if (res.status === 401) localStorage.removeItem("shobdo_admin");
   if (!res.ok) throw new Error(data.error || ("HTTP " + res.status));
   return data;
 }
+const ENGINE_LABEL = {"neural+ngram": "🧠 নিউরাল + n-gram", "neural": "🧠 নিউরাল", "ngram": "📊 n-gram"};
 let toastT;
 function toast(msg) {
   const t = $("#toast"); t.textContent = msg; t.classList.add("show");
@@ -419,7 +429,12 @@ async function loadStats() {
     $("#sbText").textContent = s.supabase ? "Supabase কানেক্টেড" : "Supabase অফলাইন (লোকাল মোড)";
     $("#autoChk").checked = !!s.autolearn;
     $("#predCtx").textContent = fmt(s.model.tokens);
-    $("#footStat").textContent = `bigram ${fmt(s.model.bigrams)} · trigram ${fmt(s.model.trigrams)}`;
+    const nn = s.neural;
+    $("#footStat").textContent = `bigram ${fmt(s.model.bigrams)} · trigram ${fmt(s.model.trigrams)}` +
+      (nn ? ` · নিউরাল: ${(nn.params / 1e6).toFixed(1)}M প্যারামিটার, ${nn.layers} স্তর` +
+            (nn.accuracy && nn.accuracy.blend ? ` (অদেখা লেখায় top-1 ${nn.accuracy.blend.top1}%)` : "")
+          : " · নিউরাল মডেল লোড হয়নি");
+    $("#engineTag").textContent = ENGINE_LABEL[s.engine] || s.engine || "—";
     if (s.runs && s.runs.length) {
       $("#runList").innerHTML = s.runs.map(r => `<div class="r"><b>${esc(r.source)} · ${fmt(r.pages)} পেজ</b><s>${fmt(r.tokens)} টোকেন · ${new Date(r.created_at).toLocaleString("bn-BD")}</s></div>`).join("");
     } else {
@@ -456,7 +471,9 @@ function renderSites(sites) {
 /* ---------------- prediction ---------------- */
 let predTimer = null;
 let latestPreds = [];
+let predSeq = 0;
 async function doPredict() {
+  const seq = ++predSeq;
   const text = $("#predictInput").value;
   if (!text.trim()) {
     $("#suggestions").innerHTML = `<span class="empty">লিখলে এখানে পরামর্শ আসবে…</span>`;
@@ -464,8 +481,10 @@ async function doPredict() {
   }
   try {
     const r = await api("/api/predict", {method: "POST", body: JSON.stringify({text})});
+    if (seq !== predSeq) return;            /* এর মধ্যে নতুন লেখা এসেছে — পুরোনো উত্তর বাদ */
     latestPreds = r.suggestions || [];
     $("#predMs").textContent = "⚡ " + r.ms + " ms";
+    if (r.engine) $("#engineTag").textContent = ENGINE_LABEL[r.engine] || r.engine;
     const max = Math.max(...latestPreds.map(p => p.p), 0.0001);
     $("#suggestions").innerHTML = latestPreds.length
       ? latestPreds.map((p, i) =>
@@ -504,7 +523,8 @@ $("#genBtn").addEventListener("click", async () => {
   try {
     const r = await api("/api/generate", {method: "POST", body: JSON.stringify({text: prompt, temperature: +$("#temp").value})});
     const out = $("#genOut"); out.style.display = "block";
-    out.innerHTML = `<span class="orig">${esc(prompt)} </span><span class="new" id="genNew"></span>`;
+    out.innerHTML = `<span class="orig">${esc(prompt)} </span><span class="new" id="genNew"></span>` +
+      `<div style="margin-top:8px;font-size:12px;opacity:.65">${esc(ENGINE_LABEL[r.engine] || "")} · ${fmt(r.ms)} ms</div>`;
     const target = r.continuation || "(আর কিছু পাওয়া যায়নি)";
     let i = 0;
     const t = setInterval(() => {
@@ -570,7 +590,7 @@ $("#autoChk").addEventListener("change", async (e) => {
   try {
     const r = await api("/api/autolearn", {method: "POST", body: JSON.stringify({on: e.target.checked})});
     toast(r.autolearn ? "অটো-লার্ন চালু — প্রতি ২ মিনিটে নিজে শিখবে" : "অটো-লার্ন বন্ধ");
-  } catch (err) { toast("ফেইল: " + err.message); }
+  } catch (err) { e.target.checked = !e.target.checked; toast("ফেইল: " + err.message); }
 });
 
 /* ---------------- ask ---------------- */
