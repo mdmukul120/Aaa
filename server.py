@@ -806,6 +806,8 @@ class RateLimiter:
 
 RATE = RateLimiter()
 ADMIN_ROUTES = ("/api/learn", "/api/autolearn")
+PAGES = {"/": "index.html", "/index.html": "index.html",
+         "/studio": "studio.html", "/studio.html": "studio.html"}
 LEARN_MODES = ("auto", "url", "site", "spider", "wiki_bn", "wiki_en", "news_bn", "news_en", "test", "supabase")
 _PING = {"t": 0.0, "ok": False}
 
@@ -898,12 +900,12 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802
         u = urlparse(self.path)
         path = u.path
-        if path in ("/", "/index.html"):
-            f = STATIC / "index.html"
+        if path in PAGES:                      # "/" = চ্যাট, "/studio" = শেখাও ও পুরোনো ড্যাশবোর্ড
+            f = STATIC / PAGES[path]
             if f.exists():
                 self._send(200, f.read_bytes(), "text/html; charset=utf-8")
             else:
-                self._send(500, b"index.html missing", "text/plain")
+                self._send(500, (PAGES[path] + " missing").encode(), "text/plain")
             return
         if path == "/healthz":
             self._json({"ok": True, "tokens": MODEL.tokens, "db": _db_alive(),
