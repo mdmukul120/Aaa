@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>শব্দ AI — শেখাও ও স্টুডিও</title>
+<style>
+  :root{
+    --bg:#060a14; --bg2:#0a1020; --card:rgba(15,23,46,.78); --stroke:#1e2a48;
+    --txt:#e9efff; --muted:#8e9cbd; --accent:#7c5cff; --accent2:#22d3ee;
+    --ok:#34d399; --warn:#fbbf24; --danger:#f87171; --radius:18px;
+    --bn:"Noto Sans Bengali","Hind Siliguri","SolaimanLipi","Kalpurush",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:var(--bn); color:var(--txt); background:var(--bg);
+    background-image:
+      radial-gradient(900px 500px at 12% -8%, rgba(124,92,255,.20), transparent 60%),
+      radial-gradient(800px 500px at 88% 0%, rgba(34,211,238,.14), transparent 55%),
+      radial-gradient(700px 600px at 50% 110%, rgba(124,92,255,.10), transparent 60%);
+    min-height:100vh; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:rgba(124,92,255,.4)}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:#243255;border-radius:8px;border:2px solid var(--bg)}
+  ::-webkit-scrollbar-track{background:transparent}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 20px 64px}
+
+  /* ---------------- header ---------------- */
+  header{
+    position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);
+    background:rgba(6,10,20,.72);border-bottom:1px solid rgba(30,42,72,.7);
+  }
+  .hrow{max-width:1240px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .logo{
+    width:44px;height:44px;border-radius:14px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#7c5cff,#22d3ee);box-shadow:0 8px 24px rgba(124,92,255,.35);flex:none;
+  }
+  .brand b{font-size:20px;letter-spacing:.2px;display:block;line-height:1.2}
+  .brand span{font-size:12.5px;color:var(--muted);display:block}
+  .pill{
+    display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:999px;
+    border:1px solid var(--stroke);background:rgba(15,23,46,.7);font-size:12.5px;color:var(--muted);white-space:nowrap;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(52,211,153,.15)}
+  .dot.off{background:var(--danger);box-shadow:0 0 0 4px rgba(248,113,113,.15)}
+  .spacer{flex:1}
+  .switch{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+  .track{width:42px;height:23px;border-radius:999px;background:#1b2542;border:1px solid var(--stroke);position:relative;transition:.2s}
+  .track i{position:absolute;top:2px;left:2px;width:17px;height:17px;border-radius:50%;background:#6b7aa0;transition:.2s}
+  .switch input{display:none}
+  .switch input:checked + .track{background:linear-gradient(90deg,#7c5cff,#22d3ee);border-color:transparent}
+  .switch input:checked + .track i{left:21px;background:#fff}
+
+  /* ---------------- hero + stats ---------------- */
+  .hero{padding:34px 0 10px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .hero h1{font-size:30px;margin:0 0 6px;line-height:1.35;letter-spacing:-.3px}
+  .hero h1 em{font-style:normal;background:linear-gradient(90deg,#a78bfa,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{margin:0;color:var(--muted);font-size:14.5px;max-width:640px}
+  .flow{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted);flex-wrap:wrap}
+  .flow b{color:#c9d5f5;font-weight:600}
+  .flow .arrow{color:#3a4a74}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0 22px}
+  .stat{
+    border:1px solid var(--stroke);background:var(--card);border-radius:var(--radius);padding:14px 16px;
+    display:flex;flex-direction:column;gap:2px;position:relative;overflow:hidden;
+  }
+  .stat::before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;
+    background:linear-gradient(90deg,rgba(124,92,255,.9),rgba(34,211,238,.6),transparent)}
+  .stat s{text-decoration:none;color:var(--muted);font-size:12.5px}
+  .stat b{font-size:23px;letter-spacing:.2px;font-variant-numeric:tabular-nums}
+  .stat small{color:#5f6f96;font-size:11.5px}
+
+  /* ---------------- layout ---------------- */
+  .grid{display:grid;grid-template-columns:minmax(0,1.62fr) minmax(300px,.95fr);gap:18px;align-items:start}
+  .card{
+    border:1px solid var(--stroke);background:var(--card);border-radius:var(--radius);
+    padding:20px;margin-bottom:18px;box-shadow:0 18px 40px -30px rgba(0,0,0,.9);
+  }
+  .card h2{margin:0 0 4px;font-size:17.5px;display:flex;align-items:center;gap:9px}
+  .card h2 .ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:rgba(124,92,255,.16);border:1px solid rgba(124,92,255,.35);font-size:14px}
+  .card .sub{color:var(--muted);font-size:13px;margin:0 0 16px}
+
+  textarea,input[type=text]{
+    width:100%;background:#0a1226;border:1px solid var(--stroke);border-radius:14px;color:var(--txt);
+    padding:14px 15px;font-family:var(--bn);font-size:15.5px;resize:vertical;outline:none;transition:.15s;
+  }
+  textarea:focus,input[type=text]:focus{border-color:rgba(124,92,255,.75);box-shadow:0 0 0 4px rgba(124,92,255,.12)}
+  textarea::placeholder,input::placeholder{color:#5c6b91}
+
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .btn{
+    border:1px solid var(--stroke);background:#141e39;color:var(--txt);border-radius:12px;
+    padding:9px 15px;font-family:var(--bn);font-size:13.5px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:7px;
+  }
+  .btn:hover{border-color:#37507f;background:#182544}
+  .btn:active{transform:translateY(1px)}
+  .btn.primary{
+    background:linear-gradient(135deg,#7c5cff,#5b8bff 60%,#22d3ee);border-color:transparent;color:#fff;
+    box-shadow:0 10px 26px -12px rgba(124,92,255,.8);font-weight:600;
+  }
+  .btn.primary:hover{filter:brightness(1.07)}
+  .btn.ghost{background:transparent}
+  .btn:disabled{opacity:.55;cursor:not-allowed}
+  .btn.small{padding:6px 11px;font-size:12.5px;border-radius:10px}
+
+  .suggest-head{display:flex;align-items:center;justify-content:space-between;margin:16px 0 8px;font-size:12.5px;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;min-height:38px}
+  .chip{
+    --w:0%; position:relative;overflow:hidden;border:1px solid var(--stroke);border-radius:11px;
+    padding:8px 12px 9px;cursor:pointer;font-family:var(--bn);font-size:14.5px;color:var(--txt);
+    background:linear-gradient(90deg,rgba(124,92,255,.42) var(--w),rgba(255,255,255,.035) var(--w));
+    transition:.12s;text-align:left;line-height:1.25;
+  }
+  .chip:hover{border-color:rgba(124,92,255,.7);transform:translateY(-1px)}
+  .chip .pw{display:block;font-size:10.5px;color:#aebbe0;font-variant-numeric:tabular-nums;letter-spacing:.2px}
+  .chip.top{border-color:rgba(34,211,238,.65);box-shadow:0 0 0 3px rgba(34,211,238,.08)}
+  .hint{font-size:11.5px;color:#5f6f96;margin-top:9px}
+  kbd{font-family:var(--mono);font-size:10.5px;border:1px solid var(--stroke);border-bottom-width:2px;border-radius:6px;padding:1px 5px;color:#b9c6e8;background:#0d1530}
+
+  .gen-out{
+    margin-top:14px;border:1px dashed #2b3a60;border-radius:14px;padding:14px 15px;min-height:52px;
+    background:rgba(10,18,38,.65);font-size:15.5px;color:#dfe8ff;display:none;white-space:pre-wrap;
+  }
+  .gen-out .orig{color:#7c8bb0}
+  .gen-out .new{color:#8ef0ff}
+  .meter{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+  input[type=range]{width:130px;accent-color:#7c5cff}
+
+  /* learn */
+  .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px}
+  .mode{
+    border:1px solid var(--stroke);background:#0d1630;border-radius:13px;padding:11px 12px;cursor:pointer;
+    font-family:var(--bn);color:var(--txt);font-size:13.5px;display:flex;flex-direction:column;gap:2px;align-items:flex-start;transition:.15s;text-align:left;
+  }
+  .mode:hover{border-color:#37507f;background:#121d3c;transform:translateY(-1px)}
+  .mode em{font-style:normal;font-size:11px;color:var(--muted)}
+  .mode.sel{border-color:rgba(34,211,238,.7);background:rgba(34,211,238,.08)}
+  .urlrow{display:flex;gap:9px;margin-top:4px}
+  .urlrow input{flex:1}
+  .spiderrow{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:9px}
+  .spiderrow select{background:#0d1630;border:1px solid var(--stroke);color:#dbe5ff;border-radius:10px;padding:8px 9px;font:inherit;font-size:13px}
+  .spiderrow label{font-size:12.5px;color:var(--muted);display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+  .spiderrow .btn{margin-left:auto}
+  .hint{font-size:12px;color:var(--muted);margin:9px 0 0;line-height:1.7}
+  .hint code{font-family:var(--mono);font-size:11px;color:#a9c1ff;background:#0d1630;border:1px solid #1c2745;border-radius:6px;padding:1px 5px;word-break:break-all}
+  .progress{height:7px;border-radius:99px;background:#111a33;overflow:hidden;margin:14px 0 10px;display:none;border:1px solid #1c2745}
+  .progress i{display:block;height:100%;width:0%;background:linear-gradient(90deg,#7c5cff,#22d3ee);transition:width .4s}
+  .progress.run i{width:35%;animation:slide 1.2s infinite ease-in-out}
+  @keyframes slide{0%{margin-left:-35%}100%{margin-left:100%}}
+  .console{
+    display:none;background:#070d1c;border:1px solid #16203a;border-radius:12px;padding:10px 12px;
+    font-family:var(--mono);font-size:11.5px;color:#93a7d4;max-height:150px;overflow:auto;white-space:pre-wrap;line-height:1.7;
+  }
+  .samples{display:none;margin-top:12px;border-top:1px solid #1a2440;padding-top:10px}
+  .samples .it{display:flex;gap:8px;align-items:baseline;padding:5px 0;font-size:13px;border-bottom:1px dashed #16203a}
+  .samples .it:last-child{border-bottom:0}
+  .badge{font-size:10.5px;padding:1px 7px;border-radius:99px;border:1px solid var(--stroke);color:#9fb0d8;background:#0d1630;white-space:nowrap}
+  .badge.bn{color:#f0c987;border-color:#4a3a1c;background:#1d1608}
+  .badge.en{color:#9fd7ff;border-color:#1c3a4a;background:#08161d}
+
+  /* ask */
+  .answer{display:none;margin-top:14px;border:1px solid #24345a;border-radius:14px;padding:14px 15px;background:rgba(10,18,38,.7)}
+  .answer .k{font-size:12px;color:var(--accent2);letter-spacing:.3px;margin-bottom:6px}
+  .answer p{margin:0;font-size:14.5px;color:#dbe5ff}
+  .src{margin-top:12px;display:flex;flex-direction:column;gap:7px}
+  .src a{color:#a9c1ff;text-decoration:none;font-size:13px;display:flex;gap:8px;align-items:baseline}
+  .src a:hover{text-decoration:underline}
+  .src .u{color:#5f6f96;font-size:11px;font-family:var(--mono);word-break:break-all}
+  .learned-note{display:none;margin-top:10px;font-size:12px;color:var(--ok)}
+  .answer .k{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .answer .match{font-size:11px;padding:1px 8px;border-radius:99px;border:1px solid #2b3b63;color:#9fb0d8;background:#0d1630}
+  .answer .match.high{color:#7ee2a8;border-color:#1f5a3a;background:#0a1d13}
+  .answer .match.medium{color:#f0c987;border-color:#4a3a1c;background:#1d1608}
+  .answer .match.low{color:#ffb4a8;border-color:#5a2a22;background:#1d0d0a}
+  .answer .asked{display:none;font-size:12.5px;color:var(--muted);margin:0 0 6px}
+  .answer p#answerText{white-space:pre-wrap}
+  .answer.none p#answerText{color:var(--muted)}
+  .alts{display:none;margin-top:12px;border-top:1px dashed #1c2745;padding-top:9px}
+  .alts .t{font-size:11.5px;color:var(--muted);margin-bottom:5px}
+  .alts .a{font-size:12.5px;color:#b9c7ea;padding:5px 0;border-bottom:1px dashed #16203a}
+  .alts .a:last-child{border-bottom:0}
+  .alts .a b{color:#dbe5ff;font-weight:600}
+  .alts .a span{color:#5f6f96;font-size:11px}
+
+  /* sidebar */
+  .side .card{padding:17px}
+  .dbgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .dbcell{border:1px solid #1b2745;border-radius:12px;padding:10px 11px;background:#0a1226}
+  .dbcell s{text-decoration:none;font-size:11px;color:var(--muted);display:block}
+  .dbcell b{font-size:15px;font-variant-numeric:tabular-nums}
+  .sites{max-height:270px;overflow:auto;display:flex;flex-direction:column;gap:6px;margin-top:4px}
+  .site{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:10px;border:1px solid transparent;cursor:pointer;font-size:13px}
+  .site:hover{background:#0f1934;border-color:#22305a}
+  .site .fav{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:10px;font-weight:700;background:#152143;color:#a9c1ff;flex:none}
+  .site .nm{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .recent{display:flex;flex-direction:column;gap:8px;max-height:260px;overflow:auto;margin-top:4px}
+  .recent .r{padding:8px 10px;border:1px solid #16203a;border-radius:10px;background:#0a1226}
+  .recent .r b{font-size:12.8px;font-weight:500;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .recent .r s{text-decoration:none;font-size:10.5px;color:#5f6f96}
+  .empty{color:#5f6f96;font-size:12.5px;padding:8px 0}
+
+  footer{margin-top:26px;color:#5f6f96;font-size:12px;border-top:1px solid #131c34;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .connbar{
+    display:none;position:sticky;top:0;z-index:30;background:linear-gradient(90deg,#3b2a12,#2a1f0e);
+    border-bottom:1px solid #6b4f1d;padding:9px 16px;font-size:13px;color:#ffd89b;
+  }
+  .connbar.show{display:block}
+  .connbar .in{display:flex;gap:8px;align-items:center;flex-wrap:wrap;max-width:1240px;margin:0 auto}
+  .connbar input{flex:1;min-width:220px;background:#1a1408;border:1px solid #6b4f1d;color:#ffe9c2;
+    border-radius:9px;padding:6px 10px;font-family:var(--mono);font-size:12px;outline:none}
+  .connbar button{background:#ffcf7a;color:#2a1f0e;border:0;border-radius:9px;padding:6px 12px;
+    font-family:var(--bn);font-size:12.5px;font-weight:600;cursor:pointer}
+  .toast{
+    position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+    background:#101a33;border:1px solid #2b3a60;color:#dfe8ff;padding:10px 18px;border-radius:12px;font-size:13.5px;
+    transition:.25s;z-index:99;box-shadow:0 18px 40px -18px #000;
+  }
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  @media (max-width:980px){
+    .grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .hero h1{font-size:24px}
+    .modes{grid-template-columns:repeat(2,1fr)}
+    .spiderrow .btn{margin-left:0;width:100%}
+  }
+  @media (max-width:520px){
+    .hrow{gap:9px}
+    .pill.hideS{display:none}
+    .card{padding:15px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <a class="brand" href="/">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 10.5v3M7 7v10M11 4.5v15M15 8v8M19 10v4M21 11v2" stroke="#fff" stroke-width="1.9" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <b>শব্দ AI</b>
+        <span>ইন্টারনেট-শিক্ষিত পরবর্তী-শব্দ মডেল · বাংলা + English</span>
+      </div>
+    </a>
+    <div class="spacer"></div>
+    <a class="pill" href="/" style="text-decoration:none;color:inherit" title="চ্যাটে ফিরে যান">💬 চ্যাট</a>
+    <span class="pill" id="sbPill"><span class="dot off" id="sbDot"></span><span id="sbText">Supabase যাচাই হচ্ছে…</span></span>
+    <span class="pill hideS" id="dbPill">📦 <span id="dbPillText">—</span></span>
+    <label class="switch" title="প্রতি ২ মিনিটে নিজে নিজে ইন্টারনেট থেকে শিখবে">
+      <input type="checkbox" id="autoChk" />
+      <span class="track"><i></i></span>
+      অটো-লার্ন
+    </label>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <h1>ইন্টারনেট থেকে শেখে, <em>পরের শব্দ বলে দেয়</em></h1>
+      <p>বিশ্বের বড় সাইটগুলোর লেখা থেকে ডেটা এনে Supabase-এ জমা রাখে, মুহূর্তে ভাষা শেখে এবং আপনি যা লিখছেন তার পরবর্তী শব্দ অনুমান করে।</p>
+    </div>
+    <div class="flow">
+      <b>🌐 ইন্টারনেট</b><span class="arrow">→</span><b>🗄 Supabase</b><span class="arrow">→</span><b>🧠 নিউরাল + n-gram</b><span class="arrow">→</span><b>⚡ প্রেডিকশন</b>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><s>শেখা টোকেন</s><b id="stTokens">0</b><small>মডেল যত শব্দ দেখেছে</small></div>
+    <div class="stat"><s>শব্দভান্ডার</s><b id="stVocab">0</b><small>unique টোকেন</small></div>
+    <div class="stat"><s>জমা ডকুমেন্ট</s><b id="stDocs">0</b><small>Supabase · ১ GB ফ্রি</small></div>
+    <div class="stat"><s>মডেল ফাইল</s><b id="stSize">0 MB</b><small>compressed gzip</small></div>
+  </section>
+
+  <div class="grid">
+    <!-- ============ main column ============ -->
+    <div>
+      <!-- predict -->
+      <section class="card">
+        <h2><span class="ic">⚡</span> পরবর্তী শব্দ অনুমান</h2>
+        <p class="sub">লিখতে থাকুন — মডেল তাৎক্ষণিকভাবে সম্ভাব্য পরের শব্দগুলো দেখাবে। যেকোনো শব্দে ক্লিক করলে সেটি যোগ হবে, <kbd>Tab</kbd> চাপলে সেরা পরামর্শ বসবে।</p>
+        <textarea id="predictInput" rows="3" placeholder="যেমন: বাংলা ভাষা …">বাংলা ভাষা </textarea>
+
+        <div class="suggest-head">
+          <span>সম্ভাব্য পরবর্তী শব্দ</span>
+          <span class="meter"><b id="engineTag" title="কোন মডেল উত্তর দিচ্ছে">—</b> · <span id="predMs">—</span> · n-gram কনটেক্সট: <b id="predCtx">0</b> টোকেন</span>
+        </div>
+        <div class="chips" id="suggestions"><span class="empty">লিখলে এখানে পরামর্শ আসবে…</span></div>
+
+        <div class="row" style="margin-top:16px">
+          <button class="btn primary" id="genBtn">✍️ মডেল দিয়ে লেখা চালিয়ে যাও</button>
+          <span class="meter">সৃজনশীলতা <input type="range" id="temp" min="0.3" max="1.4" step="0.05" value="0.85" /><b id="tempVal">0.85</b></span>
+        </div>
+        <div class="gen-out" id="genOut"></div>
+      </section>
+
+      <!-- learn -->
+      <section class="card">
+        <h2><span class="ic">🌐</span> ইন্টারনেট থেকে শেখাও</h2>
+        <p class="sub">এক ক্লিকে বড় সাইট থেকে নতুন লেখা নামিয়ে মডেল আপডেট হবে — ডেটা Supabase-এ সেভ থাকবে, তাই পরে আবার শেখাতে হবে না।</p>
+
+        <div class="modes">
+          <button class="mode" data-mode="wiki_bn">🇧🇩 বাংলা উইকিপিডিয়া<em>নিবন্ধ · ~২০ পেজ</em></button>
+          <button class="mode" data-mode="wiki_en">🌍 English Wikipedia<em>articles · ~২০ পেজ</em></button>
+          <button class="mode" data-mode="news_bn">📰 বাংলা সংবাদ<em>BBC বাংলা + প্রথম আলো</em></button>
+          <button class="mode" data-mode="news_en">🗞 World news<em>BBC · Guardian · Al Jazeera</em></button>
+          <button class="mode" data-mode="auto">🎲 মিশ্র (রেকমেন্ডেড)<em>উইকি + খবর একসাথে</em></button>
+          <button class="mode" data-mode="test">🧪 অফলাইন ডেমো<em>নেট ছাড়াই টেস্ট</em></button>
+        </div>
+
+        <div class="urlrow">
+          <input type="text" id="urlInput" placeholder="যেকোনো লিংক — ওয়েব পেজ, JSON/API, .txt, PDF" />
+          <button class="btn" id="urlBtn">🔗 এই লিংক থেকে শেখো</button>
+        </div>
+        <div class="spiderrow">
+          <select id="spPages" title="এই রাউন্ডে কয়টা পেজ">
+            <option value="10">১০ পেজ</option><option value="30" selected>৩০ পেজ</option><option value="60">৬০ পেজ</option>
+          </select>
+          <select id="spDepth" title="শুরুর লিংক থেকে কত ধাপ ভেতরে যাবে">
+            <option value="1">গভীরতা ১</option><option value="2" selected>গভীরতা ২</option><option value="3">গভীরতা ৩</option><option value="4">গভীরতা ৪</option>
+          </select>
+          <label><input type="checkbox" id="spRestart" /> শুরু থেকে</label>
+          <button class="btn" id="spiderBtn">🕷 পুরো সাইট ঘুরে শেখো</button>
+        </div>
+        <p class="hint">🔗 একটা লিংক: ওয়েব পেজ, JSON/API, টেক্সট বা PDF — যা-ই হোক পড়ে নেয়। প্রশ্ন-উত্তর শেখাতে JSON দিন:
+          <code>[{"q": "প্রশ্ন", "a": "উত্তর"}]</code><br>
+          🕷 স্পাইডার: ওপরের লিংক থেকে শুরু করে <b>একই সাইটের</b> ভেতরের লিংক ধরে ধরে পড়ে (robots.txt মেনে, ধীরে)। এক রাউন্ড শেষ হলে আবার চাপুন — যেখানে থেমেছিল সেখান থেকেই চলবে।</p>
+
+        <div class="progress" id="prog"><i></i></div>
+        <div class="console" id="learnLog"></div>
+        <div class="samples" id="samples"></div>
+      </section>
+
+      <!-- ask -->
+      <section class="card">
+        <h2><span class="ic">🔎</span> জিজ্ঞাসা করুন — সবচেয়ে মিলে যাওয়া উত্তর</h2>
+        <p class="sub">প্রথমে আপনার শেখানো <b>প্রশ্ন-উত্তর</b>, তারপর জমানো লেখা, শেষে উইকিপিডিয়া — যেখানে প্রশ্নের সাথে সবচেয়ে বেশি মেলে সেখান থেকেই উত্তর আসে (কতটা মিলল সেটাও দেখায়)। যথেষ্ট না মিললে সোজা বলে “জানি না”।</p>
+        <div class="urlrow">
+          <input type="text" id="askInput" placeholder="যেমন: পদ্মা সেতু কবে উদ্বোধন হয়?" />
+          <button class="btn primary" id="askBtn">জিজ্ঞাসা</button>
+        </div>
+        <div class="answer" id="answer">
+          <div class="k"><span id="answerKind">উত্তর</span><span class="match" id="answerMatch"></span></div>
+          <div class="asked" id="answerAsked"></div>
+          <p id="answerText"></p>
+          <div class="src" id="answerSrc"></div>
+          <div class="alts" id="answerAlts"></div>
+          <div class="learned-note" id="learnedNote"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ sidebar ============ -->
+    <div class="side">
+      <section class="card">
+        <h2><span class="ic">🗄</span> Supabase ডেটাবেস</h2>
+        <p class="sub" style="margin-bottom:10px">১ GB ফ্রি প্ল্যান · Singapore</p>
+        <div class="dbgrid">
+          <div class="dbcell"><s>DB সাইজ</s><b id="dbTotal">—</b></div>
+          <div class="dbcell"><s>ডকুমেন্ট</s><b id="dbDocs">—</b></div>
+          <div class="dbcell"><s>documents টেবিল</s><b id="dbDocBytes">—</b></div>
+          <div class="dbcell"><s>সাইট রেজিস্ট্রি</s><b id="dbSites">—</b></div>
+          <div class="dbcell"><s>প্রশ্ন-উত্তর</s><b id="dbQa">—</b></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><span class="ic">🌍</span> বিশ্বের বড় সাইট</h2>
+        <p class="sub" style="margin-bottom:8px">এই লিংকগুলো Supabase-এ সেভ করা — ক্লিক করলে ওই সাইট থেকে শেখানো যাবে।</p>
+        <div class="sites" id="siteList"><span class="empty">লোড হচ্ছে…</span></div>
+      </section>
+
+      <section class="card">
+        <h2><span class="ic">📄</span> সর্বশেষ শেখা পেজ</h2>
+        <div class="recent" id="recentList"><span class="empty">এখনো কিছু শেখা হয়নি — উপরে “ইন্টারনেট থেকে শেখাও” চাপুন।</span></div>
+      </section>
+
+      <section class="card">
+        <h2><span class="ic">📊</span> লার্নিং লগ</h2>
+        <div class="recent" id="runList"><span class="empty">—</span></div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <span>শব্দ AI · ইন্টারনেট → Supabase → n-gram ভাষা-মডেল · সব ডেটা আপনার নিজের প্রজেক্টে</span>
+    <span id="footStat">—</span>
+  </footer>
+</div>
+
+<div class="connbar" id="connbar">
+  <div class="in">
+    <span>⚠️ ব্যাকএন্ড সার্ভারের সাথে সংযোগ নেই।</span>
+    <input id="apiInput" placeholder="ব্যাকএন্ড URL — যেমন https://shobdo-ai.fly.dev" />
+    <button id="apiSave">সংযোগ করো</button>
+    <span style="opacity:.75">(বা config.js-এ SHOBDO_API_BASE সেট করুন)</span>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/config.js"></script>
+
+<script>
+const $ = (q) => document.querySelector(q);
+
+/* ব্যাকএন্ড কোথায়? — একই সার্ভার হলে খালি; Vercel-এ হোস্ট করা UI হলে
+   config.js / localStorage / নিচের ইনপুট থেকে পুরো URL নেবে। */
+let API_BASE = (localStorage.getItem("shobdo_api") || window.SHOBDO_API_BASE || "")
+  .replace(/\/+$/, "");
+const apiUrl = (p) => API_BASE + p;
+function setApiBase(v) {
+  API_BASE = (v || "").replace(/\/+$/, "");
+  localStorage.setItem("shobdo_api", API_BASE);
+}
+function showConn(show) { $("#connbar").classList.toggle("show", !!show); }
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" : Number(n).toLocaleString("en-US");
+
+async function api(path, opts = {}, retry = true) {
+  const headers = {"content-type": "application/json"};
+  const tok = localStorage.getItem("shobdo_admin");
+  if (tok) headers["x-admin-token"] = tok;
+  const res = await fetch(apiUrl(path), {headers, ...opts});
+  const data = await res.json().catch(() => ({}));
+  if (res.status === 401 && data.admin_required && retry) {
+    /* সার্ভারে ADMIN_TOKEN সেট করা — শেখানো/অটো-লার্নের জন্য টোকেন লাগবে */
+    const t = prompt("এই কাজের জন্য অ্যাডমিন টোকেন লাগবে (সার্ভারের ADMIN_TOKEN):");
+    if (t) { localStorage.setItem("shobdo_admin", t.trim()); return api(path, opts, false); }
+  }
+  if (res.status === 401) localStorage.removeItem("shobdo_admin");
+  if (!res.ok) throw new Error(data.error || ("HTTP " + res.status));
+  return data;
+}
+const ENGINE_LABEL = {"neural+ngram": "🧠 নিউরাল + n-gram", "neural": "🧠 নিউরাল", "ngram": "📊 n-gram"};
+let toastT;
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ---------------- stats ---------------- */
+let lastSites = [];
+async function loadStats() {
+  try {
+    const s = await api("/api/stats");
+    $("#stTokens").textContent = fmt(s.model.tokens);
+    $("#stVocab").textContent = fmt(s.model.vocab);
+    $("#stDocs").textContent = fmt(s.db.doc_count);
+    $("#stSize").textContent = (s.model_file_mb || 0) + " MB";
+    $("#dbTotal").textContent = s.db.db_total || "—";
+    $("#dbDocs").textContent = fmt(s.db.doc_count);
+    $("#dbDocBytes").textContent = s.db.doc_bytes || "—";
+    $("#dbSites").textContent = fmt(s.db.site_count || s.sites);
+    $("#dbQa").textContent = s.qa_pairs == null ? "—" : fmt(s.qa_pairs);
+    $("#dbPillText").textContent = (s.db.db_total || "—") + " · " + fmt(s.db.doc_count) + " ডক";
+    $("#sbDot").className = "dot" + (s.supabase ? "" : " off");
+    $("#sbText").textContent = s.supabase ? "Supabase কানেক্টেড" : "Supabase অফলাইন (লোকাল মোড)";
+    $("#autoChk").checked = !!s.autolearn;
+    $("#predCtx").textContent = fmt(s.model.tokens);
+    const nn = s.neural;
+    $("#footStat").textContent = `bigram ${fmt(s.model.bigrams)} · trigram ${fmt(s.model.trigrams)}` +
+      (nn ? ` · নিউরাল: ${(nn.params / 1e6).toFixed(1)}M প্যারামিটার, ${nn.layers} স্তর` +
+            (nn.accuracy && nn.accuracy.blend ? ` (অদেখা লেখায় top-1 ${nn.accuracy.blend.top1}%)` : "")
+          : " · নিউরাল মডেল লোড হয়নি");
+    $("#engineTag").textContent = ENGINE_LABEL[s.engine] || s.engine || "—";
+    if (s.runs && s.runs.length) {
+      $("#runList").innerHTML = s.runs.map(r => `<div class="r"><b>${esc(r.source)} · ${fmt(r.pages)} পেজ</b><s>${fmt(r.tokens)} টোকেন · ${new Date(r.created_at).toLocaleString("bn-BD")}</s></div>`).join("");
+    } else {
+      $("#runList").innerHTML = `<span class="empty">এখনো কোনো লার্নিং রান নেই।</span>`;
+    }
+    if (s.sites_registry && s.sites_registry.length) renderSites(s.sites_registry);
+    if (s.learning && s.learning.running) pollLearn();
+    showConn(false);
+  } catch (e) {
+    showConn(true);
+  }
+}
+
+function renderSites(sites) {
+  if (lastSites.length === sites.length) return;
+  lastSites = sites;
+  $("#siteList").innerHTML = sites.map(s => {
+    const letter = (s.name || s.domain).trim().charAt(0).toUpperCase();
+    return `<div class="site" data-url="${esc(s.homepage)}" data-name="${esc(s.name)}" title="${esc(s.homepage)}">
+      <div class="fav">${esc(letter)}</div>
+      <div class="nm">${esc(s.name)}</div>
+      <span class="badge ${s.lang === "bn" ? "bn" : "en"}">${s.lang}</span>
+    </div>`;
+  }).join("");
+  document.querySelectorAll(".site").forEach(el => {
+    el.addEventListener("click", () => {
+      $("#urlInput").value = el.dataset.url;
+      toast(`${el.dataset.name} — ডেটা আনা হচ্ছে…`);
+      startLearn("site", el.dataset.url);
+    });
+  });
+}
+
+/* ---------------- prediction ---------------- */
+let predTimer = null;
+let latestPreds = [];
+let predSeq = 0;
+async function doPredict() {
+  const seq = ++predSeq;
+  const text = $("#predictInput").value;
+  if (!text.trim()) {
+    $("#suggestions").innerHTML = `<span class="empty">লিখলে এখানে পরামর্শ আসবে…</span>`;
+    return;
+  }
+  try {
+    const r = await api("/api/predict", {method: "POST", body: JSON.stringify({text})});
+    if (seq !== predSeq) return;            /* এর মধ্যে নতুন লেখা এসেছে — পুরোনো উত্তর বাদ */
+    latestPreds = r.suggestions || [];
+    $("#predMs").textContent = "⚡ " + r.ms + " ms";
+    if (r.engine) $("#engineTag").textContent = ENGINE_LABEL[r.engine] || r.engine;
+    const max = Math.max(...latestPreds.map(p => p.p), 0.0001);
+    $("#suggestions").innerHTML = latestPreds.length
+      ? latestPreds.map((p, i) =>
+          `<button class="chip ${i === 0 ? "top" : ""}" data-w="${esc(p.word)}" style="--w:${(p.p / max * 100).toFixed(1)}%">
+             ${esc(p.word)}<span class="pw">${(p.p * 100).toFixed(1)}%</span>
+           </button>`).join("")
+      : `<span class="empty">এই কনটেক্সটে কিছু পাওয়া যায়নি — একটু বেশি লেখা দিন।</span>`;
+    document.querySelectorAll(".chip[data-w]").forEach(ch => {
+      ch.addEventListener("click", () => {
+        const inp = $("#predictInput");
+        inp.value = inp.value.replace(/\s+$/, "") + " " + ch.dataset.w + " ";
+        doPredict();
+      });
+    });
+  } catch (e) { $("#predMs").textContent = "ত্রুটি"; }
+}
+$("#predictInput").addEventListener("input", () => {
+  clearTimeout(predTimer);
+  predTimer = setTimeout(doPredict, 170);
+});
+$("#predictInput").addEventListener("keydown", (e) => {
+  if (e.key === "Tab" && latestPreds.length) {
+    e.preventDefault();
+    const inp = $("#predictInput");
+    inp.value = inp.value.replace(/\s+$/, "") + " " + latestPreds[0].word + " ";
+    doPredict();
+  }
+});
+
+$("#temp").addEventListener("input", () => $("#tempVal").textContent = (+$("#temp").value).toFixed(2));
+
+$("#genBtn").addEventListener("click", async () => {
+  const prompt = $("#predictInput").value.trim();
+  if (!prompt) return toast("আগে কিছু লিখুন");
+  const btn = $("#genBtn"); btn.disabled = true; btn.textContent = "লিখছে…";
+  try {
+    const r = await api("/api/generate", {method: "POST", body: JSON.stringify({text: prompt, temperature: +$("#temp").value})});
+    const out = $("#genOut"); out.style.display = "block";
+    out.innerHTML = `<span class="orig">${esc(prompt)} </span><span class="new" id="genNew"></span>` +
+      `<div style="margin-top:8px;font-size:12px;opacity:.65">${esc(ENGINE_LABEL[r.engine] || "")} · ${fmt(r.ms)} ms</div>`;
+    const target = r.continuation || "(আর কিছু পাওয়া যায়নি)";
+    let i = 0;
+    const t = setInterval(() => {
+      i += 2; $("#genNew").textContent = target.slice(0, i);
+      if (i >= target.length) clearInterval(t);
+    }, 22);
+  } catch (e) { toast("ত্রুটি: " + e.message); }
+  btn.disabled = false; btn.textContent = "✍️ মডেল দিয়ে লেখা চালিয়ে যাও";
+});
+
+/* ---------------- learning ---------------- */
+async function startLearn(mode, url, extra) {
+  try {
+    await api("/api/learn", {method: "POST", body: JSON.stringify({mode, count: 20, url, ...(extra || {})})});
+    $("#prog").style.display = "block"; $("#prog").classList.add("run");
+    $("#prog").querySelector("i").style.width = "";
+    $("#learnLog").style.display = "block"; $("#samples").style.display = "none";
+    $("#learnLog").textContent = mode === "spider" ? "স্পাইডার বেরোচ্ছে…" : "নিবন্ধ খোঁজা হচ্ছে…";
+    pollLearn();
+  } catch (e) { toast("লার্নিং শুরু হয়নি: " + e.message); }
+}
+
+let learnPollT = null;
+function pollLearn() {
+  if (learnPollT) return;
+  learnPollT = setInterval(async () => {
+    try {
+      const s = await api("/api/learn/status");
+      $("#learnLog").textContent = (s.log || []).join("\n") || "…";
+      $("#learnLog").scrollTop = 1e6;
+      if (s.running && s.mode === "spider" && s.target) {      // স্পাইডারে আসল অগ্রগতি দেখানো
+        $("#prog").classList.remove("run");
+        $("#prog").querySelector("i").style.width = Math.max(4, Math.round(100 * s.done / s.target)) + "%";
+      }
+      if (!s.running) {
+        clearInterval(learnPollT); learnPollT = null;
+        $("#prog").classList.remove("run");
+        if (s.error) { toast("ব্যর্থ: " + s.error); $("#prog").style.display = "none"; }
+        else {
+          $("#prog").style.display = "block"; $("#prog").querySelector("i").style.width = "100%";
+          if (s.last_result) {
+            const r = s.last_result;
+            $("#samples").style.display = "block";
+            const left = r.queue ? r.queue.pending : 0;
+            $("#samples").innerHTML = `<div style="font-size:12.5px;color:var(--muted);margin-bottom:6px">✅ ${fmt(r.pages)} পেজ · ~${fmt(r.tokens)} টোকেন মডেলে যোগ হয়েছে` +
+              (r.qa_added ? ` · ${fmt(r.qa_added)}টি প্রশ্ন-উত্তর জমা` : "") +
+              (r.queue ? ` · 🕷 ${esc(r.site || "")}: সারিতে বাকি ${fmt(left)} লিংক${left ? " — আবার চাপলে চলবে" : ""}` : "") +
+              (r.note ? `<br>⚠️ ${esc(r.note)}` : "") + `</div>` +
+              (r.samples || []).map(x => `<div class="it"><span class="badge ${x.lang === "bn" ? "bn" : "en"}">${x.lang}</span>
+                <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(x.title)}</span>
+                <span style="color:#5f6f96;font-size:11px">${fmt(x.chars)} ch</span></div>`).join("");
+            toast(r.queue && left ? `রাউন্ড শেষ — আরও ${fmt(left)} লিংক বাকি` : "শেখা শেষ! মডেল আপডেট হয়েছে ✅");
+          }
+          doPredict(); loadStats(); loadPages();
+        }
+      }
+    } catch (e) { /* retry */ }
+  }, 1300);
+}
+
+document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".mode").forEach(x => x.classList.remove("sel"));
+  b.classList.add("sel");
+  startLearn(b.dataset.mode);
+}));
+$("#urlBtn").addEventListener("click", () => {
+  const u = $("#urlInput").value.trim();
+  if (!/^https?:\/\//.test(u)) return toast("http:// বা https:// দিয়ে শুরু হওয়া লিংক দিন");
+  startLearn("url", u);
+});
+$("#spiderBtn").addEventListener("click", () => {
+  const u = $("#urlInput").value.trim();
+  if (!/^https?:\/\//.test(u)) return toast("ওপরের ঘরে সাইটের লিংক দিন (http:// বা https://)");
+  startLearn("spider", u, {pages: +$("#spPages").value, depth: +$("#spDepth").value, restart: $("#spRestart").checked});
+  $("#spRestart").checked = false;
+});
+$("#autoChk").addEventListener("change", async (e) => {
+  try {
+    const r = await api("/api/autolearn", {method: "POST", body: JSON.stringify({on: e.target.checked})});
+    toast(r.autolearn ? "অটো-লার্ন চালু — প্রতি ২ মিনিটে নিজে শিখবে" : "অটো-লার্ন বন্ধ");
+  } catch (err) { e.target.checked = !e.target.checked; toast("ফেইল: " + err.message); }
+});
+
+/* ---------------- ask ---------------- */
+$("#askBtn").addEventListener("click", doAsk);
+$("#askInput").addEventListener("keydown", (e) => { if (e.key === "Enter") doAsk(); });
+async function doAsk() {
+  const q = $("#askInput").value.trim();
+  if (!q) return;
+  const btn = $("#askBtn"); btn.disabled = true; btn.textContent = "খুঁজছি…";
+  try {
+    const r = await api("/api/ask", {method: "POST", body: JSON.stringify({q})});
+    const box = $("#answer"); box.style.display = "block";
+    const found = r.found !== undefined ? r.found : !!r.summary;      // পুরোনো সার্ভারের সাথেও চলে
+    const src = r.source || {};
+    const KIND = {qa: "আপনার শেখানো প্রশ্ন-উত্তর থেকে", doc: "জমানো লেখা থেকে সবচেয়ে মিলে যাওয়া অংশ", wiki: "উইকিপিডিয়া থেকে"};
+    const CONF = {high: "ভালো মিল", medium: "মোটামুটি মিল", low: "দুর্বল মিল — ভুল হতে পারে"};
+    box.classList.toggle("none", !found);
+    $("#answerKind").textContent = found ? (KIND[src.type] || "উত্তর (সূত্র থেকে)") : "উত্তর";
+    const mt = $("#answerMatch");
+    if (found && r.score) { mt.style.display = ""; mt.className = "match " + (r.confidence || "");
+      mt.textContent = `মিল ${Math.round(r.score * 100)}% · ${CONF[r.confidence] || ""}`; }
+    else mt.style.display = "none";
+    const asked = $("#answerAsked");
+    if (found && src.type === "qa" && src.question) { asked.style.display = "block"; asked.textContent = "মিলে যাওয়া প্রশ্ন: " + src.question; }
+    else asked.style.display = "none";
+    $("#answerText").textContent = found ? (r.answer || r.summary)
+      : "জানি না — এই প্রশ্নের সাথে যথেষ্ট মেলে এমন কিছু আমার ভাণ্ডারে বা উইকিপিডিয়ায় পাইনি। প্রশ্ন-উত্তরের JSON বা প্রাসঙ্গিক লিংক দিয়ে শিখিয়ে দিলে পরের বার পারব।";
+    const link = (u, t, d) => /^https?:\/\//.test(u || "")
+      ? `<a href="${esc(u)}" target="_blank" rel="noopener">🔗 ${esc(t || u)} <span class="u">${esc(d || "")}</span></a>` : "";
+    let srcs = found ? link(src.url, src.title, "সূত্র") : "";
+    srcs += (r.sources || []).filter(x => x.url !== src.url).map(x => link(x.url, x.title, x.site_domain)).join("");
+    if (found && src.type !== "qa") srcs += (r.local || []).filter(x => x.url !== src.url).slice(0, 3).map(x => link(x.url, x.title, x.site_domain)).join("");
+    $("#answerSrc").innerHTML = srcs;
+    const alts = $("#answerAlts"), al = r.alternatives || [];
+    alts.style.display = al.length ? "block" : "none";
+    alts.innerHTML = al.length ? `<div class="t">কাছাকাছি আরও মিল:</div>` + al.map(a =>
+      `<div class="a">${a.question ? `<b>${esc(a.question)}</b> — ` : ""}${esc(a.answer)} <span>(${Math.round(a.score * 100)}%)</span></div>`).join("") : "";
+    const note = $("#learnedNote");
+    if (r.learned) { note.style.display = "block"; note.textContent = `🧠 এই ${r.learned}টি পেজ মডেল এখন শিখে নিয়েছে।`; }
+    else note.style.display = "none";
+    loadStats(); loadPages(); doPredict();
+  } catch (e) { toast("ত্রুটি: " + e.message); }
+  btn.disabled = false; btn.textContent = "জিজ্ঞাসা";
+}
+
+/* ---------------- recent pages ---------------- */
+async function loadPages() {
+  try {
+    const r = await api("/api/pages");
+    const list = (r.pages || []).filter(p => p.url && !p.url.startsWith("offline"));
+    $("#recentList").innerHTML = list.length ? list.map(p => `
+      <div class="r">
+        <b title="${esc(p.title)}">${esc(p.title || p.url)}</b>
+        <s>${esc(p.site_domain || "")} · ${fmt(p.char_count || 0)} ch · ${esc(p.lang || "")}</s>
+      </div>`).join("") : `<span class="empty">এখনো কিছু শেখা হয়নি — উপরে “ইন্টারনেট থেকে শেখাও” চাপুন।</span>`;
+  } catch (e) { /* quiet */ }
+}
+
+/* ---------------- backend connection ---------------- */
+$("#apiSave").addEventListener("click", async () => {
+  const url = $("#apiInput").value.trim();
+  if (!/^https?:\/\//.test(url)) return toast("http:// বা https:// দিয়ে শুরু হওয়া URL দিন");
+  setApiBase(url);
+  try {
+    const r = await fetch(apiUrl("/healthz"), {headers: {"content-type": "application/json"}});
+    const j = await r.json();
+    if (!j.ok) throw new Error("bad healthz");
+    toast("সংযুক্ত! ✅ মডেল টোকেন: " + fmt(j.tokens));
+    showConn(false);
+    loadStats(); loadPages(); doPredict();
+  } catch (e) {
+    toast("সংযোগ হয়নি — URL/CORS চেক করুন");
+    showConn(true);
+  }
+});
+
+/* ---------------- boot ---------------- */
+$("#apiInput").value = API_BASE;
+loadStats(); loadPages(); doPredict();
+setInterval(loadStats, 30000);
+</script>
+</body>
+</html>
