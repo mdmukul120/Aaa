@@ -12,8 +12,11 @@ from collections import deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
+import answer
 import crawler
 import db
+import linkreader
+import spider
 from config import (ADMIN_TOKEN, AUTOLEARN, CORPUS_PATH, LOW_MEM, MAX_DOCS, MAX_ENTRIES,
                     MODEL_PATH, NEURAL, NEURAL_BUDGET_MS, NEURAL_BUNDLED, NEURAL_META_NAME, NEURAL_NAME,
                     NEURAL_PATH, PORT, STATIC)
@@ -241,6 +244,113 @@ def _upload_loop() -> None:
             print("[upload]", e)
 
 
+KIND_BN = {"html": "ওয়েব পেজ", "json": "JSON/API", "xml": "XML/ফিড", "text": "টেক্সট", "pdf": "PDF"}
+
+
+def _read_one_link(url: str) -> tuple[list[dict], int]:
+    """যেকোনো ধরনের একটা লিংক পড়ে: (লেখার অংশগুলো, কয়টা প্রশ্ন-উত্তর জমা হলো)।"""
+    res = linkreader.read_link(url)
+    if not res["ok"]:
+        raise RuntimeError(res.get("error") or "এই লিংক থেকে পড়ার মতো লেখা পাওয়া যায়নি")
+    qa_saved = 0
+    if res["qa"]:
+        qa_saved = db.insert_qa(res["qa"], res["url"], linkreader.host_of(res["url"]))
+        _invalidate("qa")
+    _log(f"লিংক পড়া হয়েছে ({KIND_BN.get(res['kind'], res['kind'])}): "
+         f"{len(res['docs'])} অংশ লেখা · {qa_saved} প্রশ্ন-উত্তর")
+    return res["docs"], qa_saved
+
+
+def _spider_job(url: str, pages: int, depth: int, restart: bool) -> None:
+    """স্পাইডারের এক রাউন্ড: পেজ পড়া → সেভ → কয়েক পেজ পরপর মডেলে শেখানো।"""
+    root = spider.site_root(url)
+    read = added = tokens = qa_saved = failed = skipped = 0
+    samples: list[dict] = []
+    pending: list[dict] = []          # সেভ হয়েছে, এখনো মডেলে শেখানো হয়নি
+    stop_note = ""
+
+    def flush() -> None:
+        nonlocal tokens
+        if pending:
+            tokens += _train_docs(pending)
+            pending.clear()
+
+    try:
+        with LOCK:
+            STATUS.update({"running": True, "mode": "spider", "target": pages, "done": 0,
+                           "log": [], "started": time.time(), "error": None, "last_result": None})
+        if _doc_cap_reached():
+            raise RuntimeError(f"ডেটাবেসে {MAX_DOCS:,} ডকুমেন্টের সীমা পূর্ণ — নতুন শেখা বন্ধ")
+        _log(f"🕷 স্পাইডার শুরু: {root} · এই রাউন্ডে সর্বোচ্চ {pages} পেজ · গভীরতা {depth}")
+        for ev in spider.crawl(url, pages=pages, max_depth=depth, restart=restart,
+                               should_stop=_doc_cap_reached):
+            if ev["event"] == "stop":
+                raise RuntimeError(ev["reason"])
+            if ev["event"] == "skip":
+                skipped += 1
+                _log(f"↷ বাদ ({ev['reason']}): {ev['url'][:70]}")
+                continue
+            read += 1
+            docs, qa = ev["docs"], ev["qa"]
+            if qa:
+                qa_saved += db.insert_qa(qa, ev["url"], root)
+            fresh: list[dict] = []
+            if docs:
+                new = db.insert_documents(docs)
+                fresh = ([d for d in docs if d["url"] not in SEEN_URLS] if new is None
+                         else [d for d in docs if d["url"] in new])
+                SEEN_URLS.update(d["url"] for d in docs)
+                added += len(fresh)
+                pending.extend(fresh)
+                if len(samples) < 12:
+                    d = docs[0]
+                    samples.append({"title": d.get("title") or d["url"][:60], "url": d["url"],
+                                    "lang": d.get("lang", "?"), "chars": sum(len(x["content"]) for x in docs)})
+            if ev["status"] == "failed":
+                failed += 1
+            mark = "✓" if ev["status"] == "done" else "·" if ev["status"] == "empty" else "✗"
+            detail = (f"{len(fresh)} নতুন অংশ" + (f" · {len(qa)} প্রশ্ন-উত্তর" if qa else "")
+                      if ev["status"] == "done" else ev.get("error") or "পড়ার মতো লেখা নেই")
+            _log(f"{mark} [{read}/{pages}] {ev['url'][:60]} — {detail}"
+                 + (f" · +{ev['queued']} লিংক" if ev["queued"] else ""))
+            with LOCK:
+                STATUS["done"] = read
+            if len(pending) >= 12:
+                flush()
+        flush()
+        if _doc_cap_reached():
+            stop_note = f"ডকুমেন্টের সীমা ({MAX_DOCS:,}) পূর্ণ — থামানো হলো"
+        q = db.queue_stats(root)
+        if qa_saved:
+            _invalidate("qa")
+        db.log_run("spider", read, tokens, added, f"spider: {root} (বাকি {q['pending']})")
+        db.save_model_stats(MODEL.stats())
+        with LOCK:
+            STATUS["last_result"] = {
+                "pages": read, "tokens": tokens, "docs_added": added, "dup": 0,
+                "qa_added": qa_saved, "failed": failed, "skipped": skipped,
+                "queue": q, "site": root, "samples": samples, "note": stop_note}
+        if not read and not q["pending"]:
+            _log("এই সাইটের সব লিংক আগেই পড়া শেষ — নতুন করে পড়তে ‘শুরু থেকে’ টিক দিন")
+        else:
+            _log(f"রাউন্ড শেষ: {read} পেজ পড়া · {added} নতুন অংশ · {qa_saved} প্রশ্ন-উত্তর · "
+                 f"সারিতে বাকি {q['pending']:,} লিংক" + (" — আবার চাপলে সেখান থেকেই চলবে" if q["pending"] else " ✅"))
+        if stop_note:
+            _log(stop_note)
+    except Exception as e:  # noqa: BLE001
+        try:
+            flush()
+        except Exception as e2:  # noqa: BLE001
+            print("[spider] flush failed:", e2)
+        with LOCK:
+            STATUS["error"] = str(e)
+        _log(f"ত্রুটি: {e}")
+    finally:
+        with LOCK:
+            STATUS["running"] = False
+            STATUS["done"] = STATUS["target"]
+
+
 def _learn_job(mode: str, count: int, url: str | None) -> None:
     status_result = {"pages": 0, "tokens": 0, "docs_added": 0, "samples": []}
     try:
@@ -253,11 +363,10 @@ def _learn_job(mode: str, count: int, url: str | None) -> None:
                                "(MAX_DOCS বাড়ান বা পুরোনো ডেটা মুছুন)")
         _log("শুরু: ইন্টারনেট থেকে ডেটা আনা হচ্ছে…")
         docs: list[dict] = []
+        qa_saved = 0
 
         if mode == "url" and url:
-            d = crawler.learn_url(url)
-            docs = [d] if d else []
-            _log(f"URL পড়া হয়েছে: {url[:70]}")
+            docs, qa_saved = _read_one_link(url)
         elif mode == "site" and url:
             host = urlparse(url).netloc.replace("www.", "")
             feeds = DOMAIN_FEEDS.get(host) or []
@@ -268,9 +377,7 @@ def _learn_job(mode: str, count: int, url: str | None) -> None:
                     docs += got
                     _log(f"{host} ({flang}): {len(got)} পেজ — ফিড থেকে")
             else:
-                d = crawler.learn_url(url)
-                docs = [d] if d else []
-                _log(f"{host}: সরাসরি পেজ পড়া হয়েছে ({len(docs)})")
+                docs, qa_saved = _read_one_link(url)
         elif mode == "auto":
             plan = [("wiki_bn", max(3, count // 4)), ("wiki_en", max(3, count // 4)),
                     ("bbc_bn", max(1, count // 10)), ("prothomalo", max(1, count // 10)),
@@ -313,7 +420,7 @@ def _learn_job(mode: str, count: int, url: str | None) -> None:
         else:
             raise ValueError("অজানা mode")
 
-        if not docs:
+        if not docs and not qa_saved:
             raise RuntimeError("কোনো পেজ পাওয়া যায়নি — ফিড/নেটওয়ার্ক চেক করুন")
 
         if mode in ("supabase", "test"):
@@ -325,7 +432,7 @@ def _learn_job(mode: str, count: int, url: str | None) -> None:
             added = len(fresh)
             _log(f"{len(docs)} পেজ পাওয়া গেছে · {added} নতুন (বাকিগুলো আগেই শেখা)")
 
-        if not fresh:
+        if not fresh and mode != "url":
             # ফিডে নতুন কিছু নেই → উইকিপিডিয়া থেকে নতুন লেখা এনে শেখানো
             extra = crawler.wiki_random("bn", 6) + crawler.wiki_random("en", 6)
             new2 = db.insert_documents(extra)
@@ -344,7 +451,7 @@ def _learn_job(mode: str, count: int, url: str | None) -> None:
 
         status_result = {
             "pages": len(docs), "tokens": tokens, "docs_added": added,
-            "dup": len(docs) - added,
+            "dup": len(docs) - added, "qa_added": qa_saved,
             "samples": [{"title": d.get("title") or d["url"][:60],
                          "url": d["url"], "lang": d.get("lang", "?"),
                          "chars": len(d["content"])} for d in docs[:12]],
@@ -352,7 +459,10 @@ def _learn_job(mode: str, count: int, url: str | None) -> None:
         with LOCK:
             STATUS["last_result"] = status_result
         if fresh:
-            _log(f"শেষ: {len(fresh)} নতুন পেজ · ~{tokens:,} টোকেন · মডেল আপডেট হয়েছে ✅")
+            _log(f"শেষ: {len(fresh)} নতুন পেজ · ~{tokens:,} টোকেন · মডেল আপডেট হয়েছে ✅"
+                 + (f" · {qa_saved} প্রশ্ন-উত্তর জমা হলো" if qa_saved else ""))
+        elif qa_saved:
+            _log(f"শেষ: {qa_saved} প্রশ্ন-উত্তর জমা/হালনাগাদ হলো ✅ (লেখাটা আগেই শেখা ছিল)")
         else:
             _log("শেষ: নতুন পেজ পাওয়া যায়নি (সব আগেই শেখা ছিল) — ‘মিশ্র’ বা অন্য উৎস চেষ্টা করুন")
     except Exception as e:  # noqa: BLE001
@@ -482,6 +592,10 @@ def _cached(key: str, ttl: float, fn):
     return val
 
 
+def _invalidate(key: str) -> None:
+    _TTL.pop(key, None)
+
+
 def api_stats() -> dict:
     st = MODEL.stats()
     lm = NEURAL_LM
@@ -491,6 +605,8 @@ def api_stats() -> dict:
         "neural_error": None if lm is not None else NEURAL_INFO["error"],
         "engine": "neural+ngram" if lm is not None else "ngram",
         "db": _cached("usage", 20, db.db_usage),
+        "qa_pairs": _cached("qa", 60, db.qa_count),
+        "spider": {"max_pages": spider.MAX_PAGES_PER_ROUND, "max_depth": spider.MAX_DEPTH},
         "supabase": db.configured(),
         "sites": len(BIG_SITES),
         "sites_registry": BIG_SITES,
@@ -542,14 +658,19 @@ def _learn_from_ask(q: str, fresh: list[dict], pages: int) -> None:
         print("[ask] learn failed:", e)
 
 
-def api_ask(q: str) -> dict:
-    from ngmodel import tokenize as _tok
+# "জিজ্ঞাসা"-র সীমা: এর নিচে মিললে উত্তর দেখানো হয় না ("জানি না")
+ASK_SURE, ASK_OK, ASK_LOW = 0.8, 0.6, 0.45
 
-    q = q.strip()[:300]
-    local = db.search_documents(q, limit=6)
+
+def _matcher() -> answer.Matcher:
+    """বিরল শব্দের ওজন বেশি — শব্দ কতবার দেখা গেছে তা n-gram মডেল থেকেই জানা।"""
+    uni = MODEL.uni
+    return answer.Matcher(lambda w: uni.get(w, 0), MODEL.tokens)
+
+
+def _wiki_for_ask(q: str, is_bn: bool) -> tuple[list[dict], int]:
+    """উইকিপিডিয়া থেকে প্রাসঙ্গিক পেজ এনে সেভ + (ব্যাকগ্রাউন্ডে) শেখানো। ফেরত: (পেজ, কয়টা নতুন)।"""
     web: list[dict] = []
-    learned = 0
-    is_bn = any("\u0980" <= ch <= "\u09FF" for ch in q)
     for lang in (("bn", "en") if is_bn else ("en", "bn")):
         try:
             hits = crawler.wiki_search(q, lang, limit=2)
@@ -558,15 +679,9 @@ def api_ask(q: str) -> dict:
         for h in hits:
             if h["url"] not in {w["url"] for w in web}:
                 web.append(h)
-
-    # প্রশ্নের সাথে সবচেয়ে মিলে যাওয়া সোর্স আগে
-    qwords = {w.lower() for w in _tok(q) if len(w) > 1}
-    def _rel(h: dict) -> float:
-        tw = {w.lower() for w in _tok((h.get("title") or "") + " " + h.get("content", "")[:800])}
-        return (len(qwords & tw) / (len(qwords) or 1)) + (0.5 if h.get("lang") == ("bn" if is_bn else "en") else 0)
-    web.sort(key=_rel, reverse=True)
+    learned = 0
     to_learn = [h for h in web if len(h["content"]) > 300]
-    if to_learn:
+    if to_learn and not _doc_cap_reached():
         # আগে সেভ, তারপর শুধু সত্যিই-নতুন পেজ থেকে শেখা — একই প্রশ্ন বারবার করলে
         # একই লেখা বারবার গুনে মডেল বিকৃত হতো।
         new = db.insert_documents(to_learn)
@@ -577,13 +692,77 @@ def api_ask(q: str) -> dict:
         if fresh:      # ট্রেইনিং + সেভ ব্যাকগ্রাউন্ডে — উত্তর দেরি হয় না
             threading.Thread(target=_learn_from_ask, args=(q, fresh, len(to_learn)),
                              daemon=True).start()
-    summary = ""
-    if web:
-        summary = web[0]["content"][:520].strip()
-        if not summary.endswith(("।", ".", "!", "?")):
-            summary += "…"
-    return {"query": q, "summary": summary, "sources": web[:4],
-            "local": local[:6], "learned": learned}
+    return web, learned
+
+
+def api_ask(q: str) -> dict:
+    """সবচেয়ে মিলে যাওয়া উত্তর: ১) নিজের প্রশ্ন-উত্তর ২) নিজের জমানো লেখা ৩) উইকিপিডিয়া।
+
+    তিন উৎসের সেরা মিলটাই দেখানো হয়; কোনোটাই যথেষ্ট না মিললে found=False ("জানি না")।
+    """
+    q = q.strip()[:300]
+    empty = {"query": q, "found": False, "answer": "", "summary": "", "score": 0.0,
+             "confidence": "none", "source": None, "alternatives": [], "sources": [],
+             "local": [], "learned": 0}
+    if not answer.words(q):
+        return empty
+    m = _matcher()
+    cands: list[dict] = []
+
+    # ১) নিজের প্রশ্ন-উত্তর
+    for p in m.best_qa(q, db.match_qa(answer.norm_question(q), 15))[:4]:
+        cands.append({"type": "qa", "score": p["score"], "answer": p.get("answer", ""),
+                      "question": p.get("question", ""), "url": p.get("source_url") or "",
+                      "title": p.get("site_domain") or "নিজের প্রশ্ন-উত্তর"})
+    top = max((c["score"] for c in cands), default=0.0)
+
+    # ২) নিজের জমানো লেখা (প্রশ্ন-উত্তরে নিশ্চিত মিল পেলে আর খোঁজা লাগে না)
+    local: list[dict] = []
+    if top < ASK_SURE:
+        for d in db.match_documents(answer.content_terms(q), 8):
+            score, passage = m.best_passage(q, d.get("content") or "")
+            local.append({"id": d.get("id"), "title": d.get("title"), "url": d.get("url"),
+                          "site_domain": d.get("site_domain"), "lang": d.get("lang"),
+                          "snippet": passage or (d.get("content") or "")[:220], "rank": score})
+            if passage:
+                cands.append({"type": "doc", "score": score, "answer": passage, "question": "",
+                              "url": d.get("url") or "", "title": d.get("title") or d.get("site_domain") or ""})
+        local.sort(key=lambda x: -x["rank"])
+        top = max((c["score"] for c in cands), default=0.0)
+
+    # ৩) নিজের ভাণ্ডারে ভালো মিল না থাকলে উইকিপিডিয়া
+    web: list[dict] = []
+    learned = 0
+    if top < ASK_OK:
+        web, learned = _wiki_for_ask(q, any("\u0980" <= ch <= "\u09FF" for ch in q))
+        for h in web:
+            score, passage = m.best_passage(q, h.get("content") or "")
+            if not passage and m.title_cover(q, h.get("title") or "") >= 0.6:
+                # প্রশ্নটা এই নিবন্ধের বিষয় নিয়েই — নিবন্ধের শুরুটাই সংক্ষিপ্ত পরিচয়
+                score, passage = 0.5, answer.lead(h.get("content") or "")
+            if passage:
+                cands.append({"type": "wiki", "score": round(score * 0.97, 4), "answer": passage,
+                              "question": "", "url": h.get("url") or "",
+                              "title": h.get("title") or "Wikipedia"})
+
+    order = {"qa": 0, "doc": 1, "wiki": 2}
+    cands.sort(key=lambda c: (-c["score"], order[c["type"]]))
+    out = {**empty, "sources": web[:4], "local": local[:6], "learned": learned}
+    if cands and cands[0]["score"] >= ASK_LOW:
+        best = cands[0]
+        text = best["answer"].strip()
+        if best["type"] != "qa" and not text.endswith(("।", ".", "!", "?")):
+            text += "…"
+        out.update({
+            "found": True, "answer": text, "summary": text, "score": best["score"],
+            "confidence": answer.confidence(best["score"]),
+            "source": {k: best[k] for k in ("type", "title", "url", "question")},
+            "alternatives": [{"type": c["type"], "score": c["score"], "question": c["question"],
+                              "answer": c["answer"][:300], "title": c["title"], "url": c["url"]}
+                             for c in cands[1:] if c["score"] >= ASK_LOW
+                             and c["answer"] != best["answer"]][:3],
+        })
+    return out
 
 
 def api_search(q: str) -> dict:
@@ -627,7 +806,7 @@ class RateLimiter:
 
 RATE = RateLimiter()
 ADMIN_ROUTES = ("/api/learn", "/api/autolearn")
-LEARN_MODES = ("auto", "url", "site", "wiki_bn", "wiki_en", "news_bn", "news_en", "test", "supabase")
+LEARN_MODES = ("auto", "url", "site", "spider", "wiki_bn", "wiki_en", "news_bn", "news_en", "test", "supabase")
 _PING = {"t": 0.0, "ok": False}
 
 
@@ -794,12 +973,22 @@ class Handler(BaseHTTPRequestHandler):
                 if url and not crawler.is_public_url(url):
                     self._json({"ok": False, "error": "এই ঠিকানা অনুমোদিত নয় — শুধু পাবলিক http/https লিংক"}, 400)
                     return
+                if mode in ("url", "spider") and not url:
+                    self._json({"ok": False, "error": "একটা http/https লিংক দিন"}, 400)
+                    return
+                if mode == "spider":      # পেজ-সংখ্যা ও গভীরতার নিজস্ব সীমা
+                    count = max(1, min(int(body.get("pages", body.get("count", 30))),
+                                       spider.MAX_PAGES_PER_ROUND))
+                    depth = max(0, min(int(body.get("depth", 2)), spider.MAX_DEPTH))
+                    job, args = _spider_job, (url, count, depth, bool(body.get("restart")))
+                else:
+                    job, args = _learn_job, (mode, count, url)
                 with LOCK:
                     if STATUS["running"]:
                         self._json({"ok": False, "error": "ইতিমধ্যে একটা লার্নিং চলছে"}, 409)
                         return
                     STATUS["running"] = True
-                threading.Thread(target=_learn_job, args=(mode, count, url), daemon=True).start()
+                threading.Thread(target=job, args=args, daemon=True).start()
                 self._json({"ok": True, "started": mode, "count": count})
             elif path == "/api/autolearn":
                 AUTO["on"] = bool(body.get("on"))

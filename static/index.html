@@ -143,6 +143,12 @@
   .mode.sel{border-color:rgba(34,211,238,.7);background:rgba(34,211,238,.08)}
   .urlrow{display:flex;gap:9px;margin-top:4px}
   .urlrow input{flex:1}
+  .spiderrow{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:9px}
+  .spiderrow select{background:#0d1630;border:1px solid var(--stroke);color:#dbe5ff;border-radius:10px;padding:8px 9px;font:inherit;font-size:13px}
+  .spiderrow label{font-size:12.5px;color:var(--muted);display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+  .spiderrow .btn{margin-left:auto}
+  .hint{font-size:12px;color:var(--muted);margin:9px 0 0;line-height:1.7}
+  .hint code{font-family:var(--mono);font-size:11px;color:#a9c1ff;background:#0d1630;border:1px solid #1c2745;border-radius:6px;padding:1px 5px;word-break:break-all}
   .progress{height:7px;border-radius:99px;background:#111a33;overflow:hidden;margin:14px 0 10px;display:none;border:1px solid #1c2745}
   .progress i{display:block;height:100%;width:0%;background:linear-gradient(90deg,#7c5cff,#22d3ee);transition:width .4s}
   .progress.run i{width:35%;animation:slide 1.2s infinite ease-in-out}
@@ -167,6 +173,20 @@
   .src a:hover{text-decoration:underline}
   .src .u{color:#5f6f96;font-size:11px;font-family:var(--mono);word-break:break-all}
   .learned-note{display:none;margin-top:10px;font-size:12px;color:var(--ok)}
+  .answer .k{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .answer .match{font-size:11px;padding:1px 8px;border-radius:99px;border:1px solid #2b3b63;color:#9fb0d8;background:#0d1630}
+  .answer .match.high{color:#7ee2a8;border-color:#1f5a3a;background:#0a1d13}
+  .answer .match.medium{color:#f0c987;border-color:#4a3a1c;background:#1d1608}
+  .answer .match.low{color:#ffb4a8;border-color:#5a2a22;background:#1d0d0a}
+  .answer .asked{display:none;font-size:12.5px;color:var(--muted);margin:0 0 6px}
+  .answer p#answerText{white-space:pre-wrap}
+  .answer.none p#answerText{color:var(--muted)}
+  .alts{display:none;margin-top:12px;border-top:1px dashed #1c2745;padding-top:9px}
+  .alts .t{font-size:11.5px;color:var(--muted);margin-bottom:5px}
+  .alts .a{font-size:12.5px;color:#b9c7ea;padding:5px 0;border-bottom:1px dashed #16203a}
+  .alts .a:last-child{border-bottom:0}
+  .alts .a b{color:#dbe5ff;font-weight:600}
+  .alts .a span{color:#5f6f96;font-size:11px}
 
   /* sidebar */
   .side .card{padding:17px}
@@ -208,6 +228,7 @@
     .stats{grid-template-columns:repeat(2,1fr)}
     .hero h1{font-size:24px}
     .modes{grid-template-columns:repeat(2,1fr)}
+    .spiderrow .btn{margin-left:0;width:100%}
   }
   @media (max-width:520px){
     .hrow{gap:9px}
@@ -297,9 +318,22 @@
         </div>
 
         <div class="urlrow">
-          <input type="text" id="urlInput" placeholder="যেকোনো লিংক পেস্ট করুন — https://bn.wikipedia.org/wiki/বাংলাদেশ" />
+          <input type="text" id="urlInput" placeholder="যেকোনো লিংক — ওয়েব পেজ, JSON/API, .txt, PDF" />
           <button class="btn" id="urlBtn">🔗 এই লিংক থেকে শেখো</button>
         </div>
+        <div class="spiderrow">
+          <select id="spPages" title="এই রাউন্ডে কয়টা পেজ">
+            <option value="10">১০ পেজ</option><option value="30" selected>৩০ পেজ</option><option value="60">৬০ পেজ</option>
+          </select>
+          <select id="spDepth" title="শুরুর লিংক থেকে কত ধাপ ভেতরে যাবে">
+            <option value="1">গভীরতা ১</option><option value="2" selected>গভীরতা ২</option><option value="3">গভীরতা ৩</option><option value="4">গভীরতা ৪</option>
+          </select>
+          <label><input type="checkbox" id="spRestart" /> শুরু থেকে</label>
+          <button class="btn" id="spiderBtn">🕷 পুরো সাইট ঘুরে শেখো</button>
+        </div>
+        <p class="hint">🔗 একটা লিংক: ওয়েব পেজ, JSON/API, টেক্সট বা PDF — যা-ই হোক পড়ে নেয়। প্রশ্ন-উত্তর শেখাতে JSON দিন:
+          <code>[{"q": "প্রশ্ন", "a": "উত্তর"}]</code><br>
+          🕷 স্পাইডার: ওপরের লিংক থেকে শুরু করে <b>একই সাইটের</b> ভেতরের লিংক ধরে ধরে পড়ে (robots.txt মেনে, ধীরে)। এক রাউন্ড শেষ হলে আবার চাপুন — যেখানে থেমেছিল সেখান থেকেই চলবে।</p>
 
         <div class="progress" id="prog"><i></i></div>
         <div class="console" id="learnLog"></div>
@@ -308,16 +342,18 @@
 
       <!-- ask -->
       <section class="card">
-        <h2><span class="ic">🔎</span> জিজ্ঞাসা করুন — মডেল শিখবে আর উত্তর দেবে</h2>
-        <p class="sub">প্রশ্ন করলে প্রথমে আপনার Supabase-এ খোঁজে, না পেলে ইন্টারনেট (উইকিপিডিয়া) থেকে এনে গুছিয়ে উত্তর দেয় — আর সেই লেখা দিয়েই নিজেকে আরও শেখায়।</p>
+        <h2><span class="ic">🔎</span> জিজ্ঞাসা করুন — সবচেয়ে মিলে যাওয়া উত্তর</h2>
+        <p class="sub">প্রথমে আপনার শেখানো <b>প্রশ্ন-উত্তর</b>, তারপর জমানো লেখা, শেষে উইকিপিডিয়া — যেখানে প্রশ্নের সাথে সবচেয়ে বেশি মেলে সেখান থেকেই উত্তর আসে (কতটা মিলল সেটাও দেখায়)। যথেষ্ট না মিললে সোজা বলে “জানি না”।</p>
         <div class="urlrow">
           <input type="text" id="askInput" placeholder="যেমন: পদ্মা সেতু কবে উদ্বোধন হয়?" />
           <button class="btn primary" id="askBtn">জিজ্ঞাসা</button>
         </div>
         <div class="answer" id="answer">
-          <div class="k">উত্তর (সূত্র থেকে)</div>
+          <div class="k"><span id="answerKind">উত্তর</span><span class="match" id="answerMatch"></span></div>
+          <div class="asked" id="answerAsked"></div>
           <p id="answerText"></p>
           <div class="src" id="answerSrc"></div>
+          <div class="alts" id="answerAlts"></div>
           <div class="learned-note" id="learnedNote"></div>
         </div>
       </section>
@@ -333,6 +369,7 @@
           <div class="dbcell"><s>ডকুমেন্ট</s><b id="dbDocs">—</b></div>
           <div class="dbcell"><s>documents টেবিল</s><b id="dbDocBytes">—</b></div>
           <div class="dbcell"><s>সাইট রেজিস্ট্রি</s><b id="dbSites">—</b></div>
+          <div class="dbcell"><s>প্রশ্ন-উত্তর</s><b id="dbQa">—</b></div>
         </div>
       </section>
 
@@ -422,6 +459,7 @@ async function loadStats() {
     $("#dbDocs").textContent = fmt(s.db.doc_count);
     $("#dbDocBytes").textContent = s.db.doc_bytes || "—";
     $("#dbSites").textContent = fmt(s.db.site_count || s.sites);
+    $("#dbQa").textContent = s.qa_pairs == null ? "—" : fmt(s.qa_pairs);
     $("#dbPillText").textContent = (s.db.db_total || "—") + " · " + fmt(s.db.doc_count) + " ডক";
     $("#sbDot").className = "dot" + (s.supabase ? "" : " off");
     $("#sbText").textContent = s.supabase ? "Supabase কানেক্টেড" : "Supabase অফলাইন (লোকাল মোড)";
@@ -534,12 +572,13 @@ $("#genBtn").addEventListener("click", async () => {
 });
 
 /* ---------------- learning ---------------- */
-async function startLearn(mode, url) {
+async function startLearn(mode, url, extra) {
   try {
-    await api("/api/learn", {method: "POST", body: JSON.stringify({mode, count: 20, url})});
+    await api("/api/learn", {method: "POST", body: JSON.stringify({mode, count: 20, url, ...(extra || {})})});
     $("#prog").style.display = "block"; $("#prog").classList.add("run");
+    $("#prog").querySelector("i").style.width = "";
     $("#learnLog").style.display = "block"; $("#samples").style.display = "none";
-    $("#learnLog").textContent = "নিবন্ধ খোঁজা হচ্ছে…";
+    $("#learnLog").textContent = mode === "spider" ? "স্পাইডার বেরোচ্ছে…" : "নিবন্ধ খোঁজা হচ্ছে…";
     pollLearn();
   } catch (e) { toast("লার্নিং শুরু হয়নি: " + e.message); }
 }
@@ -552,6 +591,10 @@ function pollLearn() {
       const s = await api("/api/learn/status");
       $("#learnLog").textContent = (s.log || []).join("\n") || "…";
       $("#learnLog").scrollTop = 1e6;
+      if (s.running && s.mode === "spider" && s.target) {      // স্পাইডারে আসল অগ্রগতি দেখানো
+        $("#prog").classList.remove("run");
+        $("#prog").querySelector("i").style.width = Math.max(4, Math.round(100 * s.done / s.target)) + "%";
+      }
       if (!s.running) {
         clearInterval(learnPollT); learnPollT = null;
         $("#prog").classList.remove("run");
@@ -561,11 +604,15 @@ function pollLearn() {
           if (s.last_result) {
             const r = s.last_result;
             $("#samples").style.display = "block";
-            $("#samples").innerHTML = `<div style="font-size:12.5px;color:var(--muted);margin-bottom:6px">✅ ${fmt(r.pages)} পেজ · ~${fmt(r.tokens)} টোকেন মডেলে যোগ হয়েছে</div>` +
-              r.samples.map(x => `<div class="it"><span class="badge ${x.lang === "bn" ? "bn" : "en"}">${x.lang}</span>
+            const left = r.queue ? r.queue.pending : 0;
+            $("#samples").innerHTML = `<div style="font-size:12.5px;color:var(--muted);margin-bottom:6px">✅ ${fmt(r.pages)} পেজ · ~${fmt(r.tokens)} টোকেন মডেলে যোগ হয়েছে` +
+              (r.qa_added ? ` · ${fmt(r.qa_added)}টি প্রশ্ন-উত্তর জমা` : "") +
+              (r.queue ? ` · 🕷 ${esc(r.site || "")}: সারিতে বাকি ${fmt(left)} লিংক${left ? " — আবার চাপলে চলবে" : ""}` : "") +
+              (r.note ? `<br>⚠️ ${esc(r.note)}` : "") + `</div>` +
+              (r.samples || []).map(x => `<div class="it"><span class="badge ${x.lang === "bn" ? "bn" : "en"}">${x.lang}</span>
                 <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(x.title)}</span>
                 <span style="color:#5f6f96;font-size:11px">${fmt(x.chars)} ch</span></div>`).join("");
-            toast("শেখা শেষ! মডেল আপডেট হয়েছে ✅");
+            toast(r.queue && left ? `রাউন্ড শেষ — আরও ${fmt(left)} লিংক বাকি` : "শেখা শেষ! মডেল আপডেট হয়েছে ✅");
           }
           doPredict(); loadStats(); loadPages();
         }
@@ -584,6 +631,12 @@ $("#urlBtn").addEventListener("click", () => {
   if (!/^https?:\/\//.test(u)) return toast("http:// বা https:// দিয়ে শুরু হওয়া লিংক দিন");
   startLearn("url", u);
 });
+$("#spiderBtn").addEventListener("click", () => {
+  const u = $("#urlInput").value.trim();
+  if (!/^https?:\/\//.test(u)) return toast("ওপরের ঘরে সাইটের লিংক দিন (http:// বা https://)");
+  startLearn("spider", u, {pages: +$("#spPages").value, depth: +$("#spDepth").value, restart: $("#spRestart").checked});
+  $("#spRestart").checked = false;
+});
 $("#autoChk").addEventListener("change", async (e) => {
   try {
     const r = await api("/api/autolearn", {method: "POST", body: JSON.stringify({on: e.target.checked})});
@@ -601,9 +654,31 @@ async function doAsk() {
   try {
     const r = await api("/api/ask", {method: "POST", body: JSON.stringify({q})});
     const box = $("#answer"); box.style.display = "block";
-    $("#answerText").textContent = r.summary || "সরাসরি উত্তর পাওয়া যায়নি — নিচের সূত্র দেখুন।";
-    $("#answerSrc").innerHTML = (r.sources || []).map(s =>
-      `<a href="${esc(s.url)}" target="_blank" rel="noopener">🔗 ${esc(s.title)} <span class="u">${esc(s.site_domain || "")}</span></a>`).join("");
+    const found = r.found !== undefined ? r.found : !!r.summary;      // পুরোনো সার্ভারের সাথেও চলে
+    const src = r.source || {};
+    const KIND = {qa: "আপনার শেখানো প্রশ্ন-উত্তর থেকে", doc: "জমানো লেখা থেকে সবচেয়ে মিলে যাওয়া অংশ", wiki: "উইকিপিডিয়া থেকে"};
+    const CONF = {high: "ভালো মিল", medium: "মোটামুটি মিল", low: "দুর্বল মিল — ভুল হতে পারে"};
+    box.classList.toggle("none", !found);
+    $("#answerKind").textContent = found ? (KIND[src.type] || "উত্তর (সূত্র থেকে)") : "উত্তর";
+    const mt = $("#answerMatch");
+    if (found && r.score) { mt.style.display = ""; mt.className = "match " + (r.confidence || "");
+      mt.textContent = `মিল ${Math.round(r.score * 100)}% · ${CONF[r.confidence] || ""}`; }
+    else mt.style.display = "none";
+    const asked = $("#answerAsked");
+    if (found && src.type === "qa" && src.question) { asked.style.display = "block"; asked.textContent = "মিলে যাওয়া প্রশ্ন: " + src.question; }
+    else asked.style.display = "none";
+    $("#answerText").textContent = found ? (r.answer || r.summary)
+      : "জানি না — এই প্রশ্নের সাথে যথেষ্ট মেলে এমন কিছু আমার ভাণ্ডারে বা উইকিপিডিয়ায় পাইনি। প্রশ্ন-উত্তরের JSON বা প্রাসঙ্গিক লিংক দিয়ে শিখিয়ে দিলে পরের বার পারব।";
+    const link = (u, t, d) => /^https?:\/\//.test(u || "")
+      ? `<a href="${esc(u)}" target="_blank" rel="noopener">🔗 ${esc(t || u)} <span class="u">${esc(d || "")}</span></a>` : "";
+    let srcs = found ? link(src.url, src.title, "সূত্র") : "";
+    srcs += (r.sources || []).filter(x => x.url !== src.url).map(x => link(x.url, x.title, x.site_domain)).join("");
+    if (found && src.type !== "qa") srcs += (r.local || []).filter(x => x.url !== src.url).slice(0, 3).map(x => link(x.url, x.title, x.site_domain)).join("");
+    $("#answerSrc").innerHTML = srcs;
+    const alts = $("#answerAlts"), al = r.alternatives || [];
+    alts.style.display = al.length ? "block" : "none";
+    alts.innerHTML = al.length ? `<div class="t">কাছাকাছি আরও মিল:</div>` + al.map(a =>
+      `<div class="a">${a.question ? `<b>${esc(a.question)}</b> — ` : ""}${esc(a.answer)} <span>(${Math.round(a.score * 100)}%)</span></div>`).join("") : "";
     const note = $("#learnedNote");
     if (r.learned) { note.style.display = "block"; note.textContent = `🧠 এই ${r.learned}টি পেজ মডেল এখন শিখে নিয়েছে।`; }
     else note.style.display = "none";

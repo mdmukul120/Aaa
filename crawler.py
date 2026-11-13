@@ -7,16 +7,17 @@ import re
 import socket
 import time
 import xml.etree.ElementTree as ET
-from urllib.parse import quote, urljoin, urlparse
+from urllib.parse import quote, urldefrag, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
-from config import MAX_DOC_CHARS, USER_AGENT
+from config import LOW_MEM, MAX_DOC_CHARS, USER_AGENT
 
 HEADERS = {
     "User-Agent": USER_AGENT,
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/json,application/pdf,text/plain,"
+              "application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "bn,en;q=0.9",
 }
 
@@ -92,8 +93,66 @@ def extract_article(html: str, url: str) -> dict | None:
     return {"title": title or url, "content": body_text[:MAX_DOC_CHARS], "url": url}
 
 
-MAX_BYTES = 2_000_000
+_JUNK_TAGS = ["script", "style", "noscript", "nav", "footer", "header",
+              "aside", "form", "svg", "iframe", "button", "template"]
+
+
+def extract_loose(html: str, url: str, min_chars: int = 200) -> dict | None:
+    """extract_article ব্যর্থ হলে: ছোট ছোট লাইনের পেজ (তালিকা, টেবিল, প্রশ্নোত্তর) থেকে লেখা।
+
+    সাধারণ এক্সট্র্যাক্টর ৬০ অক্ষরের ছোট অনুচ্ছেদ বাদ দেয় (মেনু/বিজ্ঞাপন ঠেকাতে) —
+    তাতে FAQ ধরনের পেজ পুরোটাই হারিয়ে যেত।
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    title = soup.title.get_text(" ", strip=True) if soup.title else ""
+    for tag in soup(_JUNK_TAGS):
+        tag.decompose()
+    root = soup.find("article") or soup.find("main") or soup.body or soup
+    lines: list[str] = []
+    for ln in root.get_text("\n", strip=True).split("\n"):
+        ln = re.sub(r"\s+", " ", ln).strip()
+        if len(ln) < 12 or len(ln.split()) < 2:
+            continue
+        low = ln.lower()
+        if len(ln) < 220 and any(b in low for b in BOILER):
+            continue
+        lines.append(ln)
+    lines = list(dict.fromkeys(lines))
+    text = clean_text("\n".join(lines))
+    if len(text) < min_chars:
+        return None
+    return {"title": re.sub(r"\s+", " ", title)[:300] or url, "content": text, "url": url}
+
+
+def extract_links(html: str, base_url: str, limit: int = 400) -> list[str]:
+    """পেজের ভেতরের লিংক (পূর্ণ ঠিকানা, # অংশ বাদ, ক্রম ঠিক রেখে ডুপ্লিকেট বাদ)।"""
+    soup = BeautifulSoup(html, "html.parser")
+    base = soup.find("base", href=True)
+    if base:
+        base_url = urljoin(base_url, base["href"])
+    out: dict[str, None] = {}
+    for a in soup.find_all("a", href=True):
+        href = (a.get("href") or "").strip()
+        if not href or href.startswith(("#", "mailto:", "javascript:", "tel:", "data:")):
+            continue
+        if "nofollow" in (a.get("rel") or []):
+            continue
+        full = urldefrag(urljoin(base_url, href))[0]
+        if full.startswith(("http://", "https://")) and len(full) <= 500:
+            out.setdefault(full, None)
+            if len(out) >= limit:
+                break
+    return list(out)
+
+
+MAX_BYTES = 2_000_000              # HTML/XML পেজের সর্বোচ্চ আকার
+MAX_BYTES_BIG = (6 if LOW_MEM else 20) * 1_000_000     # JSON / টেক্সট / PDF
 MAX_REDIRECTS = 5
+
+# যে ধরনগুলো থেকে লেখা বের করা যায় না — নামানোই হয় না
+_BINARY_TYPES = ("image/", "video/", "audio/", "font/", "application/zip", "application/gzip",
+                 "application/x-tar", "application/x-7z", "application/x-rar",
+                 "application/vnd.", "application/msword", "application/x-msdownload")
 
 
 def is_public_url(url: str) -> bool:
@@ -134,34 +193,90 @@ def _decode(raw: bytes, ctype: str) -> str:
         return raw.decode("utf-8", errors="replace")
 
 
-def fetch_raw(url: str, timeout: int = 20) -> tuple[bytes, str] | None:
-    """নিরাপদ GET: প্রতিটি redirect ধাপে ঠিকানা যাচাই, সর্বোচ্চ ২ MB।"""
+def sniff_kind(raw: bytes, ctype: str = "", url: str = "") -> str:
+    """বিষয়বস্তুর ধরন: "pdf" | "json" | "html" | "xml" | "text" | "binary"।
+
+    হেডারের চেয়ে ফাইলের শুরুটা বেশি নির্ভরযোগ্য — অনেক সার্ভার (যেমন
+    raw.githubusercontent.com) JSON-কেও text/plain বলে পাঠায়।
+    """
+    head = raw[:2048].lstrip(b"\xef\xbb\xbf \t\r\n")
+    ctype = (ctype or "").lower()
+    path = urlparse(url).path.lower() if url else ""
+    if head.startswith(b"%PDF-"):
+        return "pdf"
+    if b"\x00" in raw[:2048] and not head.startswith((b"\xff\xfe", b"\xfe\xff")):
+        return "binary"
+    if head[:1] in (b"{", b"[") and ("json" in ctype or path.endswith((".json", ".jsonl", ".ndjson"))
+                                    or "html" not in ctype):
+        return "json"
+    if "json" in ctype or path.endswith((".jsonl", ".ndjson")):
+        return "json"
+    low = head[:600].lower()
+    if low.startswith(b"<?xml") or b"<rss" in low or b"<feed" in low or b"<urlset" in low \
+            or b"<sitemapindex" in low:
+        return "xml" if b"<html" not in low else "html"
+    if b"<!doctype html" in low or b"<html" in low or "html" in ctype:
+        return "html"
+    if "xml" in ctype:
+        return "xml"
+    if re.search(rb"<(p|div|body|article|h1|table)\b", raw[:20000], re.I) and "text/plain" not in ctype:
+        return "html"
+    return "text"
+
+
+def fetch_any(url: str, timeout: int = 20, allow: tuple[str, ...] | None = None) -> dict:
+    """নিরাপদ GET — যেকোনো ধরনের লিংক (ওয়েব পেজ, JSON/API, টেক্সট, PDF)।
+
+    প্রতিটি redirect ধাপে ঠিকানা যাচাই (SSRF), আকারের সীমা, বাইনারি ফাইল বাদ।
+    ফেরত: {"raw", "ctype", "kind", "url" (redirect-এর পরের ঠিকানা)} অথবা {"error": "..."}।
+    """
     try:
         for _ in range(MAX_REDIRECTS + 1):
             if not is_public_url(url):
-                return None
+                return {"error": "ঠিকানা অনুমোদিত নয় (শুধু পাবলিক http/https)"}
             with requests.get(url, headers=HEADERS, timeout=timeout,
                               allow_redirects=False, stream=True) as r:
                 if r.status_code in (301, 302, 303, 307, 308):
                     loc = r.headers.get("location")
                     if not loc:
-                        return None
+                        return {"error": "ভাঙা redirect"}
                     url = urljoin(url, loc)
                     continue
                 if r.status_code != 200:
-                    return None
+                    hint = " (লগইন/কী লাগে?)" if r.status_code in (401, 403) else ""
+                    return {"error": f"সার্ভার {r.status_code} দিয়েছে{hint}", "status": r.status_code}
                 ctype = r.headers.get("content-type", "")
-                if "html" not in ctype and "xml" not in ctype and "text" not in ctype:
-                    return None
+                low = ctype.lower()
+                if any(b in low for b in _BINARY_TYPES) and "json" not in low and "xml" not in low:
+                    return {"error": f"এই ধরনের ফাইল পড়া যায় না ({low.split(';')[0]})"}
+                small = "html" in low or ("xml" in low and "json" not in low)
+                cap = MAX_BYTES if small else MAX_BYTES_BIG
                 raw = b""
                 for chunk in r.iter_content(65536):
                     raw += chunk
-                    if len(raw) >= MAX_BYTES:
+                    if len(raw) > cap:
                         break
-                return raw[:MAX_BYTES], ctype
-        return None
-    except Exception:  # noqa: BLE001
-        return None
+                kind = sniff_kind(raw, ctype, url)
+                if kind == "binary":
+                    return {"error": "এই ফাইলে পড়ার মতো লেখা নেই (বাইনারি)"}
+                if allow and kind not in allow:
+                    return {"error": f"অপ্রত্যাশিত ধরন: {kind}"}
+                if len(raw) > cap:
+                    if kind in ("pdf", "json"):      # কাটা PDF/JSON পড়া যায় না
+                        return {"error": f"ফাইল খুব বড় (সীমা {cap // 1_000_000} MB)"}
+                    raw = raw[:cap]
+                return {"raw": raw, "ctype": ctype, "kind": kind, "url": url}
+        return {"error": "অনেক বেশি redirect"}
+    except requests.RequestException as e:
+        return {"error": f"সংযোগ ব্যর্থ: {type(e).__name__}"}
+    except Exception as e:  # noqa: BLE001
+        return {"error": f"পড়া যায়নি: {e}"}
+
+
+def fetch_raw(url: str, timeout: int = 20) -> tuple[bytes, str] | None:
+    """ওয়েব পেজ/ফিডের জন্য (HTML, XML, টেক্সট); অন্য কিছু হলে None।"""
+    got = fetch_any(url, timeout, allow=("html", "xml", "text"))
+    return (got["raw"][:MAX_BYTES], got["ctype"]) if "raw" in got else None
 
 
 def fetch(url: str, timeout: int = 20) -> str | None:

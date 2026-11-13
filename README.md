@@ -15,6 +15,9 @@
 | নিউরাল ট্রেইনার | `train_neural.py` | JAX দিয়ে CPU-তেই ট্রেইন/ফাইন-টিউন; GitHub Actions থেকে নিজে নিজে চলে |
 | n-gram ভাষা-মডেল | `ngmodel.py` | Interpolated n-gram LM (trigram + bigram + skip-gram + unigram) — সঙ্গে সঙ্গে শেখে |
 | ক্রলার / এক্সট্র্যাক্টর | `crawler.py` | উইকি API, RSS/Atom ফিড, যেকোনো URL থেকে মূল লেখা আলাদা করা |
+| লিংক-পাঠক | `linkreader.py` | একটা লিংক যে ধরনেরই হোক (ওয়েব পেজ, JSON/API, টেক্সট/Markdown/CSV, PDF) — লেখা + প্রশ্ন-উত্তর জোড়া বের করে |
+| স্পাইডার | `spider.py` | এক লিংক থেকে শুরু করে একই সাইটের ভেতরের লিংক ধরে ধরে পড়া (robots.txt, বিরতি, সীমা, থেমে আবার শুরু) |
+| উত্তর-বাছাই | `answer.py` | প্রশ্নের সাথে সবচেয়ে মিলে যাওয়া প্রশ্ন-উত্তর/লেখার অংশ খোঁজা (শব্দ-মিল; কোনো বড় মডেল নয়) |
 | বাল্ক লার্নার | `crawl_hf.py` | HuggingFace-এর `wikimedia/wikipedia` ডেটাসেট থেকে হাজারো নিবন্ধ |
 | CLI ট্রেইনার (n-gram) | `train.py` | `--crawl N`, `--train`, `--ask "…"`, `--sync --upload` |
 | ওজন ফাইল | `models/shobdo-neural.npz` | ট্রেইন করা নিউরাল মডেল (ওজন + টোকেনাইজার + মেটা, ~৫ MB) |
@@ -65,8 +68,13 @@
 | `learning_runs` | কখন কোন উৎস থেকে কত পেজ/টোকেন শেখা হলো |
 | `model_stats` | vocab, uni/bi/tri counts |
 | `predictions` | ইনপুট, শীর্ষ পরামর্শ, সম্ভাবনা (ফিডব্যাক লগ) |
+| `qa_pairs` | question, answer, q_norm (unique), source_url — **শেখানো প্রশ্ন-উত্তর** |
+| `crawl_queue` | root (সাইট), url (unique), depth, status — স্পাইডারের সারি (কোন লিংক বাকি/শেষ) |
 
-ফাংশন: `search_documents(q, lim)` — Postgres ফুল-টেক্সট সার্চ + `ts_headline` স্নিপেট; `db_usage()` — সাইজ হিসাব। RLS চালু, ডিফল্টে কোনো পাবলিক পলিসি নেই — শুধু সার্ভার-সাইড **service key** দিয়ে অ্যাক্সেস।
+ফাংশন: `search_documents(q, lim)` — Postgres ফুল-টেক্সট সার্চ + `ts_headline` স্নিপেট; `db_usage()` — সাইজ হিসাব;
+`match_qa(q, lim)` — কাছাকাছি প্রশ্ন (pg_trgm); `match_documents(terms, lim)` — প্রশ্নের শব্দ যত বেশি আছে তত আগে;
+`crawl_stats(root)`। শেষ দুই টেবিল ও তিন ফাংশন তৈরির SQL: [`deploy/supabase-qa-spider.sql`](deploy/supabase-qa-spider.sql)
+(নতুন Supabase প্রজেক্টে SQL Editor-এ একবার চালাতে হয়)। RLS চালু, ডিফল্টে কোনো পাবলিক পলিসি নেই — শুধু সার্ভার-সাইড **service key** দিয়ে অ্যাক্সেস।
 
 **বর্তমান ব্যবহার:** ডেটাবেস **২৩ MB** / ১,০২৪ MB · `documents` টেবিল **১২ MB** · **১,০৭২** ডকুমেন্ট — অর্থাৎ ফ্রি প্ল্যানের প্রায় ২% খরচে।
 
@@ -163,9 +171,10 @@ repo → Settings → Secrets and variables → Actions: `SUPABASE_URL`, `SUPABA
 | GET | `/api/stats` | মডেল (n-gram + নিউরাল) + DB + লার্নিং স্ট্যাটাস | — |
 | POST | `/api/predict` `{text}` | পরবর্তী ৬ শব্দ + সম্ভাবনা, `engine` | ৩০০ |
 | POST | `/api/generate` `{text, temperature, max_tokens, engine}` | লেখা চালিয়ে যাওয়া (`engine`: `auto`/`ngram`) | ৪০ |
-| POST | `/api/learn` `{mode, count, url}` 🔒 | `wiki_bn\|wiki_en\|news_bn\|news_en\|auto\|site\|url\|test` | ৬ |
+| POST | `/api/learn` `{mode, count, url}` 🔒 | `wiki_bn\|wiki_en\|news_bn\|news_en\|auto\|site\|url\|test` — `url`: যেকোনো ধরনের একটা লিংক | ৬ |
+| POST | `/api/learn` `{mode:"spider", url, pages, depth, restart}` 🔒 | স্পাইডারের এক রাউন্ড (নিচে §৬.১) | ৬ |
 | GET | `/api/learn/status` | প্রোগ্রেস + লগ | — |
-| POST | `/api/ask` `{q}` | DB→ইন্টারনেট খুঁজে গুছানো উত্তর; নতুন পেজ হলে শেখে | ১২ |
+| POST | `/api/ask` `{q}` | সবচেয়ে মিলে যাওয়া উত্তর: প্রশ্ন-উত্তর → জমানো লেখা → উইকিপিডিয়া; `found`, `answer`, `score`, `confidence`, `source` | ১২ |
 | POST | `/api/search` `{q}` | Supabase FTS সার্চ | ৬০ |
 | GET | `/api/pages` | সর্বশেষ শেখা পেজ | — |
 | POST | `/api/autolearn` `{on}` 🔒 | প্রতি ২ মিনিটে নিজে শেখা চালু/বন্ধ | ৬ |
@@ -199,6 +208,30 @@ Wikipedia (bn/en) — CC BY-SA; BBC/Al Jazeera/Guardian/প্রথম আল�
 (না থাকলে বা পুরোনো টোকেনাইজারের হলে সব ডকুমেন্ট এনে নিজেই নতুন করে গড়ে ও Storage-এ তুলে রাখে)। নিউরাল ওজন রিপোতেই
 থাকে (`models/`), আর Storage-এ নতুনতর থাকলে সেটাই নেয়।
 service key কখনো ব্রাউজারে বা গিটে যাবে না — `.env` শুধু সার্ভারের জন্য, হোস্টে env var/secret হিসেবে বসান।
+
+## ৬.১ লিংক, স্পাইডার আর "জিজ্ঞাসা" কীভাবে কাজ করে
+
+**একটা লিংক (`mode: "url"`)** — ধরন হেডার দেখে নয়, ফাইলের ভেতর দেখে ঠিক হয়:
+
+| লিংক | যা নেওয়া হয় |
+|---|---|
+| ওয়েব পেজ | মূল লেখা; ছোট ছোট লাইনের পেজও; FAQ (`<details>`, `<dt>/<dd>`, JSON-LD `FAQPage`) থেকে প্রশ্ন-উত্তর |
+| JSON / API | সব লেখা + প্রশ্ন-উত্তর। চেনে: `[{"q": "…", "a": "…"}]`, `question/answer`, `প্রশ্ন/উত্তর`, `prompt/completion`, `instruction/output`, SQuAD, `messages[role, content]`, JSON Lines |
+| টেক্সট / Markdown / CSV | লেখা; `প্রশ্ন: … উত্তর: …` বা `Q: … A: …` লাইন; CSV-তে `question,answer` কলাম |
+| PDF | লেখা (`pypdf`) — স্ক্যান করা ছবি বা পুরোনো নন-ইউনিকোড ফন্টের PDF পড়া যায় না |
+
+বড় লেখা ~১০,০০০ অক্ষরের অংশে ভাগ হয় (`…#part-2`, …)। সীমা: HTML ২ MB; JSON/PDF/টেক্সট ২০ MB (`LOW_MEM`-এ ৬ MB)।
+পড়া যায় না: লগইন/API-কী লাগা লিংক, JavaScript দিয়ে আঁকা পেজ, ছবি/ভিডিও/অফিস ফাইল।
+
+**স্পাইডার (`mode: "spider"`)** — শুধু একই সাইট; `robots.txt` ও `Crawl-delay` (সর্বোচ্চ ১০ সে.) মানে; পেজের মাঝে ১ সে. বিরতি;
+প্রতি রাউন্ডে সর্বোচ্চ ২০০ পেজ (`LOW_MEM`-এ ৬০), গভীরতা সর্বোচ্চ ৬; সারি `crawl_queue`-এ থাকে বলে একই লিংক দু'বার পড়ে না,
+আর একই URL দিয়ে আবার চালালে যেখানে থেমেছিল সেখান থেকে চলে (`restart: true` দিলে শুরু থেকে)। `MAX_DOCS` ছুঁলে থামে।
+
+**জিজ্ঞাসা (`/api/ask`)** — তিন উৎসের মধ্যে যেটা প্রশ্নের সাথে সবচেয়ে মেলে সেটাই দেখায়:
+১) `qa_pairs` (স্কোর ≥ ০.৮ হলে আর খোঁজে না) → ২) `documents`-এর সবচেয়ে মিলে যাওয়া ১–৩ বাক্য → ৩) উইকিপিডিয়া।
+স্কোর ০.৪৫-এর নিচে হলে `found: false` ("জানি না")। মিল মাপা হয় শব্দ দিয়ে (বিরল শব্দের ওজন বেশি, বাংলা বিভক্তি ছেঁটে,
+বানান-ভুল সহ্য করে) — অর্থ বুঝে নয়; তাই একই কথা সম্পূর্ণ ভিন্ন শব্দে জিজ্ঞেস করলে মিলবে না, আর লেখা থেকে আসা অংশটা
+প্রাসঙ্গিক হলেও সবসময় সরাসরি উত্তর নাও হতে পারে।
 
 ## ৯. পরবর্তী উন্নতির পথ
 

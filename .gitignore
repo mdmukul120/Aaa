@@ -7,6 +7,8 @@ data/*.pkl.gz
 data/*.npz
 data/shobdo-neural.json
 data/corpus.jsonl
+data/qa.jsonl
+data/crawl_queue.json
 data/*.tmp
 
 __pycache__/
