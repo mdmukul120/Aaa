@@ -496,9 +496,8 @@ function setConn(s) {
   const n = $("#notice");
   n.hidden = !(s === "wait" || s === "off");
   n.className = "notice " + s;
-  $("#noticeText").textContent = s === "wait"
-    ? "সার্ভার জেগে উঠছে — প্রথম উত্তরে এক মিনিট পর্যন্ত লাগতে পারে।"
-    : "সার্ভারের সাথে সংযোগ নেই।";
+  $("#noticeText").textContent = s === "wait" ? "সার্ভার জেগে উঠছে — প্রথম উত্তরে এক মিনিট পর্যন্ত লাগতে পারে।"
+    : s === "off" ? "সার্ভারের সাথে সংযোগ নেই।" : "";
   $("#noticeBtn").hidden = s !== "off";
 }
 
@@ -546,6 +545,9 @@ async function post(path, body, signal, onWait) {
   }
 }
 
+/* সার্ভার জেগে আছে কি না। /healthz নয় — ওই নামের ঠিকানা কিছু কনটেন্ট-ব্লকার আটকে দেয়
+   (তখন সার্ভার চালু থাকলেও "সংযোগ নেই" দেখাত); /api/learn/status ছোট, ডেটাবেস ছোঁয় না। */
+const PING_PATH = "/api/learn/status";
 let pinging = false;
 async function ping() {
   if (pinging) return;
@@ -554,8 +556,8 @@ async function ping() {
   if (connState !== "ok") setConn("check");
   try {
     for (;;) {
-      const r = await attempt("/healthz", {cache: "no-store"}, null, 20000);
-      if (r.data && r.data.ok) { setConn("ok"); return; }
+      const r = await attempt(PING_PATH, {}, null, 20000);
+      if (r.data) { setConn("ok"); return; }
       if (r.final || Date.now() - t0 > 90000) { setConn("off"); return; }
       setConn("wait");
       await sleep(4000);

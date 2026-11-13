@@ -40,8 +40,10 @@ class UiFiles(unittest.TestCase):
         s = read("static", "index.html")
         for part in ('id="input"', 'id="send"', 'id="msgs"', 'id="chatList"', 'id="newChat"',
                      'id="modelMenu"', 'id="settings"', 'href="/studio"',
-                     '"/api/ask"', '"/api/generate"', '"/healthz"'):
+                     '"/api/ask"', '"/api/generate"', '"/api/learn/status"'):
             self.assertIn(part, s, part)
+        # /healthz নামের ঠিকানা কনটেন্ট-ব্লকারে আটকায় — চ্যাট পাতা সেটা ডাকে না
+        self.assertNotIn('"/healthz"', s)
 
     def test_studio_keeps_learning_tools_and_links_back(self):
         s = read("static", "studio.html")
