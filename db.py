@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import threading
+import time
 from typing import Any
 
 import requests
@@ -15,6 +16,8 @@ import requests
 from config import CORPUS_PATH, SUPABASE_KEY, SUPABASE_URL
 
 _lock = threading.Lock()
+QA_PATH = CORPUS_PATH.with_name("qa.jsonl")                 # Supabase না থাকলে প্রশ্ন-উত্তর এখানে
+QUEUE_PATH = CORPUS_PATH.with_name("crawl_queue.json")      # … আর স্পাইডারের সারি এখানে
 
 
 def configured() -> bool:
@@ -380,3 +383,235 @@ def ping() -> bool:
         return True
     except Exception:  # noqa: BLE001
         return False
+
+
+# --------------------------------------------------------------------------- #
+# প্রশ্ন-উত্তর জোড়া (qa_pairs) — "জিজ্ঞাসা"-র প্রথম উৎস
+# --------------------------------------------------------------------------- #
+def _now() -> str:
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+
+def insert_qa(pairs: list[dict], source_url: str = "", site_domain: str = "") -> int:
+    """[{"q", "a"}] সেভ করে; একই প্রশ্ন আবার এলে উত্তরটা নতুনটা দিয়ে বদলে যায় (সংশোধন করা যায়)।
+
+    ফেরত: কয়টা জোড়া সেভ হলো।
+    """
+    from answer import norm_question
+
+    rows: dict[str, dict] = {}
+    for p in pairs:
+        q, a = str(p.get("q", "")).strip(), str(p.get("a", "")).strip()
+        qn = norm_question(q)
+        if not qn or not a:
+            continue
+        rows[qn] = {"question": q[:400], "answer": a[:2000], "q_norm": qn,
+                    "lang": "bn" if any("\u0980" <= ch <= "\u09FF" for ch in q) else "en",
+                    "source_url": (p.get("url") or source_url or "")[:500] or None,
+                    "site_domain": site_domain or None, "updated_at": _now()}
+    items = list(rows.values())
+    if not items:
+        return 0
+    if configured():
+        try:
+            for i in range(0, len(items), 200):
+                _req("POST", "qa_pairs", params={"on_conflict": "q_norm"}, body=items[i:i + 200],
+                     extra_headers={"Prefer": "resolution=merge-duplicates,return=minimal"})
+            return len(items)
+        except Exception as e:  # noqa: BLE001
+            print("[db] qa insert failed (deploy/supabase-qa-spider.sql চালানো হয়েছে?):", e)
+    with _lock, QA_PATH.open("a", encoding="utf-8") as f:
+        for r in items:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    return len(items)
+
+
+def _local_qa() -> list[dict]:
+    rows: dict[str, dict] = {}
+    if QA_PATH.exists():
+        with QA_PATH.open(encoding="utf-8") as f:
+            for ln in f:
+                try:
+                    r = json.loads(ln)
+                    rows[r["q_norm"]] = r        # পরের লাইন আগেরটাকে বদলায়
+                except (ValueError, KeyError, TypeError):
+                    continue
+    return list(rows.values())
+
+
+def match_qa(q_norm: str, limit: int = 12) -> list[dict]:
+    """প্রশ্নের কাছাকাছি জমানো প্রশ্নগুলো (চূড়ান্ত বাছাই answer.Matcher করে)।"""
+    if not q_norm:
+        return []
+    if configured():
+        try:
+            return _req("POST", "rpc/match_qa", body={"q": q_norm, "lim": limit}, timeout=12) or []
+        except Exception as e:  # noqa: BLE001
+            print("[db] match_qa failed:", e)
+    want = set(q_norm.split())
+    scored = [(len(want & set(r["q_norm"].split())), r) for r in _local_qa()]
+    scored = [x for x in scored if x[0]]
+    scored.sort(key=lambda x: -x[0])
+    return [r for _, r in scored[:max(limit, 30)]]
+
+
+def qa_count() -> int:
+    if configured():
+        try:
+            r = requests.get(f"{SUPABASE_URL}/rest/v1/qa_pairs",
+                             headers=_headers({"Prefer": "count=exact", "Range": "0-0"}),
+                             params={"select": "id"}, timeout=12)
+            cr = r.headers.get("content-range", "")
+            if r.status_code < 300 and "/" in cr:
+                return int(cr.split("/")[-1])
+        except Exception:  # noqa: BLE001
+            pass
+    return len(_local_qa())
+
+
+def match_documents(terms: list[str], limit: int = 8) -> list[dict]:
+    """যে ডকুমেন্টগুলোতে প্রশ্নের শব্দ সবচেয়ে বেশি আছে — পুরো content সহ।"""
+    terms = [t for t in dict.fromkeys(terms) if 2 <= len(t) <= 60][:12]
+    if not terms:
+        return []
+    if configured():
+        try:
+            return _req("POST", "rpc/match_documents", body={"terms": terms, "lim": limit},
+                        timeout=15) or []
+        except Exception as e:  # noqa: BLE001
+            print("[db] match_documents failed:", e)
+    scored: list[tuple[int, int, dict]] = []
+    if CORPUS_PATH.exists():
+        for ln in CORPUS_PATH.open(encoding="utf-8"):
+            try:
+                d = json.loads(ln)
+            except ValueError:
+                continue
+            text = (d.get("title", "") + " " + d.get("content", "")).lower()
+            hits = sum(1 for t in terms if t in text)
+            if hits:
+                scored.append((hits, sum(text.count(t) for t in terms), d))
+    scored.sort(key=lambda x: (-x[0], -x[1]))
+    return [{"id": 0, "title": d.get("title"), "url": d.get("url"), "site_domain": d.get("site_domain"),
+             "lang": d.get("lang"), "content": d.get("content", ""), "hits": h, "rank": float(c)}
+            for h, c, d in scored[:limit]]
+
+
+# --------------------------------------------------------------------------- #
+# স্পাইডারের সারি (crawl_queue) — কোন লিংক বাকি/শেষ; রিস্টার্টের পরেও মনে থাকে
+# --------------------------------------------------------------------------- #
+_queue_mem: dict[str, dict] | None = None
+_queue_remote = {"retry_at": 0.0}  # Supabase-এর সারি ব্যর্থ হলে ১০ মিনিট লোকাল ফাইলে চলে, পরে আবার চেষ্টা
+
+
+def _use_remote_queue() -> bool:
+    return configured() and time.time() >= _queue_remote["retry_at"]
+
+
+def _queue_fail(e: Exception) -> None:
+    print("[db] crawl_queue ব্যর্থ — আপাতত লোকাল সারি (deploy/supabase-qa-spider.sql চালানো আছে?):", e)
+    _queue_remote["retry_at"] = time.time() + 600
+
+
+def _queue_load() -> dict[str, dict]:
+    global _queue_mem
+    if _queue_mem is None:
+        try:
+            _queue_mem = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            _queue_mem = {}
+    return _queue_mem
+
+
+def _queue_save() -> None:
+    try:
+        QUEUE_PATH.write_text(json.dumps(_queue_mem, ensure_ascii=False), encoding="utf-8")
+    except OSError as e:
+        print("[db] queue save failed:", e)
+
+
+def queue_add(root: str, items: list[tuple[str, int]]) -> None:
+    """নতুন লিংক সারিতে; আগে থেকে থাকা URL ছোঁয়া হয় না (একই পেজ দু'বার পড়া হয় না)।"""
+    if not items:
+        return
+    if _use_remote_queue():
+        try:
+            rows = [{"root": root, "url": u, "depth": d} for u, d in items]
+            for i in range(0, len(rows), 200):
+                _req("POST", "crawl_queue", params={"on_conflict": "url"}, body=rows[i:i + 200],
+                     extra_headers={"Prefer": "resolution=ignore-duplicates,return=minimal"})
+            return
+        except Exception as e:  # noqa: BLE001
+            _queue_fail(e)
+    with _lock:
+        q = _queue_load()
+        for u, d in items:
+            q.setdefault(u, {"root": root, "depth": d, "status": "pending", "n": len(q)})
+        _queue_save()
+
+
+def queue_next(root: str, n: int = 10) -> list[dict]:
+    """পরের n-টি বাকি লিংক — কম গভীরতার (শুরুর কাছের) পেজ আগে।"""
+    if _use_remote_queue():
+        try:
+            return _req("GET", "crawl_queue", params={
+                "select": "id,url,depth", "root": f"eq.{root}", "status": "eq.pending",
+                "order": "depth.asc,id.asc", "limit": n}) or []
+        except Exception as e:  # noqa: BLE001
+            _queue_fail(e)
+    with _lock:
+        rows = [{"id": 0, "url": u, "depth": r["depth"], "n": r.get("n", 0)}
+                for u, r in _queue_load().items() if r["root"] == root and r["status"] == "pending"]
+    rows.sort(key=lambda r: (r["depth"], r["n"]))
+    return rows[:n]
+
+
+def queue_mark(row: dict, status: str, note: str = "") -> None:
+    if _use_remote_queue() and row.get("id"):
+        try:
+            _req("PATCH", "crawl_queue", params={"id": f"eq.{row['id']}"},
+                 body={"status": status, "note": note[:300] or None, "fetched_at": _now()},
+                 extra_headers={"Prefer": "return=minimal"})
+            return
+        except Exception as e:  # noqa: BLE001
+            _queue_fail(e)
+    with _lock:
+        r = _queue_load().get(row["url"])
+        if r:
+            r["status"] = status
+            _queue_save()
+
+
+def queue_stats(root: str) -> dict:
+    if _use_remote_queue():
+        try:
+            rows = _req("POST", "rpc/crawl_stats", body={"p_root": root})
+            if rows:
+                return {k: int(rows[0].get(k) or 0) for k in ("pending", "done", "failed", "total")}
+        except Exception as e:  # noqa: BLE001
+            _queue_fail(e)
+    out = {"pending": 0, "done": 0, "failed": 0, "total": 0}
+    with _lock:
+        for r in _queue_load().values():
+            if r["root"] == root:
+                out["total"] += 1
+                key = ("pending" if r["status"] == "pending"
+                       else "done" if r["status"] in ("done", "empty") else "failed")
+                out[key] += 1
+    return out
+
+
+def queue_reset(root: str) -> None:
+    """একটা সাইটের সারি মুছে নতুন করে শুরু (জমানো ডকুমেন্ট/প্রশ্ন-উত্তর থেকে যায়)।"""
+    if _use_remote_queue():
+        try:
+            _req("DELETE", "crawl_queue", params={"root": f"eq.{root}"},
+                 extra_headers={"Prefer": "return=minimal"})
+            return
+        except Exception as e:  # noqa: BLE001
+            _queue_fail(e)
+    with _lock:
+        q = _queue_load()
+        for u in [u for u, r in q.items() if r["root"] == root]:
+            del q[u]
+        _queue_save()
